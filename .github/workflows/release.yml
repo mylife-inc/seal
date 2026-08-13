@@ -1,0 +1,172 @@
+# Publish the `sgit` binaries from the sealed repository.
+#
+# `workflow_dispatch` only. `cli/src` is encrypted, so a runner cannot build
+# anything until it holds a dispatch token — and only a key-holder can mint
+# one. Start it with `sgit ci dispatch cli`.
+#
+# The release is created in *this* repository rather than a shared artefact
+# bucket, which means the built-in GITHUB_TOKEN is enough: no PAT, nothing to
+# rotate, and the repository publishes what it built rather than borrowing
+# somebody else's namespace.
+name: Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Version to publish, e.g. v1.2.0"
+        required: true
+        type: string
+      encrypted_token:
+        description: "age-encrypted dispatch payload (base64)"
+        required: true
+        type: string
+      build_id:
+        description: "UUID from the dispatcher, for audit correlation"
+        required: false
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  binaries:
+    name: sgit (${{ matrix.target }})
+    runs-on: ${{ matrix.platform }}
+    timeout-minutes: 45
+
+    # Every host the installer resolves to.
+    #
+    # It picks by the *host's* architecture, not by what is being built, so a
+    # release missing one of these fails on whichever machine asks for it —
+    # which is exactly how three of four jobs 404'd the first time Zellij tried
+    # this. `macos-latest` is Apple Silicon, so the Intel Darwin build has to be
+    # a cross-compile from it rather than a native build on an Intel runner.
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - { target: x86_64-unknown-linux-musl, platform: ubuntu-latest }
+          - { target: aarch64-unknown-linux-musl, platform: ubuntu-24.04-arm }
+          - { target: aarch64-apple-darwin, platform: macos-latest }
+          - { target: x86_64-apple-darwin, platform: macos-latest }
+
+    steps:
+      - uses: actions/checkout@v4
+
+      # `cli/` is ciphertext until this runs. The action destroys the key
+      # material before it returns, so cargo never sees it.
+      - uses: ./.github/actions/codeseal-decrypt
+        with:
+          encrypted_token: ${{ inputs.encrypted_token }}
+          dispatch_key: ${{ secrets.CODESEAL_DISPATCH_PRIVATE_KEY }}
+
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: ${{ matrix.target }}
+
+      # musl needs a linker that the Ubuntu images do not carry by default.
+      - name: Install the musl toolchain
+        if: contains(matrix.target, 'musl')
+        run: sudo apt-get update && sudo apt-get install -y musl-tools
+
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: cli
+          key: release-${{ matrix.target }}
+
+      # The version being published has to be the version being built.
+      #
+      # Zellij shipped `zel-v0.1.2-*.tar.gz` containing a binary that answered
+      # `0.1.0`, because the workflow took its version from a dispatch input and
+      # nothing ever read Cargo.toml. Every part of that release agreed with
+      # every other part and all of them were wrong together.
+      - name: The manifest agrees with the version being published
+        env:
+          VERSION: ${{ inputs.version }}
+        run: |
+          set -euo pipefail
+          declared=$(awk '/^\[package\]/{p=1} p&&/^version *=/{gsub(/[" ]/,"",$3); print $3; exit}' cli/Cargo.toml)
+          want="${VERSION#v}"
+          [ "$declared" = "$want" ] || {
+            echo "::error::cli/Cargo.toml declares $declared, but this would publish $want."
+            echo "::error::Bump the version and commit it, then dispatch again."
+            exit 1
+          }
+          echo "cli/Cargo.toml declares $declared"
+
+      - name: Build
+        working-directory: cli
+        run: cargo build --release --locked --target ${{ matrix.target }}
+
+      - name: Package
+        env:
+          VERSION: ${{ inputs.version }}
+          TARGET: ${{ matrix.target }}
+        run: |
+          set -euo pipefail
+          mkdir -p dist
+          name="sgit-${VERSION}-${TARGET}"
+          tar -czf "dist/${name}.tar.gz" -C "cli/target/${TARGET}/release" sgit
+          ( cd dist && shasum -a 256 "${name}.tar.gz" > "${name}.tar.gz.sha256" )
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: binary-${{ matrix.target }}
+          path: dist/*
+
+  publish:
+    name: Publish the release
+    needs: binaries
+    runs-on: ubuntu-latest
+
+    # The only job that writes, and the only one that needs to. It builds
+    # nothing, so it never decrypts.
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/download-artifact@v4
+        with:
+          path: dist
+          pattern: binary-*
+          merge-multiple: true
+
+      - name: Checksums, and the installer
+        env:
+          VERSION: ${{ inputs.version }}
+        run: |
+          set -euo pipefail
+          # One SHA256SUMS over every archive, beside the per-archive files.
+          # The installer reads either, and has failed closed on a release that
+          # published only the form it was not looking for.
+          ( cd dist && shasum -a 256 ./*.tar.gz > SHA256SUMS && shasum -a 256 -c SHA256SUMS )
+          # Published with the binaries, so a pinned version can always be
+          # installed the same way the release it belongs to was.
+          cp scripts/install.sh dist/install.sh
+          ls -1 dist | sed 's/^/  /'
+
+      - name: Create the release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          VERSION: ${{ inputs.version }}
+        run: |
+          set -euo pipefail
+          # A version with a dash is a pre-release; the installer skips those
+          # when resolving "latest", so a candidate cannot be installed by
+          # accident.
+          prerelease=""
+          case "$VERSION" in *-*) prerelease="--prerelease" ;; esac
+
+          gh release create "codeseal-${VERSION}" \
+            --title "CodeSeal ${VERSION}" \
+            $prerelease \
+            --notes "\`sgit\` ${VERSION}, built from a sealed repository.
+
+          \`\`\`
+          curl -fsSL https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/main/scripts/install.sh | sh
+          \`\`\`
+          " \
+            dist/*

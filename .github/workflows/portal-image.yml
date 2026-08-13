@@ -1,0 +1,169 @@
+# Publish the CodeSeal Portal image from the sealed repository.
+#
+# `workflow_dispatch` only. `portal/` and `infra/` are both encrypted — the
+# application *and* the Dockerfile that builds it — so a runner holds neither
+# until it has a dispatch token. Start it with `sgit ci dispatch image`.
+#
+# This is the shape none of the other pipelines exercise: decrypted source
+# feeding a multi-stage container build rather than a compiler. The Rust and
+# documentation pipelines each produce a file; this one produces an image, and
+# pushes it to a registry rather than attaching it to a release.
+name: Portal image
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Version to tag, e.g. v1.2.0"
+        required: true
+        type: string
+      encrypted_token:
+        description: "age-encrypted dispatch payload (base64)"
+        required: true
+        type: string
+      build_id:
+        description: "UUID from the dispatcher, for audit correlation"
+        required: false
+        type: string
+
+env:
+  REGISTRY: ghcr.io
+  IMAGE: mylife-inc/codeseal-portal
+
+jobs:
+  build:
+    name: ${{ matrix.platform.arch }}
+    runs-on: ${{ matrix.platform.runner }}
+    timeout-minutes: 45
+
+    # Native runners for both, so neither half is emulated. A Next.js build
+    # under QEMU is slow enough to be its own problem, and GitHub gives arm64
+    # hardware for the asking.
+    strategy:
+      fail-fast: false
+      matrix:
+        platform:
+          - { arch: amd64, name: linux/amd64, runner: ubuntu-latest }
+          - { arch: arm64, name: linux/arm64, runner: ubuntu-24.04-arm }
+
+    permissions:
+      contents: read
+      # Declared rather than inherited: the repository default is a ceiling,
+      # not a grant, and a workflow that states what it needs keeps working
+      # when somebody tightens that default later.
+      packages: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: ./.github/actions/codeseal-decrypt
+        with:
+          encrypted_token: ${{ inputs.encrypted_token }}
+          dispatch_key: ${{ secrets.CODESEAL_DISPATCH_PRIVATE_KEY }}
+
+      # The Dockerfile is encrypted too, so its absence here means the decrypt
+      # did not happen — worth saying plainly rather than letting buildx report
+      # a missing file.
+      - name: The build context was decrypted
+        run: |
+          set -euo pipefail
+          for f in infra/docker/portal/Dockerfile portal/package.json; do
+            [ -s "$f" ] || { echo "::error::$f is missing — the repository was not decrypted."; exit 1; }
+          done
+          echo "decrypted: infra/, portal/"
+
+      - uses: docker/setup-buildx-action@v3
+
+      - name: Sign in to GHCR
+        uses: docker/login-action@v3
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      # Pushed by digest, tagged in `merge`.
+      #
+      # Two jobs pushing the same tag would race, and whichever finished last
+      # would win — leaving a single-architecture image under a tag claiming to
+      # be multi-architecture, silently. Digests do not collide.
+      - name: Build and push by digest
+        id: build
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: infra/docker/portal/Dockerfile
+          target: runtime
+          platforms: ${{ matrix.platform.name }}
+          outputs: type=image,name=${{ env.REGISTRY }}/${{ env.IMAGE }},push-by-digest=true,name-canonical=true,push=true
+          cache-from: type=gha,scope=portal-${{ matrix.platform.arch }}
+          cache-to: type=gha,mode=max,scope=portal-${{ matrix.platform.arch }}
+
+      - name: Record the digest
+        env:
+          DIGEST: ${{ steps.build.outputs.digest }}
+        run: |
+          mkdir -p /tmp/digests
+          touch "/tmp/digests/${DIGEST#sha256:}"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: digest-${{ matrix.platform.arch }}
+          path: /tmp/digests/*
+          retention-days: 1
+          if-no-files-found: error
+
+  merge:
+    name: Publish the manifest
+    needs: build
+    runs-on: ubuntu-latest
+
+    # This job pushes no image; it stitches two that already exist into one
+    # manifest list. It never needs the source, so it never decrypts.
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          path: /tmp/digests
+          pattern: digest-*
+          merge-multiple: true
+
+      - uses: docker/setup-buildx-action@v3
+
+      - name: Sign in to GHCR
+        uses: docker/login-action@v3
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      # How many digests arrived is the whole question. One means a manifest
+      # that claims to be multi-architecture and is not — the failure this
+      # shape exists to prevent — so it is checked rather than assumed.
+      - name: What is being merged
+        run: |
+          set -eu
+          ls -1 /tmp/digests | sed 's/^/  sha256:/'
+          count=$(ls -1 /tmp/digests | wc -l)
+          [ "$count" -eq 2 ] || {
+            echo "::error::Expected 2 digests (amd64 + arm64), found $count."
+            exit 1
+          }
+
+      - name: Stitch the architectures into one manifest
+        working-directory: /tmp/digests
+        env:
+          VERSION: ${{ inputs.version }}
+        run: |
+          set -eu
+          docker buildx imagetools create \
+            --tag "${REGISTRY}/${IMAGE}:latest" \
+            --tag "${REGISTRY}/${IMAGE}:${VERSION#v}" \
+            $(printf "${REGISTRY}/${IMAGE}@sha256:%s " *)
+
+      - name: Show what was published
+        env:
+          VERSION: ${{ inputs.version }}
+        run: docker buildx imagetools inspect "${REGISTRY}/${IMAGE}:${VERSION#v}"

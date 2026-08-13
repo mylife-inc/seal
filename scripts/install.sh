@@ -3,7 +3,7 @@
 #
 # Standalone POSIX sh (works on macOS bash 3.2, Alpine ash, dash).
 #
-#   curl -fsSL https://raw.githubusercontent.com/mylife-inc/releases/main/codeseal/install.sh | sh
+#   curl -fsSL https://raw.githubusercontent.com/mylife-inc/seal/main/scripts/install.sh | sh
 #
 # What it does, in order:
 #   1. Installs the `sgit` binary from the latest GitHub release
@@ -52,7 +52,7 @@ set -eu
 #
 # That sharing is why every tag here is scoped: `latest` in a repository shared
 # by several products is not necessarily ours.
-DEFAULT_REPO="mylife-inc/releases"
+DEFAULT_REPO="mylife-inc/seal"
 REPO="${SGIT_REPO:-$DEFAULT_REPO}"
 SCOPE="${SGIT_SCOPE:-codeseal}"
 

@@ -1166,5 +1166,26 @@ dispatch:
   default_ref: main
   public_key: age1lhpqc6q57vtum2uy0p0e7sx89m4qrfpgupe99l605lcmsx05fyhqvnd4zj
   runner_key_file: ci-runner.key
+  # After `sgit push`, dispatch the build without being asked. The workflow has
+  # no `push:` trigger and cannot have one — a runner needs a token only a
+  # key-holder can mint — so this is how a sealed repository gets the ordinary
+  # "push, then CI runs" behaviour.
+  auto_on_push:
+    enabled: true
+    branches: [main]
+  targets:
+    # Built from docs/public, which was never encrypted — so this one needs no
+    # dispatch token, and its generated workflow declares none.
+    docs:
+      workflow: docs.yml
+      token: false
+    cli:
+      workflow: release.yml
+      inputs:
+        version: prompt
+    image:
+      workflow: portal-image.yml
+      inputs:
+        version: prompt
 codeseal_config:
   alias: seal
