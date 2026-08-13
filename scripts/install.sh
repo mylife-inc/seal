@@ -3,7 +3,7 @@
 #
 # Standalone POSIX sh (works on macOS bash 3.2, Alpine ash, dash).
 #
-#   curl -fsSL https://raw.githubusercontent.com/mylife-inc/seal/main/scripts/install.sh | sh
+#   curl -fsSL https://raw.githubusercontent.com/mylife-inc/releases/main/codeseal/install.sh | sh
 #
 # What it does, in order:
 #   1. Installs the `sgit` binary from the latest GitHub release
@@ -52,7 +52,7 @@ set -eu
 #
 # That sharing is why every tag here is scoped: `latest` in a repository shared
 # by several products is not necessarily ours.
-DEFAULT_REPO="mylife-inc/seal"
+DEFAULT_REPO="mylife-inc/releases"
 REPO="${SGIT_REPO:-$DEFAULT_REPO}"
 SCOPE="${SGIT_SCOPE:-codeseal}"
 
@@ -219,7 +219,14 @@ verify_sha256() {
     err "Neither sha256sum nor shasum found — cannot verify integrity."
     return 3
   fi
-  expected=$(awk -v name="$(basename "${archive}")" '$2 == name { print $1 }' "${sums}")
+  # `shasum` writes "<hash>  <name>" or "<hash>  ./<name>" depending on how the
+  # glob reached it, and both forms are published by things we control. Matching
+  # only the bare name meant a SHA256SUMS generated with `shasum ./*.tar.gz`
+  # verified nothing and failed closed — an install refused over a leading dot,
+  # reported as "Could not find <archive> in SHA256SUMS".
+  expected=$(awk -v name="$(basename "${archive}")" '
+    { entry = $2; sub(/^\.\//, "", entry); if (entry == name) { print $1; exit } }
+  ' "${sums}")
   [ -n "${expected}" ] || { err "Could not find ${archive} in SHA256SUMS."; return 3; }
   actual=$(${sum_cmd} "${archive}" | awk '{print $1}')
   if [ "${expected}" != "${actual}" ]; then
