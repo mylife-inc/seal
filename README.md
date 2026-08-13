@@ -14,15 +14,15 @@ build.
 
 Most of what you can see here is scaffolding. The parts that carry the design —
 the CLI implementation, the Portal, the specifications and the deployment
-topology — are encrypted, and reading them requires a key nobody publishes.
+topology — are encrypted, and reading them requires a key held by the people
+who maintain CodeSeal.
 
-That is the product demonstrating itself. A `.sgit` directory, a set of opaque
-blobs, and a build that works anyway.
+There is nothing to clone. Without a key a checkout is a directory of opaque
+blobs, and the binaries below are built from those blobs by CI on a runner that
+holds the key for the length of a build and no longer.
 
-```
-sgit clone <repo>      # clone and decrypt, if you hold a key
-sgit status            # what is protected, and how
-```
+That is the product demonstrating itself: a public repository, an unreadable
+source tree, and releases that come out of it anyway.
 
 ## Install
 
