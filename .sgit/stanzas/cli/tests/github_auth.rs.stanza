@@ -1,0 +1,39 @@
+version: 1
+file: cli/tests/github_auth.rs
+recipients:
+- name: sid-med
+  role: developer
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBlUDRmSWxwNGd2aW9ObEFv
+    MXczY3ZSVmxNZ3gxUkZjS2JWZlcwajQrM2dnCmJqUCtVWitUbDFPNkZPSG45UGs0
+    L1ljK0dCdnowL1FNSExkUGpkeVBtRHMKLT4gWkMwLWdyZWFzZSA1eFwgWXozQClS
+    IC46CklnSjUvbVh5NVJEdFVYVm1oTFFCcHdlc3pEK2hlSnkvdjJFRmZKNHYyZ05E
+    OUJpc2ZndU9Jb0IzUnBBbzlNR0QKWXpmTGhaemlsYjdLUktCU1BOYllJeVJCMEgx
+    RwotLS0gWGRMN05RcnBEWXc4RXdwc1o4MUZ6RmIxeUhOUGxJSExGQnB5c0ltd3RE
+    bwrqtV2pMgImfiipU6o90jXWgqhIUQ0yIjL1BO6ih0uL3SXaPSsarnfiRGcS/dIi
+    3RbWEGkQt2NxgXUhtGzTU00H
+    -----END AGE ENCRYPTED FILE-----
+- name: ci-runner
+  role: ci
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBTMXh0SUlpenZkd1dMeEh2
+    bTZaeEMzb1didkxrQWJmSUNxY0FJd2tsVml3Ck5MSlRRNXphZFBFYkN4RWZRZVpF
+    b2ZNcXYvTEtTS2pBanVVbjhTSjBjTEkKLT4gbjs/bSYzYC1ncmVhc2UgPF00XFh0
+    ZyBsIGhFICQKNGcKLS0tIGE1SDY2MEQyQ044aFdOc1FGTk82Sm5KeHRMbWY0NUJa
+    QTRiTzY3SUhiK3cK1zT+PCL7s/5rkiDSmlqvDEn0GNnjkoqCgy+iRwOfeBY1JLty
+    IlJMaEcFO9GaHWwOKQRbH22iSIHbA/R+TYoeZw==
+    -----END AGE ENCRYPTED FILE-----
+- name: admin-server
+  role: admin
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBLV3BSVW5vY29CdzZOc1h1
+    TGFyU2pDdGFMVERtbUJNTFdkNEF3cVRmWFZNCkNuS3ZmVlJiOXZHUlZoWXhpVnZv
+    Wjd1RmRSSEt2Tk5JTW11RHZieEg0bU0KLT4gay1ncmVhc2UgPVpRIENYZ1R1CnpM
+    VnZjY2R3dzFsSDBiNmV2QWVjQzJHaFVrTWd5YXdudmlyb2IzQldNUUpqdmxsNm1Q
+    bUNmM0R0WXZwQgotLS0gdlZjcUpweUczeDJXc2p0WXpJb1NHQXVEeUNSQUpZU1Bk
+    OFl6UytLY09jawopasXC4XoS5Ue8DzsrkEdrzWpsL0fAYq6yXuR8PHf8vvoh0hfn
+    qirGPSIUERbj8fiE275Q2W09pcAKrWky/VL2
+    -----END AGE ENCRYPTED FILE-----

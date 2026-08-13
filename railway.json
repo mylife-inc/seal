@@ -1,0 +1,11 @@
+{
+  "$schema": "https://railway.app/railway.schema.json",
+  "$comment": "sgit managed",
+  "build": {
+    "builder": "DOCKERFILE",
+    "buildCommand": "bash scripts/railway-build.sh"
+  },
+  "deploy": {
+    "startCommand": ""
+  }
+}

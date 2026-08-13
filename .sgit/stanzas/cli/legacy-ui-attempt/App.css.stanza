@@ -1,0 +1,41 @@
+version: 1
+file: cli/legacy-ui-attempt/App.css
+recipients:
+- name: sid-med
+  role: developer
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSAyK0JxQWsxeXRFaFpHeEUw
+    bCtUV0hyaG1VVTcxY1cxaTErc0U4bE9UbWxjCmFFWERpNG1EMGxGWVJlL2NoL04r
+    ZW9YMkx1cmFDaG5IbDdJOW81RmxkT1kKLT4gRyNoYi1GLWdyZWFzZQozQVlnM0ln
+    TE53MkhHRFNzZG9PVXBHVmk3czhIUFRHVHZoSjNRc1hSYmtKeHE2MEJMUGtvCi0t
+    LSBLSzNQaU9aWFZIU2RneXUxdHRPaElUbm5qNlNObDRsQWp5NHBWbkNZcmZNCrPK
+    vNCvv0GTslRH4ESA6T3CtT6UBwVFH8fKVuNJ2fBdmDdLRDLRp7Mhxs6CxFrfowHS
+    qpz9gXFM7/nspK4XNxw=
+    -----END AGE ENCRYPTED FILE-----
+- name: ci-runner
+  role: ci
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB1a2xBTGNHck52T3R1aXpI
+    Q2x6a2dFakxjK2plU05NcUhMcmVGczBhZUNFCk00VDlnSk1tU01xMVpjRlRnZXZn
+    QmZaMklYdDcxbEVXT04zbzRiN1MwRTAKLT4gVnhmaiMqLS1ncmVhc2UgPypHKlA6
+    IElGbiw2aD4gRFtuKzIgZk1sejl0Uwp1L3crejNWZTU0cDhhL1BsbFVoMS9Ed0xk
+    R0hadzJxSUp1Rlh1ZTNXWStCU295TDdHblZzU2cKLS0tIEswUGh6b0Zhdk1RMnA3
+    b0l4TCtUakRnRVVkSjhRblFOQ0QzREJMY2YzWDQKrPvyxcL8ovRhosS41qyZj4HS
+    ngpgq5grwajLi2aDX+3l3sNakjM17JuRJDgobI7EyC5UH/NPGDpkZAB3llq3yg==
+    -----END AGE ENCRYPTED FILE-----
+- name: admin-server
+  role: admin
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSByellleUxTVVZ5bVc3OGpj
+    ZUF2U2J1am92T3p3OEhZT2FGRW9DT0hEU0VFCmZiRWVwQWNQSVc2VTJyNGRGQ0dW
+    b080OFl4UDdxaExJdURxVVNVQWdTaVUKLT4gczAnJy1ncmVhc2UgIkJKODwgY3wg
+    YS85MSonICgragpSS3V0TjdPY0JtM3YwV0ZQNThuRzdZVWZ4NkZJZ3VaUGdRN3ln
+    eFpDVmZmaGNuRUMyRUs0MUxmZlZFY2FBalE4CmMwS2EveEVIUGh0Mk9lVjdGdmZY
+    UlRzUlJQeGFrdWFSckFERm0zTVVGY3MwSGhnVFNFWE5MT1EKLS0tIHFMeVNmUE9r
+    R0dSZHhMUFg3cUNxbDM1QXFJcmJjb3dwbnhMaTE0QTZMS00KTvgU4iEZgHZOFTkj
+    NdvYhkAPiNuR1IFcK25jZKKZotw5s6qvcfBX49elx/FPzI4hHuxGMo6GmNC+pV4a
+    h/ed7Q==
+    -----END AGE ENCRYPTED FILE-----

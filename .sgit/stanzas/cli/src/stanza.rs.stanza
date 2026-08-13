@@ -1,0 +1,40 @@
+version: 1
+file: cli/src/stanza.rs
+recipients:
+- name: sid-med
+  role: developer
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSByNTdZRlR5RnNDS2FTWVda
+    cW5RSnRxUndqaW50THdxOWl4OHc1M0Jzc1I4CmtPemRYM0U3aWNXVjdMMFZYa2Jv
+    SHNzbzl3cU9CZmdVWjRDQXozL3FVa2cKLT4gcjImMz1+LWdyZWFzZSBBdyUKK2p5
+    Z041bkRDN0ZnUGZWR01TQVE0MlhCb3pYegotLS0gb0hsT0RLUTEzcVZJVkN4U3NM
+    TTNsNmdrUEM3MVFLK1B6bDZwckcyNzNTMAorMl7+vs+kgQxerU7kshQbqvTfc7Xg
+    ygb8+OZikz63Xr5DhKkBfZHg8q9GennFLMaq/8/TtV9j3znw5UwQ1m6P
+    -----END AGE ENCRYPTED FILE-----
+- name: ci-runner
+  role: ci
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBJSmJTRTVBbG5ObnYwL0Zh
+    bVpEaFEwdUxaQXdsbXlpZkJRSVFUUmlEc3drCm1VUU0rL3VlVEU2K3J0a0w4OGRo
+    alhad3E4UFJDNCtjZUc3NkdKbTJxYzQKLT4gSiFPaS1ncmVhc2UKT2NzZFpCQVJL
+    dnk4TWlCaUhWdmFYTVhJK05RUFd4Zm5Da2s5UXhYWjVjUG9Jd2tTQWlMblE3ZlJT
+    WDZXRmY3LwpwYVJ5RjFyRG5odmp5S3hDakQxejVpZldqbmYrSVBnQlNGRTdFeFF2
+    dndJbVY2a3dLQTgrYWVxegotLS0gOFVtOTRJdnN2d1Y2Y3ptaWhtR3NSTWVJdnpI
+    ZlJDT2pMVzlEMHduaDlZTQqZMMolbbmWNIz9z6JINPWXoqaxDHFlty08oWo0tuLu
+    9ugUGPSVN3HGH6JtCuQ2eKHwSsEMVzQGSsqZrwjVsn+Z
+    -----END AGE ENCRYPTED FILE-----
+- name: admin-server
+  role: admin
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBGR1oyOU56MEZJRlpKRm9Z
+    cldscmI4RkxFaC8zamtxSUpVb25EbU9mWWo0CmthZ2ZvK0dJRnFPdFdzbWhGcXJW
+    Q1JIaVRJcWFuZjAzYkNzMFBKME1nWE0KLT4gLTRQJCxiZ1ctZ3JlYXNlClhmT0tz
+    cDNCSlUwR2N0L2wzZzV4SndCMUM0NEVVbTB5SDBoWGFmZno2SmZzaHRDZ09qdmVk
+    TEwxeHRCY3V6NzMKYnk2VzNqTXBFQWZubFhFOUFkcnEKLS0tIE5memttNHRzUEdr
+    bFJDMXJTV05EYVd6dXFSN01sQ1hiUldzNC85MlNDazQKeuGjau1sI6paC/4pQ74T
+    GinySl/H16W04qFZnXdjn+kDv0at7YcYg5R3Eysmj5rLUQhuvGjd+c+/R6f1YF+W
+    HA==
+    -----END AGE ENCRYPTED FILE-----

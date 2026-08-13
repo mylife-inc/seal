@@ -1,0 +1,43 @@
+version: 1
+file: docs/specs/CodeSeal-Portal-Spec-Part1.md
+recipients:
+- name: sid-med
+  role: developer
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBkdld1U3J0cm9obUxuSUU4
+    UXFkdnZlWGxUU2FTQlNrTWFFdkpUZVVsWGswCnZFc0I2S0JML3QxQjQwWTljUGtt
+    bUhZTUx0TldCQ3NYWi84RmRCajFsRmcKLT4gQWElVlEtZ3JlYXNlIDQgXiUqemoK
+    dVBkU1dlMk0vWFNHS3E2Lzlld0ZESERoK3dacE9xV3RWU2wxN0JQc3lCMWppZFhJ
+    SEp4WDVXejFVd2phTjBUcwpHR3JwTStjWnJMaWdaWnpXSUpSNlNZRy91UzRjbVUv
+    MkJwOURMWmdsV3pMM09qY2hCVmh3RDNPWXo3c3VqeGxEClB3Ci0tLSB5SDlyTG0w
+    dGhnaE9IM3VMb2EyRUF5czBQUWU3RWhaRnlCWjhWaVhucmJjCuTPMiLGwpBasWs2
+    ST5ZplfRanjOZ0F8Ohfzg9evSfL8kLSMghQohgl2Bz0E9BQy6fXElzWVkquWtjWh
+    i8+7Wqc=
+    -----END AGE ENCRYPTED FILE-----
+- name: ci-runner
+  role: ci
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBNUFlKbmdFR0l0RVMwZndN
+    QzNtNE9FdmY4L3I0MlU2KzNlaytPcTIyYzFBClFEZzZBM0dqdDRzc00vRk1RQ1g1
+    a2NXK0hlNSsraGdBVThxL1pHTWRlRncKLT4gS3lHZy1ncmVhc2UKV3NyUlh5Wk1R
+    MER1OWxKRm9FYzUydENuMDRNbGxOWFMxYVJQejFkUzVPTVM5eWtLcnErMndSZzA0
+    cmVTYUFqVQp3dWtoelRjeFBwWFBkazZNSGVlZ2tYYjVpNXNaVlZVa2hzYnFnay9H
+    eVZSNWVmNi9NZWxzYkR2b3IvZFQKLS0tIGlNa1VnQkozYnFNbHlKZnZPMjFVbGNH
+    SEpQMUM4KzAweWRqSFBqNUo5T1UKmbyIFikr5zj2FXwSf/lrR8ETEbk6xPo+L/wm
+    TiH9JkPfDRlceRJZaeAga1ZGqs2b4EpJcYMl7KbuNrPmeNBVBA==
+    -----END AGE ENCRYPTED FILE-----
+- name: admin-server
+  role: admin
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBOSTlZbHRtK2RnYjlpVVNM
+    cWFmUDFzaEhIQk9GSzQ4YWFwczBDV1BvdGg4CjZVOUhONGpJbDlYYnpuejV2a2s0
+    Nm4rV2pmdnNwTTJhNlE5clpvZGR6NXMKLT4gJ19OLWdyZWFzZSBISyAqQ0g1Lkog
+    OnRoXgpvbTZkL0k5THZnSmxtRlVZL2hzSEcvWnVUM3hqTnFNdnV5RjRjYXVxY3Fp
+    Wk5udk9YQ3p5Z0RvUUFtcEp0ak9iCkEvZ0svYkxmcTV3N3pCTGNQLzZlSFdQNWk4
+    ejF3N21sOEEKLS0tIGFVQlUwQVV2VW96Wmk0OHYycnpERFkrQ2dQWCtoSFk2SmVF
+    N29TejE3aGMKcW7RxmSVSXVPsbYbVsL/R7x48hgGAb1OM29Ft1wJWEePcIhCrIVE
+    geSyTg6+l/jmF0B4zP6XC6Xbl9kDe2DGFg==
+    -----END AGE ENCRYPTED FILE-----

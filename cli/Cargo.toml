@@ -1,0 +1,92 @@
+[package]
+name = "sgit"
+version = "1.1.0"
+edition = "2021"
+rust-version = "1.82"
+license = "Apache-2.0"
+description = "CodeSeal CLI — secure Git wrapper for encrypted source files"
+repository = "https://github.com/mylife-inc/CodeSeal"
+
+[[bin]]
+name = "sgit"
+path = "src/main.rs"
+
+[dependencies]
+# Strong typing + parsing
+clap = { version = "4", features = ["derive"] }
+serde = { version = "1", features = ["derive"] }
+serde_yaml = "0.9"
+
+# Errors
+anyhow = "1"
+thiserror = "1"
+
+# Cryptography
+age = { version = "0.11", features = ["armor"] }
+aes-gcm = "0.10"
+# libsodium-compatible crypto_box_seal for GitHub Actions secrets API.
+# `seal` feature unlocks the anonymous-sender SealedBox primitive.
+crypto_box = { version = "0.9", features = ["seal"] }
+rand = "0.8"
+sha2 = "0.10"
+hex = "0.4"
+base64 = "0.22"
+zeroize = { version = "1", features = ["derive"] }
+secrecy = "0.10"
+
+# Time (deterministic with explicit serialization)
+chrono = { version = "0.4", features = ["serde"] }
+
+# Filesystem
+tempfile = "3"
+walkdir = "2"
+
+# HTTP (portal_client + github_client). rustls so we don't depend on
+# system OpenSSL. `blocking` because the CLI is single-threaded sync.
+reqwest = { version = "0.12", default-features = false, features = ["blocking", "json", "rustls-tls"] }
+serde_json = "1"
+
+# Home directory resolution for $CODESEAL fallback (~/.codeseal/).
+# `dirs` is a tiny, single-purpose crate maintained by the Rust core team.
+dirs = "5"
+
+# Interactive prompts for `sgit init --wizard` — read user input with
+# proper TTY handling, secret masking, and validation feedback.
+dialoguer = { version = "0.11", default-features = false, features = ["password"] }
+
+# Progress bars for `sgit history-rewrite` (spec Part 13 §58.10).
+# Falls back to plain log lines automatically when stdout isn't a TTY.
+indicatif = "0.17"
+
+[dev-dependencies]
+assert_cmd = "2"
+assert_fs = "1"
+predicates = "3"
+serde_json = "1"
+# Spins up an in-process HTTP server with declarative matchers — used to
+# exercise portal_client + github_client without touching the network.
+wiremock = "0.6"
+tokio = { version = "1", features = ["rt", "macros"] }
+
+[profile.release]
+lto = true
+strip = "symbols"
+codegen-units = 1
+panic = "abort"
+
+[lints.rust]
+unsafe_code = "deny"
+# `unreachable_pub` is noise for a binary crate where nothing is exported.
+unreachable_pub = "allow"
+missing_debug_implementations = "warn"
+
+[lints.clippy]
+# Use lower priority so individual lint overrides take precedence (clippy 1.74+).
+all = { level = "warn", priority = -1 }
+# Pragmatic relaxations for a CLI binary — pedantic produces too much noise
+# for security-sensitive code review. Re-enable selectively if needed.
+missing_errors_doc = "allow"
+missing_panics_doc = "allow"
+module_name_repetitions = "allow"
+too_many_lines = "allow"
+must_use_candidate = "allow"

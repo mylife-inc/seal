@@ -1,0 +1,39 @@
+version: 1
+file: portal/src/app/api/admin-key/rotate/route.ts
+recipients:
+- name: sid-med
+  role: developer
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBsb1EyY29IVndkaWZxUld2
+    Z1U4cXJkYjlVU2hJaTBDQm5hY01DMzRlS2pvCktycVZZOFRlSkJLVzZyUnZ2ZUFv
+    eVgwaGxiLzZFSFhvcjlxcEczNnY2NWsKLT4gTls3LWdyZWFzZSA7P2lFbyA6bStj
+    UTdIagpBY2lwCi0tLSBISlcrUGNXVmhoZEhiOUJFbVJIVHIvMUNBZXVZRE8yUmE0
+    QW0raE9GMVVVCu0lBuD2MkAsJ8pbeP7pAVuqasaQDt5tid19K996sluOVHcxSKcG
+    OTQnaa2SE/nnEvr9221Ly2GKUW9MJPOqYmU=
+    -----END AGE ENCRYPTED FILE-----
+- name: ci-runner
+  role: ci
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBiMWwwTUN5UGJDcFJCRnRr
+    TVZlQVhDMk5UTW1zSHk5UjJBZUNla3NETTJjClRXL090NkIzNXdvRnpncmVRVGVj
+    WDVaWUtjQ0V3WWlRbHhQT1hNRUwxS28KLT4gVVVRUCktZ3JlYXNlIDF9MTZHUHgg
+    clIkfnF8Cm51dUsxTFZsRkhYbE1LVXBGdExrTnpxOTYvUi9lTnN5WFN2V2E0U2Iz
+    TlNlNlZ5dlVlTERUaCt3R1lCbG9aMmwKSVZETkdSQzhvSE9SRUp2MjFUUEplVjdh
+    eGNOZmN3Ci0tLSBKeUttRzFqTmlxWkJDaG5WRTRIZWJOdGRLTEpkY3ZlTFVwaElH
+    RUFqOCtzCpSLOvHT/DKYugwJLRQFQYoqpR3xpc5iroXOeurzFn4TlzSpSLWcvo36
+    SdVc+l4+9Mgf08TVpn78H78chARhInY=
+    -----END AGE ENCRYPTED FILE-----
+- name: admin-server
+  role: admin
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBxck83MU1VQ0EzZXAzR2dI
+    Z05nRTNYY1AvakVGOSt4SGdiY2JVbTU5VG04ClhtMXIwZS9tcC93K2sySFBDRHBO
+    R2pzZUxRb1k1cE4vNjc3SHRDeUlHcm8KLT4gWC5RZy1ncmVhc2UgdiBxYFsxJ1J3
+    ZSAkdjtBdCBlST98LApOWWZuMWhRSkUzMFN4WU1TQnZTcGxqNmcxTEl1NXZLQmZ3
+    U084ZFE4TnhDazNRCi0tLSBhUVBQTUp2cDlXajJSTXdGMDZxRWo2Y041SG1ETWRM
+    RGo0MjhTa3VVbThzCisPxvpuD7RG+Jwzwjc5E67d8WoaV+BbgUrsRtki5KhkaHtC
+    ClMwCbLy5eLuLtcbvxzFrZehvVppq1ZGrxltecM=
+    -----END AGE ENCRYPTED FILE-----

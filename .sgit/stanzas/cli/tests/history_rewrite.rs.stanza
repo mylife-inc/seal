@@ -1,0 +1,37 @@
+version: 1
+file: cli/tests/history_rewrite.rs
+recipients:
+- name: sid-med
+  role: developer
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBhOGJ2RmphQXBhR0hmZDlh
+    S3RaajF2QUYrVHQ4bStxNmI1eS85NDZYbEdZCkxrTHkyZ2NBOGw1YWR0Qldtd0sx
+    LzJLMWpvTjFvcitEcnlqWHArWEttNDAKLT4gXT19Tkd0IT0tZ3JlYXNlICZQSnFj
+    IDU6RDEgY1V9IDQxPCcKQ1ZuRUV0eEJMOWV4TTNOY0tMci9BVmxRK3EvTkVLMWtL
+    L2JnUmcKLS0tIDQ0a0I1NWN2Y0k2WkFwVDdncVhwNWNiRmRoZmJHNHNPb0ZGNmRy
+    TnUyUU0KBPKWTm3OdhNEPJXx1iv8tIHNEg66jUsoFbgHXjYWSxD0cZI86klba21G
+    aKGatOk/P/0s1huCqnWYHXH2ihm8eg==
+    -----END AGE ENCRYPTED FILE-----
+- name: ci-runner
+  role: ci
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBCeGErVUdDZnBoYU5FeTR0
+    cFhRRmMvSXhiL0F3UlkwWTZWOUxMclN6RHdVCmozOHNTeVNxTDFQNlE4RW9MQlk0
+    RGtPelRIcXE0YmVRQVJicXR5UnV0NlEKLT4gRH5BLWdyZWFzZSBmImVrIC1KNVos
+    aXcgKjRRCllySUxEUXlwa0U0V1R3Ci0tLSBrZUpKVEh0c3JBYzlEcFBYRnI4VVBm
+    WE5wYndZcjVLUzh0UlNGejJwQmhBCqx+7wkXd042gwMrCqpiJiOc2UhNeAqACTYY
+    3fXhuUPXQ/d61XkP9JUuJp0uODORj3sMEk9xlwhPlgZNl2WrMaY=
+    -----END AGE ENCRYPTED FILE-----
+- name: admin-server
+  role: admin
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBKMVc3UTZ5eFNScXhQeW1U
+    am5SM2ttb0d5bDkzZndkL1dvRkYyRENxR1dZClVMOW1Dc2d4WFMzYWllVSsxK1Z6
+    Q3JrUk5weXRLb1Rqa1RGRXZvVm9vVUkKLT4gbS1ncmVhc2UKNEdub1Z5U0JJek0K
+    LS0tIDBDYjdDZis3dkVPTDNsa0ZTQXNTSVlYbUpMa3NobEFFNjNMWEd6cy9UWmsK
+    UYjixDjOSr1o6iktbKTv1PKPU26ZAM1eH2TAkZfivG6Mu0yquLvK73sE2sdy1Ypr
+    Iv9hrAswKeAzL/YIXy1zog==
+    -----END AGE ENCRYPTED FILE-----

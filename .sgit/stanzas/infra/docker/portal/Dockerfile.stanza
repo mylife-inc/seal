@@ -1,0 +1,40 @@
+version: 1
+file: infra/docker/portal/Dockerfile
+recipients:
+- name: sid-med
+  role: developer
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBhem1uaHdNWUVCc1BlOGh5
+    Z09NeGQ3L3Y3M1R3bENSekJzeE9xVm1mU2pvCmh2SGlRVVRoZ3pTU21kcE13S2xh
+    aE8zeG1od2lrRVlOOW9oVFBxOHhkREkKLT4gWjlEJ3JgcS1ncmVhc2UgdmhgM2VM
+    QiB0Qwp4ZWd5TE1PaE82bkxQLy9sclpvUDhpMzFaUjN6aUNaYVhlcVB0QQotLS0g
+    MG1tTnZDYmVzMk9HUncxZitFZU1FNWZ5WlZwOGZ2N2xCek5VU1hxY2llMAq1Sv9I
+    3cnvEW3SsE0OsqKmznFhxk47myQ4hqdi98zPMAGCo8Lf6JPy97PVZXFjtQ5uKihI
+    bB02AFaNpZwANm/r
+    -----END AGE ENCRYPTED FILE-----
+- name: ci-runner
+  role: ci
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBVR0t4Tk5PV3BuUkhhdjQ2
+    TTdocHRVTmZ3Uyt4MVBna29SYzczNlMrOHp3CllHSFI2Rko5SHM0MCtsWkx6bFdm
+    N0IwYXJKWGtUbHBBd0V1VkpGRkF1S3MKLT4gMTZgXCg2Ty1ncmVhc2UKRExYYU1i
+    QkUwcmZ5WlFoNVJQT0xJbkNReS9FOVczNDZtTDZjb2pVcHowQWdvTVA3YlhSekor
+    ZjZMK3VDOXhmTwpiTFhJZjMzbFY4aVVXamNOMjkrNEhJcUV0M3ZtdTRQKwotLS0g
+    MlpxR0l1cmVXQjBsRXB1RC9vVm5vOGdrZXUyRlZxWGpWNXpHYXRwaGlMMAogL6HI
+    2InMvmJxEi0dSU/007B+sgOGelOjxnaFMeZEdiLynXfWURUuI5o6ooa9wxBcsRy/
+    zzWNwKalZFkJKdeY
+    -----END AGE ENCRYPTED FILE-----
+- name: admin-server
+  role: admin
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBTWTJCUUR3YVo5ZWY4UUl4
+    UnZEL242RVNyRjFwckJ0bjIybDZVNGo4MVM4Ci9naGM1K2V4cFVleFVKZ292MDVu
+    OHg5T21kTmFYckVqREpoWWlTV1NIQUkKLT4gNTl1cm8tZ3JlYXNlICY0elcgLEUi
+    MTp1RGsgOWw5NUNsdUUgJkhTSygmCkZONXQvaUhrd3BaK0xLTzMKLS0tIGZaUlJK
+    MVJlTE5TdE9OZzVueW4rYlpLODhCOVp5YzFHNStkSlRTVWxCYlEKimKRviPaLOMF
+    30LgJfrgEzpDZL8RRjlyYFOaqyOiQGk2zaxaIZmFKJcOUaMrNfcs7rfNW6PMGihW
+    I4EyMmghxg==
+    -----END AGE ENCRYPTED FILE-----

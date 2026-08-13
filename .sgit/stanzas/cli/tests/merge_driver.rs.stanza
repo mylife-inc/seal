@@ -1,0 +1,39 @@
+version: 1
+file: cli/tests/merge_driver.rs
+recipients:
+- name: sid-med
+  role: developer
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSAvdllUYWFmRi9EMFN6VkpU
+    cnBjTzJlMFJBT3hVa1AzMlF5N292eEpSK3pNCnZ5RlF0OEZiUm1Zai9DQlM2R2h3
+    MVV1Z0poYis5RVZzaHUxaFpnMUtOUUEKLT4gIWBlNiUtZ3JlYXNlIFwrIFMsXXty
+    ID4yIH41CmhyMlltRDRJY2Rab2lzRjlUQ3dudlpTb3RQZWd0N3dBZy9PUnEvWTVv
+    eGMwbmo3em1JNmVjQ2RQMWtVTFhXaEMKd2RDR0w3Z2IxMDFGQk1TM1Q2SUZqaWo3
+    bWR4WS9mNHducko5Z2toWGVqVkJnZTg1VlI3VysvRXlyYTAKLS0tIGhLKzRScnkz
+    dlZrTEMwOVdKN2x2VFdNaFp5SzZVLzlpR0VWREFxeEdPeXcKHsuJ0hEEZVL2pS41
+    luISl6aQS88LX6ZhA67ljIgBVPqUu59X2DaP3YHUeLuSaMCicapd3i1pcb1XgITm
+    lC9I+A==
+    -----END AGE ENCRYPTED FILE-----
+- name: ci-runner
+  role: ci
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSAxNGh3dWdNbXQ2Sm5IUVJv
+    TnV3UG9pb2FNN3JYR2gvd1NsdUZNdXFRWWpvCnFZMEhRaUpaSzFhd2pEZ0EvcFph
+    STE3Wk1hYS9WRlVSU1JTMnhFTEZTZFUKLT4ge0pmdy9KZF4tZ3JlYXNlIE4raQpL
+    UQotLS0gRmhvdEw3YWllbE9Hb3MraWh0dDdJaGpXUzc3WmpXU0t4V0NKalI4SkFG
+    UQrHpoXoMZVZ3SjbZf6nMsOFWqcAqvhkRsuYGipBJQ1f+WLV/Bcwue73ZsDbcTHS
+    nklq+ekhm0/a0yJAZI8Xnoyp
+    -----END AGE ENCRYPTED FILE-----
+- name: admin-server
+  role: admin
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBBVGhMSUlHRjg1VkRpd3Zo
+    a241VFUxaVh4ZEY3L3ZSeHlvMTQyYUxRNVdjClpyYmxFSDh2WjUzbnpFaDVJWVBG
+    eURkaWFQc25wWlhmOVcxbjJ2VFhmN0kKLT4gXE0tZ3JlYXNlIFVhW09WXwo0NDAy
+    dVJORHlkV0owUFVGCi0tLSBtRnZ1UXNnbHhlVjk3UmozamJQaklQc0s3RXFTblc0
+    T1ZteXRGNy82MEprCrzdBBgg1qVmQWjLcDs2Jq41WZ7ebD7p/1bkbUtpRZMxzUYR
+    gVEakXTTWM1jwed2cmLl3nC9EHP7F+FxD3ojKDI=
+    -----END AGE ENCRYPTED FILE-----

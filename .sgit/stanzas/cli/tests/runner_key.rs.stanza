@@ -1,0 +1,38 @@
+version: 1
+file: cli/tests/runner_key.rs
+recipients:
+- name: sid-med
+  role: developer
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB2bnlSMFlySlA3ZEQrQlQy
+    RXcwUjVQb0tjL0FkUURPb1gxdzRkR0JXNjJVCmw3M3daM2JjbStQWHY3eFNXbXMv
+    Q0JFUWhFVnl5TGh4elFHMmpFVGpUSkUKLT4gJDs9WkFRLWdyZWFzZSA7IFlMPy4m
+    eyQKRzZMWkhGL1AKLS0tIGtVQ2pIM0hIeTU5L3hMVnJiZ2dwZnpZTXZPVTY2eHMr
+    clFvZW0wKzJ0WVUKBt06mHEgPgF6JAIpljI74O75HmGKGkGB8hzzH5vYYs11t/M4
+    IKY80lmkrdkGJ7u6hTcufCtCatPE40VFdJvNKg==
+    -----END AGE ENCRYPTED FILE-----
+- name: ci-runner
+  role: ci
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBYeG9zdkI4S1JlcnVzdHJ1
+    cEM0TGxudFdCSlFLdzQvcjU1NDdBMG10MXlRCjZZT3hTUVdBN3lvVkRKaCtucVRD
+    SGhBM3EzMFlVVEs3aUgzU3h0elFBTEUKLT4gLCVGLWdyZWFzZSBxNVsxRzVGIFd5
+    QiAzICV+PkgKSFRCR0M3VWIxWTFnem5PamwxVlBVaEdFRFZYZlVhMFNsN3Z5eW9w
+    UXE3bXpqZEU1YzZVa2RIbUJ4V0ZaTHVKUAo5RmxHajNiamEwYUhRRjAKLS0tIER2
+    ZUJlQ2kyZnVvOERBaVJXa3NxV20yODVxNjVGdlh1OXlNOVhPSlpiVGsKDZkY+mZL
+    PfRoBspjoLkUfPwj8AUZLW5YZqvNudHNqE/foWHPSwVrYwle4/qVgAEj65VXNO1I
+    zfkxuPlVRuUSVw==
+    -----END AGE ENCRYPTED FILE-----
+- name: admin-server
+  role: admin
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBON2prSllVa3dmSWtORjZz
+    cDl5R28wRFkrM09tdDZvVWRHMXFIYTVnd0YwClljK0Jnd0M0VkY5WTlqRi9XeW0r
+    a1Rkd0x3cEJMT21JN0RwaHcxa3g1aXcKLT4gKD44LWdyZWFzZSAlRApSeEZkR0lh
+    T0ZPUjkxc0Q1ei8vaGFCbjNaMUVXSUR4djAvYwotLS0gQWM2eXNXbkY0ZWEwYUU1
+    Z0plTDV3cVVhcXRtbEVPVzUwUUFWWUxIdnhHWQpZUdsk6xEfdF32kPerspnJYsTV
+    c4czKY3O6NpSq/QbevoU4xFOv9LgvItjD55r1SE03qGuvR54NbOykeLCUHhn
+    -----END AGE ENCRYPTED FILE-----

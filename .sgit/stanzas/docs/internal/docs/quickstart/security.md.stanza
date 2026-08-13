@@ -1,0 +1,39 @@
+version: 1
+file: docs/internal/docs/quickstart/security.md
+recipients:
+- name: sid-med
+  role: developer
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSA4YzhQdFRpWERha05yZnV5
+    aFNDSnBRdGVVcFJUSzlpN3hNMitIajc0c0U4CjhBcFU3RTY2UDhENlNNVW1hRHln
+    VSs0cWJTa1NJTDF2RGNpeUpvclFaNFkKLT4gZ0wtZ3JlYXNlIFZkRXFHQEQ3Ci93
+    ekRsVG5TSlJoQk5DeS9mMVFNdm5lOXd5a3VLL2RJSmIycwotLS0gRG8vRjVSaDVj
+    RVBTVXAxYjIrNnkvT01GVHEzd2dBeHlOZWM5VEI2S3FIQQp6gZMNp8iTVGZOZ9X1
+    7rfXfBqQSRrHpVZHgfSOLUBiROia5Xq2hCnYzCrLtCWzxW6ITajCSOz9OFutSZFq
+    Ud11
+    -----END AGE ENCRYPTED FILE-----
+- name: ci-runner
+  role: ci
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSByWFpVQUdiTmFnckxJcm5R
+    bjNNU3dXTUxmM0dUOVNERVFXcDE0Sk54MHdnCmxzZk9Kd2lCNUwrbmdjbStsSEJO
+    QUo3Wk1Gb3Z1SVRpQTJLN0J0cHpMKzgKLT4gSyotZ3JlYXNlIGFiU1p7JXQpID1S
+    I2sgNmVwTDBmRgpnQnpxT0lHWTIzZjFyNC9ZVmx3ZWxqWDZkc2oxVzVaL0xOUFQw
+    RXpyCi0tLSBRbFhXZ0RNRUVydkkrbkVPMENwSUk1Zm9RbzFvaU5FWDhSNzYzNlZT
+    QXU0CjQGmYeAFriQtMGalS/+6wJE4G87KCkI2m+N3e7ojkJ8K4y2O8rzBYZlJnw9
+    WyZFHSxBMWoSrFvGtpt7sGW3lLY=
+    -----END AGE ENCRYPTED FILE-----
+- name: admin-server
+  role: admin
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBqU3l1amZhenhYbGlrcXl6
+    NjZQOWxrSGY4TWF4L2U2VGxZL2k5R2dEdFRRCnpJSWE0SGVtVjFDMlZkRGtpZ1JH
+    WkhTTkZYejhiVmY2TWo5VjFyTkY1Ym8KLT4gfSdVWi1ncmVhc2UgVX1uKE5FYSBR
+    R2ZHXmE+WQpjY1dxakcvdFVtc0RVaHUrWFQzcUhZM0Y1SHdOekxzVAotLS0gRmhk
+    Vi9vTWdZenpmQ0x0czJmT2U3SFd1YnBjeHJ0bk1Leld2M3dRRGhtMAoCuTRifoLo
+    D8ycnnqnlvBIu+VmM7ZmJ5ogjAuyAW+MgeI8CYMigLI61Z8U8pRz+TdPFCwmRVhx
+    MFHbVQ1ibOcs
+    -----END AGE ENCRYPTED FILE-----

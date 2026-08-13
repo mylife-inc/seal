@@ -1,0 +1,38 @@
+version: 1
+file: portal/src/lib/observability/tracing.ts
+recipients:
+- name: sid-med
+  role: developer
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB0a2k1V0ZOd0F2UFVCbnE5
+    WDJiQTJuUXJwdjQvYXNmdFZ0YUxJZEpSOTJFCnEwWTFubWM1RkFaMGVaU3lMMHVG
+    VFAvYytDTWxJZXBtY3lYUGlobDB3SEEKLT4gM3I+LWdyZWFzZSBFVSR9CklUOWIx
+    dXpHdlNBZmFpRmhNMERHN2s3UFVYeVFnZnc2bzhETmZ0WGUxQQotLS0gWWk3Z2Nh
+    Ym1hV00zNVVoeGhwYU1qZjg0L2k2dlViVEZRakxZeG4vL3BzUQrwHqDyOdhtmqB8
+    +V2Huwjpg8tV1/DOyHuIzwXGPFZK1f2KKls91nP08H1d5orzRqGTK5UlX0DdauWi
+    WCn4Gx7u
+    -----END AGE ENCRYPTED FILE-----
+- name: ci-runner
+  role: ci
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBNWVkrWlZ5QUpHUXRPYVJy
+    bDZMMXRZRWVYS043MmF0ODlVY2lKUm0wbVFFCnRaY1FTUWZHbjBzaFNmaGNCRGU0
+    OEJPbVFXVW04UEk1bXhRbDZBVVFlMzgKLT4gMkMidTRHLWdyZWFzZSA0YCBUYFB+
+    SCA9cCUnREcyRSBYRApockNYNStUQU5tOWJjUQotLS0gKzBZeEJqWG1QbjVuY0NJ
+    Zk51Q3drUVpucFhkdkh2T3lqeWRkR1hhV1NvWQp+yI7O3CQJFHArtqUjLwN02Wae
+    hZnWS1x6mldfWBCH+ZGyx2ZSLdsVYpc+/CVKll3XawxRF2r1QeCc2C+pCQM7
+    -----END AGE ENCRYPTED FILE-----
+- name: admin-server
+  role: admin
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBVTWdjc2FJOHpQN1JmMXBS
+    UVUxRllIWm0vOU5OLzZZdFpDdWVRaDFBTFRFCktrVnlBdndXT2s2eTBINi9XUkh0
+    amNoTjVvREpGa1prY1U1bXNkNGhEOEEKLT4gdGg9LWdyZWFzZSAvVio8CjdvU05t
+    ODJKd294NmhpTElrRGJ6a0ljbUlnWnFIR2tBVy9ZTy9ZVQotLS0gRWNLZmZlMjhI
+    bjNhUkF6MTE5UXg0NFlvbGdFSmJHb2JsRktPQ0dTWkhEMAoRvU3Q3a8OuY2+Eb+I
+    2Vb1D7JlrrIx7d62KZsUtypi/WAqn5O/+UGshstorsD8/wO2ccr93e/vjD2hBWBI
+    mW3R
+    -----END AGE ENCRYPTED FILE-----

@@ -1,0 +1,41 @@
+version: 1
+file: portal/src/tests/integration/redis-hardening.test.ts
+recipients:
+- name: sid-med
+  role: developer
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBoZ1QwcXZUYjVZcEFpajJG
+    TnlHWklZWDdoVXJuOGlmcjNnalZOTXAzZjJvCmdWYnBzN1BUK2xVYkU4Nk5uY3Zl
+    ZXB5bktzVVFOVlFmcy9GQnQzYjlUS0kKLT4gX2t0RHluLWdyZWFzZSBHaDMuaTUg
+    Onl1NSBOZEhzWjA7CmdHQmlRc0xsUEJMQU9wbGt1RUJzaXBsa3QzZlY2N1lvOStI
+    ZWlSbFhyNjN0anBVeElJWlVnaUFQV3VnWEVFdUoKQWFHdWpwbjJadzdzVi9LY1lD
+    SHhqRWlHai9QdE9BUDNQbHZxNWhYV29UOAotLS0gSzhiMlB1QUVzY0xNcXVYUHZO
+    WTJNTnMvRWhRd2lJY3BiU0dkbEI2WWp2QQpbSnlZ1EhyBb+/0NudsOXZ9iWUEKbP
+    9NHSvBjKbyVAd+cJSjpv7IofCyGyceKIIHtCRefhW8R22bKASG50/6VI
+    -----END AGE ENCRYPTED FILE-----
+- name: ci-runner
+  role: ci
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBacFBMdlNHNEZNWkU0TmlS
+    U2poK2dGUU9UR1BnMnlYSVJSOVd1cWd6MDJNCkFwcjczRGpPRXlzaHBIV0t2OERN
+    a1hPMkdWNHFnd0pGaFRmdTZoOE9tdUkKLT4gMTdSKjEtZ3JlYXNlCnI2NlVIdFRv
+    VlZaenN6ZGNDR2lscFJyTTY5ajE0L00KLS0tIFBBTGdDOGo4OFBBeTQ5a2hLRkxO
+    RGJDRmFBR1E1TkU3V3dRQlA2N211NTQKkgLigFx3IiZtsPdr3vKiYuxbiWcJxAuz
+    loiEjuCEPqqJd6/noei21LWaknvxQC1vBfWc3LajHI07ggKlO+86Nw==
+    -----END AGE ENCRYPTED FILE-----
+- name: admin-server
+  role: admin
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBVQmI4b0RKb3Jyam5RY3dy
+    MUFva2FraE9uaUhNM1Q1NERQaFdteHRNZkRFCjl2azFpTkpVZCtrbEFGclRBZWNm
+    cjB2RVM5UjRNK0FndW91aDRwRkxkZlEKLT4gfDpOY1tXTkstZ3JlYXNlIHdUNyBF
+    TUYxIFc0Wi5fbFEKRUR0Sit4T2QvTUcyWFZQYnVOb2JJYXBmR1BjV2NabTIvb1gz
+    bUtTU21SVXRZcyt0eDlCUFFmeVAvb1U2WTFoSgpqZHFnQWVsZlM5dklUbit4UkV6
+    WXdrNnZhckFyS0t2RGR4UEYrWDhQa2wwV3NsWmxybnF5TDAwCi0tLSBQVHNaTk1P
+    aHBWRkkvajcvM0ZVV0J6Yk9KSFFvc0dHdFFKckJhQnpWVEFBCjA9zSuO3B6hh88+
+    NZU9sWLbddW4HhSNgGX/scGwOlalga1PhEEMdDgV7YXk6jCDPQNIKusmJh+HQk9s
+    JE7maVQ=
+    -----END AGE ENCRYPTED FILE-----

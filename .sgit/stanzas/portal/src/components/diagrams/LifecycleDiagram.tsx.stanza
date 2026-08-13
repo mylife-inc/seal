@@ -1,0 +1,38 @@
+version: 1
+file: portal/src/components/diagrams/LifecycleDiagram.tsx
+recipients:
+- name: sid-med
+  role: developer
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB2b1l0K0xBYU9jYjROczJZ
+    SDBQQWJRUFRtdVRBRFdNMlV3MWN5ZlFlKzI0CldyWkxUaGdORmdTQkZaYmhGeXdG
+    Zmo5blZHTTdXcSt4VThZRTRyN043aWMKLT4gYmFQLWdyZWFzZSBoaisgVCssW0o6
+    KWEga09LKXFQOAo3SU4vUlZNbXJvRXA1RHoxVVJsdHdvQVJEU3dtZGNCZTVXUHI5
+    TzFCZEEKLS0tIGxPUnZFQ1E2TnYvZWFmUko4dWFIell6YTZwRExrWEZ5RG4zQ1B0
+    WVJWeHcKu9ens7Wfxalw+dXqUFqlmXOUwkPicEwDcbcgndFWXOUYmQrojLeiyLNF
+    8cEfIYiT9ZeXVkCrlN3hT9kNYqzJQg==
+    -----END AGE ENCRYPTED FILE-----
+- name: ci-runner
+  role: ci
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBvV3ZqWGUyaFdhZS83aTh4
+    UHJGTDRCeWdpa2hhcXNmV1RoRDNyME5ua2pjCnFhUG9kTFRSR0kzZS9aM1ZITG9P
+    MEdoOUViQXYvbnp2ZFkvSmlMRk1JR1UKLT4gPnstZ3JlYXNlCi9iSFdFa0lFRTcz
+    ZlViL2pvTEIvSVd5M3d3M0puZwotLS0gczN6ajZVSGk3V2Yvam9iL0JCSXAvQUNI
+    R25WK0x0dVlzUzlaV2JJSDVJOAr4OJZcAoAwvTepjTGFmvkgpdMCMe80dMKsX0xd
+    BhqIUfjLFDLvIT5VRwX1etE4761OJyZeRzTikyd403OmafNT
+    -----END AGE ENCRYPTED FILE-----
+- name: admin-server
+  role: admin
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBmMUJYcXplWFZFallXaUdQ
+    Q2oyMnJXN0VnQUFwZXA1Y3UrMWlrNEtxKzFvCnZWcnRFYlMySGFlbWpYQTN2QzB5
+    WU9WVVJHUEtNNkR4RmY1RDAyQ3VucmsKLT4gaSowMy1ncmVhc2UKb09LeGduRE1M
+    SEFHUDJxZ2I2dDQzazBwQjY5ZjQ1ZEo0QkVaM2xYRzBnL1RtV2djN3BYczBwUk8w
+    RVBCSW1jCi0tLSBJRWIwWnJUZ3A1WVR4amZpNzRWM3VMWWM1R0dFRVorUndFeHU0
+    bkpvRXBjCsT8dq9XaJol0pgY2fcFc1zqRmmFxSR/87xkyZ4xLNXNgAd2cKCqPjCL
+    3qoKsPy3RBWfKca9tnVmLvf4P+wz9js=
+    -----END AGE ENCRYPTED FILE-----

@@ -1,0 +1,40 @@
+version: 1
+file: portal/src/components/diagrams/ArchitectureDiagram.tsx
+recipients:
+- name: sid-med
+  role: developer
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBWVjgyWTVaMnBvU2szM3ZD
+    b05vMGhteGl0T2YyQy9uQ2lpUElnbVdLWlMwClBIM05VWGJQSm8xdWpUbGNLc1J5
+    L1JIa1BucUxneXlSU2h0bEw0TFp1ZWcKLT4gP1J8UTNEIi1ncmVhc2UgdisiMmZ3
+    CncrcktLdUpKOE1kMlNyZm1zNUZiUFVQMHRBVnhRMjg3Wm5odlRaSHprN3BCMTRQ
+    ZQotLS0gTEVXc2ZVd0owSmpDYkhLY3UzZmM0TVMwTGZLMmdHR3lJNk5jbWJpNmhE
+    RQoCPfqEv4p2QQdO66u7Ug4HS6I6zs2G/UoinRrq5RTbJr7Fb8Osnv60HYvyWuSD
+    kXO8+9I31OFW0A7PdiZfV0mI
+    -----END AGE ENCRYPTED FILE-----
+- name: ci-runner
+  role: ci
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBSNThNaUFOYjdmRmdJSyt6
+    RW1yS09vMWdaTHA5aExrbThyRlpqU0hZcVVRCmltbUhqcGlOZ2MyR2tRNUt0dlBi
+    ak1iSElYWFd0eTJPMVlKVVloRVNDWTAKLT4gUC1ncmVhc2UgNWUhV2EKMGhjYXlJ
+    a3Q4eEJ1bTg0cnFhTmNTTWxnWVJzN0tHVE16cTIrL3pETVNsUlgwZjhBNExEZnlT
+    bXdScFlXOEQ1MgpBQURwcHgzckxyVQotLS0gYnFuT2xkR3Fqc0JZVzBpY25EeE1W
+    TUlkVlBhcDErdkIvT3pudlhieGVFawrrZPEQxs8MPcax504xQfdxalodiimoxuxC
+    aoiR89RmdMULWVR70YCyVMpHqWLf3zBM7dvAvtu6mpmu0SXtCP37
+    -----END AGE ENCRYPTED FILE-----
+- name: admin-server
+  role: admin
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSA2bjMzZnduWDZQYjF1R2Fp
+    U2VZTWk3NHZtSS9ENlB2aHFkc3VJMjRiTWdVCjhocHVieTU5ZFFaVHMxQU8yUm9Y
+    dk5QMFVRUktJRXZFdTNGRE9DZWNtTnMKLT4gc1N0XV4sLWdyZWFzZSB4R3JDIEcw
+    Njd7cSB3J2E+bnhwCmwxU3EvZm5ZS0Frd3dUc0xtTnJEd3dya2V4NEhSaUlkN0dz
+    STBJQmxLcVZIQ3BFMllGSk0rUkNVU3JiYjdLTTYKaDhGTVN6U1RySW9peGpCOVZS
+    OUwKLS0tIHNvN1ViTXQ1dU1QV3B5Y3BaTjE0Z1JIRUgvZlFWOXViNE9TbXp2LytW
+    T1EKD4AYvuVjniVS6w7c0tqsoNNkogMykjkFKZX5G69yE1OJdatOg50LOEdHzDOS
+    BggrncKvVctY5pbxoR5awCQPlA==
+    -----END AGE ENCRYPTED FILE-----

@@ -1,0 +1,42 @@
+version: 1
+file: portal/public/configs/case-1-passphrase-github.manifest.yaml
+recipients:
+- name: sid-med
+  role: developer
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBMcXJOQ1c0SkpXWkVSU2Fo
+    SWJLcVVXQXd1eTVOSG5JTzFCdzh4b1hlRnprCk5lamVGVWtEQTdvTldNMW9yWDg3
+    T2tjeGxFUkYvL0FHcC9BbkxCR3NLRlkKLT4gYElQZ0d4aS1ncmVhc2UgJ3FEfApJ
+    SjcvZkRlNlJhMStSMmlxSmJPa2NodytWb0hYWGlrQVp5Y1lKVW9WUlArZ2dnSFVT
+    Y3JnRzRxcDZFcU5HdkttClA0Y0UKLS0tIEp4N2Ivc0MrNlNieHVMM1U1ek1YL3hB
+    enVKckhURXg2cWxIcXNsSHRXenMKxQah6sZOsz5X2dPNCWrkoCt0PUc54Smv6DKE
+    exE9no/H/yTPj4F8Z5TQpbcTWj6bhW5MY8OpqYei0E/py7mfrQ==
+    -----END AGE ENCRYPTED FILE-----
+- name: ci-runner
+  role: ci
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSByVG1CdzJsK3hRTE5LTzZI
+    VmJhZ0p0M2RJTUYxbGF5bDJZTXJpaDBlRVF3Cm9mQ2x3bS8yWmFkVjVWYTY4MmUr
+    OEFlb2gzMDkycis0TS9EbUlTb2kvUmcKLT4gUW5icXh+ez0tZ3JlYXNlIF5nICF0
+    Mmg4aCBAXThWOSBTCkc2akNIMWQ1SE5BMDhmU2lDU21Fcms0SHorb2s5citYa2J5
+    Z0NNN1NPQU1NV3pEZER0U3dUY2RuWExLbVR4UkwKcUZJUm5GdwotLS0gcnFNWVhX
+    NXVwWHV4ZlR6bk1XdDl2ZUlBbGtVQ1BGaFJieTcvOUw4U3FFRQpnLGzgblUhx7DY
+    Y3fbu24kK1JV0XpU9I2nhGJcIjiQ7yyo1MSsN4ZBDrCn40sYgMdcil6ZvRvsorNz
+    ma1XI+8e
+    -----END AGE ENCRYPTED FILE-----
+- name: admin-server
+  role: admin
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBaM2ppeGR3eFhCNG9wdXdL
+    dGk4VnFrVGtESVZSWUkxZFQvam9qNnc1RTM4Cm55RW96eENEUnhSYWhmdW5pSEFB
+    cEpCNjVWOStFL1hZYStjS1JUN1ZYalUKLT4gS2VOKy1ncmVhc2UgWkpwYGA3fiYg
+    fntRJU8kayggVTlxcWpCLUkKQmRRTC9rSEFSa3RtY3gzL2xzV1dvc2JwK1BQTXZE
+    UzlpeURlZ29CTnZHMm1sMFp3bE1ySkw3Y2hyNnF6M0NaZAoySnArV2xLdG5yWFhj
+    ZENxS3N4eTh2enhVNUptelhBYUxhbUpBQmxBa01qTUhtbnc5SURNa3cKLS0tIDli
+    bUhHTWMyNmQxQndWY1RRMVVaSW5jL1JQQ08vV21DejcwcmdwcFYrMncKjqTtMpN0
+    BJDNBFSoZkCK6spspFsu1IU8fRWeiGHCJpje67pjq22TVjoeBbynBhjHv9BPnQfz
+    u3D+R8tqN0xO8A==
+    -----END AGE ENCRYPTED FILE-----

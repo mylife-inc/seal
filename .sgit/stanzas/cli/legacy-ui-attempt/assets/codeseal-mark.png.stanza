@@ -1,0 +1,38 @@
+version: 1
+file: cli/legacy-ui-attempt/assets/codeseal-mark.png
+recipients:
+- name: sid-med
+  role: developer
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBYQll4Y0RSQjFteUN5WXFh
+    WUtQSWYwM1BUcnR1bWd1OVhYbldVYXMrLzNFCkNZbDFmb2pBaDBMZUI1M0YvZ29Q
+    SGZrRS83M3NWbnNCaFBaLzNWVWdaaWMKLT4gZzh5fUh5Oi1ncmVhc2UgbiFvIHhZ
+    OjQgRj5TbDxXaSBcfTlWJ35xdwpYczVDZ0svZzdRKzZVZjFrTThadQotLS0gdy82
+    a2dNVTlicTRzbE0vbjhtS0gwYnA4KzJrUkMzRDA5aTQrVzhFVWRMVQpuyiHAQsyN
+    pM4oBXjU85DLnLeHNke72Nq8DF8BDC3NfxkpQTenj6m2oynnevTHJ+sgiS2wQlnB
+    27MSPDrrKTiH
+    -----END AGE ENCRYPTED FILE-----
+- name: ci-runner
+  role: ci
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSA0KzkvQk9lYWxGTjdERDUw
+    V2ZrV210SXRWWm1yQ0JUY29sVXdTNW00Q0hRCjFObEtTK0tTbktmcHV1eWpKK092
+    V0VNNUhQekEyOTdXL1pqLzBhTXlNNjQKLT4gUSUtOjctTy1ncmVhc2UgZ2Z6QmQK
+    dUpIaGhzTW1mYjRUcCtaUE1PeVg3SXJhMEhFaWdmVWtSN1FwQWtVYWJrSUdaekU2
+    bG1YK2hjSlE5K00KLS0tIGZxbi9PSlBIV2FYTDRyc3hIVFNlWGgwWHUvUnN2YnBB
+    MHJjUjdsQVpUalUKiuU7Vms8O/ZLMtXs/TenjEQaQVNjn1g8cJ8J5TFGHnrnmHt/
+    jwObZ4a2a4dIN8u21ThNVxWUR50mIpl5ytIp2Q==
+    -----END AGE ENCRYPTED FILE-----
+- name: admin-server
+  role: admin
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBGbkMxajdNeWxkOU9XVUU1
+    QU9qeFp4aGRacUNwT1NZd0FsWG11YTFzTDBBCm5rSzdoSmw1TUxoWDdveEtUZ05G
+    V0tlU1d0dHU3bGVJVnN4NXVwcjRnbUUKLT4gbEdZZ2p4a1QtZ3JlYXNlClYybkt5
+    dHZWaU5HRlIybTZMdVlSOUUvdgotLS0gZ0FxWk02UDdYQ0gvMHltL3d4UkttYmpM
+    N0doaXdGeDhYd0tyQm9yODE1TQozM1VYfhNHr4Oi+/p6QpYzTzbFcAtk1QM/i1E8
+    b9QgMnVsJJ8AKCwP95jit6XeHH4xKs31LVcWAShFwvlA9nCD
+    -----END AGE ENCRYPTED FILE-----

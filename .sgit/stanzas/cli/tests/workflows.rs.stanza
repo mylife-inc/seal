@@ -1,0 +1,37 @@
+version: 1
+file: cli/tests/workflows.rs
+recipients:
+- name: sid-med
+  role: developer
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBDTmJVOGIySUUyTXU5aHQy
+    cVR5UUU5SFRDcjVRWC91YXE4U1JXU2xtV0RzCmlueEhIM2lmdGtwRnJ5TjlBdzdK
+    V0xpMGJ1Z3BYSEJQZDNUb3AvK2lieWcKLT4gfSw5Xi1ncmVhc2UgKER9aSlcIF82
+    TXAoc1YKZmxCdXpZQQotLS0gYTlYNzE2VzFVaHRBY05uM0xISk1ucUNwOC85UWdQ
+    TUdoL1QvS1ZCT1Mxcwr8Sg5rcmUbSGXvOMUGMeVdedArMELhYB0+rf02G8MT/KNZ
+    SthkimPknDn6WUsgBe/NgRnAUfFv5mmOKs9P5OCq
+    -----END AGE ENCRYPTED FILE-----
+- name: ci-runner
+  role: ci
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSAxSkZzTXNxOVY4UGRSSnl0
+    VXQ4OG8yczk3SDBKMTBucEkxdFdDN0ZrUW5BClF1dEl3VVVQckUrWnBGOTBBeUZt
+    eW9qdFpvZHEzOXNiNGFDNXlqNnB4a00KLT4gXVlkLWdyZWFzZSBNTzpCKjMgOChP
+    ITIyIDYKU2htckc3ZWJ2Nmp4V3RJb3dQSkdnOFhQWXIwbG1hSEE5Z2xlOSs1WlRS
+    SjZxOVY2VkpuTGxPRS94bjNGWWo2ZwozV3MKLS0tIG5QVWN4MjZLRjJTNXdOZGJG
+    UFJpKzBxb3gwdWxhdTFCbUFlR3AyNVozQUUKvIwyHJQorBp38+4EVL0Tnr+B+Js+
+    H3VtxaRSZ7NFU7doblf4T73p8uPkCb4ZwEgH2OpLP5zZoPXLA8mLlQs/VQ==
+    -----END AGE ENCRYPTED FILE-----
+- name: admin-server
+  role: admin
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBrRmt1QjU5OHhucURoZFNO
+    UWUyTjVOVjNuMlJRU2tFdUhTclNEcEV5TUEwCm1RTmZSOEFTMHFRSnNGU1FLajd3
+    NExUTiszUGpiU292UEFpNEJpZGpPM2sKLT4gP0AuZHstZ3JlYXNlIFdOfiBiJk5a
+    IXU0IFQ+N0ZraXQhIDlCeApkemtNZXhzCi0tLSAzYkJOdkFyeHhodzEySGhSRjdo
+    dWMwdGJjMDI4OWREemNEWVF1MnFPenRrCl5qQq4mag/2eZ/q++c1p+1xy8akQxbb
+    FlqqjEiMAlwoYYRiSJDUwgHKJ+qgsulJcnB9XY+a8YBaR9BBdLN8QLs=
+    -----END AGE ENCRYPTED FILE-----

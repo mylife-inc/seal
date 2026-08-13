@@ -1,0 +1,39 @@
+version: 1
+file: portal/README.md
+recipients:
+- name: sid-med
+  role: developer
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBpd1pWU3AwZVdBdFFwVUNh
+    RjBGak9ka0lwVndIWjEwZUNPaExoUVV4L0VRClhyOXRrbmJjUVhjbGRRRXdoWFRz
+    N0pJWkx5UTlKME9WM2FZQjFIc0JoTncKLT4gQWEtZ3JlYXNlIGJVKDE4OVVSIFZj
+    JiAySTN6SjsgT1MKeVMwakxxbTJkeVNXMmhWWGtLVU0wNkJpTUx6NFFPTXMxUURy
+    TEJubDdoZkIraFRiKzI4OHhFZVF2YUZHbGlVWQpZZwotLS0gbmNiR3FzbEc5TDhs
+    VytBbjNLVThrOUs0cjUwZEZMb0NyUTBCbWtsL3QwTQqfhOeJnkl6ZlFRU+bxO2E8
+    Vj4+x8bwqI5VVSKPa5owbF8eNX9X1zAuAYHuiMJeHDi/NUCbIzpC9MiC6oPdP961
+    -----END AGE ENCRYPTED FILE-----
+- name: ci-runner
+  role: ci
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBxMlhrcFVZb0ZHV0cwbmxm
+    Q3owUDE3V0oxVU9BRmZ5OHBsOU03TnFiR3g4Ckl6d05JdElBSktGYmptVjg1b3VB
+    azM5QjJGSTlMeWErVk1wU1ZmY0VDZ2MKLT4gKGEtZ3JlYXNlIHcyKSBKaj8gdHgk
+    OQpZWmJPbFpVZ0lWTHVPOUlMaTdUMmlta0VHekhUcVBSYjNITVBBWEt3ckVaUk1n
+    VjZoQUZENWw1UVZldGhadHRjCnNLanI3dlVFU2l2SVlQOAotLS0gN3JITm1HVFN4
+    WFJxcVA3cCtnVU9IUGV4TFEyTTdNTTZZVldpaGpBc1E1OAq4cWy644EfX/tvLdFG
+    lq5OfonlNLxqMbu6GJRJ4pbfsI8KU7fruc6zQ0D+D5lBz+cghac9mu5hNNpj3dIL
+    GGS4
+    -----END AGE ENCRYPTED FILE-----
+- name: admin-server
+  role: admin
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBwai9xcFF1bDN4SlY4QlQx
+    b1l1d0JzSUdiK0VjSlBhTDBFeFJQVlBpaFcwClF5QVhJVURuQ09kS0xxL2lvMXdt
+    M281cENzaEowU003a0ZwN0RXTHJid0UKLT4gQlFMSFdNLWdyZWFzZQpFM1EvWGtH
+    WHRsNkpOWDFjRGcKLS0tIExRUTZtbHJnRlB5aGV5QkVPek9JT3plZE5ZWU03cDU0
+    dExwRlEwNlVyQlUKLfkKKXy4ma/tRG6scdqsxcBTDVvyRWm2QlhUiGn0B+Wj8EGg
+    egMNeZo+p0kArysjOQFRFgfu+TETkNZqWzndOg==
+    -----END AGE ENCRYPTED FILE-----

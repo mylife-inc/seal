@@ -1,0 +1,39 @@
+version: 1
+file: portal/src/app/api/healthz/route.ts
+recipients:
+- name: sid-med
+  role: developer
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBHbzkzclcraTRHUlpZUEta
+    ME12SjdpR1hicnBMOFNhakMxbUlCWmhnVFVFCk9tR2ZST3VhUWc4Zm1SNTVQLzlI
+    WW5DQTZnN3YrbEIweVdwbjFlYkk5clkKLT4gSjQtZ3JlYXNlID9fXSBsajZnZTYg
+    VWkkTn5mNm0KcDgwRXJVZWVPLzMrTlFGNzhYaFFrc0N3RFEKLS0tIEpJbUU5bkxl
+    R09XU2tzRTc5SWRzUU9hWlhBenBEZDlBekNsZVhEWUk2ZDAKui2QGAWPW7bXsCTz
+    iDLNhzbUThXOgU1Z7PihehyuzqeQ+/J8S1EYe2KevAmfnWsCnOCFN6KNSJ0SNchU
+    pdj7rA==
+    -----END AGE ENCRYPTED FILE-----
+- name: ci-runner
+  role: ci
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSAzZjNvZU9obVZVR2RkMGVu
+    UjJpY2RvYjVoeGVUb2NYTjBhaWFzVWdDZ1JvCnRjcit1UGtZeXZ4YkFuMjZzNExh
+    bGYyUW5HNjRxWDJFSnlGeEtDdURML28KLT4gYCNvNlwtZ3JlYXNlICkpXjtyWyAy
+    IHF6ejItYApWUndMaVJFM1hUZHV6dFdUOTNDZEg3U1UyeVFHUFdiMmEvdlEyQVE0
+    bEdVSlVBdWVUUG81azJ0TmtNUmdWSnlRCk5YQUcwUjNXNHBkbkg3dkhRcXprMDFX
+    ZitJcjZrbzQKLS0tIFFKL2hsUmRScXhJM3NQK0ViSm1pKzJkbFJvUzJSd3dDK3A0
+    OWhvVFlIejAK5qqymYYLq/OLZ2z3EIrPKoZfqkvUSO+ynvg+fqS2K0O/Yyb1hXUs
+    JwFvgcE05KQKeBGagQuHId9vA15nNWeeJQ==
+    -----END AGE ENCRYPTED FILE-----
+- name: admin-server
+  role: admin
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBuNENDRXg3aGZ4K25ITWZQ
+    NmFZZVlrbkVGYmV0cGFoeEdUSkpUTWN0b1RzCmtjeHlNcUFEbXd0eFRPVkVuSFRy
+    U05iTnFPcjkvRTNmZzQyRTk0YUhIZDAKLT4gLl8tZ3JlYXNlIG1+dCAwSyA+aW0i
+    IDsKCi0tLSBjdERobS83aGIreTFrNjhyRFNmKzBwdHpVZ1lGbWUxejI0QmNYcXFR
+    aFF3CpO4KSj0erAQkeOfSqZL5mjAx4SdbzhaRyCPjWs7uC/wYl33sRtuG/budxO0
+    lrZRt+ZeZM/SCUUe1SRAFCADw10=
+    -----END AGE ENCRYPTED FILE-----

@@ -1,0 +1,39 @@
+version: 1
+file: docs/internal/docs/quickstart/installation.md
+recipients:
+- name: sid-med
+  role: developer
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSAxaFE5ZHV6OUVVdWl3NU14
+    bllKU3ByaStsZnFwZlpMdEVNdDhZS1MyNm5VClFQSEg1YmNnSC83Rm9GNm9UYXRB
+    VzFlS2Y2RTd2VmJhdXpYT0YwU01GelUKLT4gci1ncmVhc2UgTjogLT5LNDlEe3oK
+    NkZucnc4ZUMyNG9HUU1qUkJZQU9Oak1zUUcybTBMVTAydWVwbURIRXJOcDN5MklJ
+    QVpTMmFxMDhiLzRvdTZBcgpmaS9yTVZkNGNWV01hdTZlY1RicEJ2UUNTdFR2NkFV
+    eFhMSHRDWDUzCi0tLSBOY3ZQZVVncDhiRWxYUGg3WGllSklKN1diS2pmeFJzejA4
+    Rjd4bjJ0cjFzCrXQy8bAqPCrzCsbeIViGPrhjtR3lVtPbG8tg58xKn9cKY3o2fRy
+    eR5/zbwleoBbe2U+mR+w/ME58JfBMkqNnXA=
+    -----END AGE ENCRYPTED FILE-----
+- name: ci-runner
+  role: ci
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBzZnJOUDhiSUd1S1JTSFpQ
+    M0tqdWJ4ZUdkeHZrbEF2dy9GTy9xOGlMZ2d3Cm1EK0MrWFlIazlONUV5czZTd0Fp
+    d3pMRS8yWXo2RGhFY050dmJLNVQwbFEKLT4gcn4tZ3JlYXNlIGFvay5LKiUKbEJn
+    Ci0tLSBxUnpOUkVZeGRDN3d6VzZiWkU2VkpkWFh3OHd2M1hpRHZZNUh4UlF3RFRr
+    CroOHgWhF0G5tabFLe2zVQZQmxTdnUauIjzJZBDFLTFS5qZ5bKQbuPuW69O2j3Xt
+    vp5TCJFjbvOIJxJ18tjrH10=
+    -----END AGE ENCRYPTED FILE-----
+- name: admin-server
+  role: admin
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBkSW1IdmFHbkxwV0hkNjhD
+    TzBIc0JXQmNSby9teCtXM085M0MrYnp4MkdNCmZwWlEyUEd6aG45L1U2TXlWWWNV
+    Ykx4aDdxMVdXcFhNUnRKVkNpckIxYlUKLT4gSldeLWdyZWFzZSBLLTYKRFNOdGU3
+    VDhidTY3UGluekFtZFJ5cDBiVTg5N2NVTUlGQjY0dXlGd0VOZ0p4bHRUSjl0KzhZ
+    MDRmbXRYCi0tLSBEaXEyZ0dldDZLYVhNa3A0SFpWdnJlakY0eXNkREsrRnkwdmpG
+    Vms1dFUwCrzk0BIBMCpsaIawezj9nAlOTE5Z+Cql5Kx7oCzjBdaAgZJ2quMsWqQr
+    2putQDACHV7lSmiyEDaXEcCWcUBiR5k=
+    -----END AGE ENCRYPTED FILE-----

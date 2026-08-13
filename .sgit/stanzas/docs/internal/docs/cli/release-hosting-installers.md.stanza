@@ -1,0 +1,42 @@
+version: 1
+file: docs/internal/docs/cli/release-hosting-installers.md
+recipients:
+- name: sid-med
+  role: developer
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSA0KzE3WWZDenZmNnFhaVMw
+    NWJRYVgvL2Y3TytoZHJuQnhTU0VicGRTSUgwCkdmQWRJbFIxbkc2dDFyQU0zNERI
+    TXNqOXdRQ3RZdG5ScVQ3bEN5TGx3QWsKLT4gfC1ncmVhc2UKSE9Bb2toTzh4c0d4
+    T050cUZBTHJKSzU0bG1xK3R0NTgzWTN4VVA3SEs0SGRjU0Mwc1BWZUVnTFgvamkr
+    M3FPcwo2bkk2K1RjVCtSRVNXY1BmK0VHSm53Ci0tLSA2b3JnUmVoWGV3WEsrZ0VB
+    ai9MR2c0VkhISEdnU3Z0TXBZdkNtc0cya3lzCoz9IxdChM/BBTCwrMUXjQCbSEAH
+    qkNJCs9EJnqa2rpwMgfPRjVjthzZjs3BRSu/iiHUZyV3+jhT0p73BMKdjyQ=
+    -----END AGE ENCRYPTED FILE-----
+- name: ci-runner
+  role: ci
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBEVm92ZkhWNTBMeDJzakNs
+    SnNJVHowSERFU2ZqcjJTcldHaWhZaWlPalFJCmx6YStTWmZlUlRwcVlsQllvMlY1
+    bm0xSUJsTTFicXpLZHRWZVFKMlJHNGMKLT4gdH0/VD0tZ3JlYXNlCmNJZnZhbmlD
+    dHNZM2tBQ041UzZIZ0RoMjE1NGVHUFQrTXZzL3RmUitSMWZlblMwSUpJa0taMEU3
+    TC9jMHFEZkYKVzZlR0RUcHhvN3RTRWtzbzE4RGtwVVJiajFZZnp4ZDRMZEUKLS0t
+    IFFaSmhmeXVMSjZPQ0h0RmRmWmgyNlVmWHdLUVVQcjRPalpFU29BTWNsNGsKcv6G
+    jaxaz2DFi7tY+xANRb7hOJQLjI9C4arexJpmiQ0W4WTiYSuP1trmVxT/8qCIEdWW
+    3HlMFYPRSJFigQXpVw==
+    -----END AGE ENCRYPTED FILE-----
+- name: admin-server
+  role: admin
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBYdkRGdGg1RERQSmhVbzJF
+    ODYxaldYYVRpRW5SS2oySjNvdThFcXp5THpvClZUUkxGNkdpaG85dmpNcVRWNW0y
+    bDRFWGNYd2VhYWw4K0pHZyt0dllubm8KLT4gL2RpS1BoLWdyZWFzZSBPMS4veAoz
+    V1J3cy8rdktlTXhTTWh0Zk9iYzU4bExyZ0lJY1ZYcEV5SjhMYmFHMmZJNUJWK1Ra
+    VnNyRzZwcWtRMDYvK3RuClZOOTAyaXY2akNubnU4dnBNdnRrbGlNa0JVWVR0TE5B
+    bXVweENRdlNWQzFROGZRcjEzVmpVUGpVbjEvUWJrUUkKOFpvCi0tLSBqWUxwOGUw
+    TllLN3RHc2tva1lWME9ZQ1FJTHg5cmdjNWdQQ2hpSTRwcGZzCr2pJdkLom9E3mjO
+    lejcF+g/qYGmxNvi/vZhsBg25k/qWm4qlDVi6JNQLuqEx488VfWtmwhicPt4Ay6z
+    XLB9J/I=
+    -----END AGE ENCRYPTED FILE-----

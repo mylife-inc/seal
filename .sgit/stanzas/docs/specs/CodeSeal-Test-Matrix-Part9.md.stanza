@@ -1,0 +1,39 @@
+version: 1
+file: docs/specs/CodeSeal-Test-Matrix-Part9.md
+recipients:
+- name: sid-med
+  role: developer
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBjb1ZYWWRmUnlHcU43WURI
+    T3BCQTdSMnVSNkxFaW95Z0N2ZWlXN21jOEZRCncyOUd1TDZydTRaanhlZFU1NExs
+    SzFyOVA3MzRuQ21ZMUtjdk9uYVhkdjgKLT4gXnw/Vy1ncmVhc2UgZChXfmc3IFkv
+    ej96dFkKZnpmUC9vcFdrUnlFcXNRbXBYMGgycG1OSnprRmRIRlBzbnZzUndyL1Bo
+    Rk5jZwotLS0gL3M1aDNEOGtDL2Q0ZGx2Q1psV2ZPOHB1bVRBeThkSHFDMGJnUzQ3
+    MlJuNApeu4R1M4Pp7uk3MPjcum2K/jqcCK5NHm9fJEdcLQ7PTYlDubEkIPl2kScF
+    JXIhRwde9MIqBYFqiLkZ+8dgBWKU
+    -----END AGE ENCRYPTED FILE-----
+- name: ci-runner
+  role: ci
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBrTmxLTkZNZlpkUXozQ20z
+    QW8raEV3MVlnU0lMbXdJdzY4MEVMN0xaTENJCkNOR0N5dUVCSkVjSXJFOFg4dS90
+    T25vMjdhcWVsWUdZYlNjajI0Mnl0TzgKLT4gdCxbeS1ncmVhc2UgOzttRF4mLwpG
+    bVdwOGo4QldJRQotLS0gK3g1Z2IxQlZYZ0hUcHd1RUNkalpVSlJKYUwyRVFzMVE0
+    bDUzN0h4d1F2QQoVi7AyQP1IdMsykndMB26sf4d/LEMUdIwRFTYy8GeVSBETU3+4
+    JyPyP5zNGxsCWfnx6FiMh1VDsWeMZLDi84eO
+    -----END AGE ENCRYPTED FILE-----
+- name: admin-server
+  role: admin
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBLK2pXWGxzMWg1YnZQL2di
+    Y0VidWZzTzNjYWFwOENrYUJGS2h1YjVhbDBFClpMUm9JWXFubmN5Rm9TckpOdnZu
+    T2liQWpWNWlCL0pjMkxuZ2o3Vk1RL0kKLT4gLXsraH5IZy1ncmVhc2UgY0JuMiwg
+    XTdiQgprK2ZIOTJUMDFDZjJaV2VBYitTYUcwZEt4U0crTEQwcmNBRTdjdmdlY1BG
+    dDJXMk5LeDBJZ2gyWld3QmMyREorCk9Bdm14R1FWcnBqOWEzOHdyc3dMQm16WUd3
+    dHRWU1JHUiswCi0tLSBqb09YWDc3R29VSFZJa3JMY1ErcTQ3R1ZUYmMwMUlOdXdS
+    MkJDM09jRjNvCoPjxO9U6n+EJ29bxpQJ1hcuAHUSAvYU6BVdwxEaX4K1l5avfqjK
+    t27drplMiryuicTp7ZfN9VRdpRbfnvyCqd8=
+    -----END AGE ENCRYPTED FILE-----

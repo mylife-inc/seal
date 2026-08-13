@@ -1,0 +1,41 @@
+version: 1
+file: docs/internal/docs/cli/manifest-paths.md
+recipients:
+- name: sid-med
+  role: developer
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBtWUJVbWVMT0Z5MHJ6TWhw
+    bCtVUnpna0Y1akNZdDdwM3ZORHgyZHY2U1QwCkFCalZ2V1cydFIyaW9hMVN6KzFh
+    elZmV0lIT3lKOVpNODlxUXF0ci9HU3cKLT4gJ0xVMGdZLWdyZWFzZSAtT0BnfiA+
+    fH5TZSJsOyAvRXA6Q2F+agpUaldxR1cxcmVKV2l4L2k2NmE1M2dueDdYZTZlT09Z
+    aEpuc1k4aXZrL09LaW1nTmZnK2Y0N3NaODMwYXFZYVR1ClVXQ0JZdjgrVjlobWQx
+    UEpIdFZ4R3BzZWZ2VFhrOEt0RHA2RgotLS0gcy9ZYVA5WDlRS1BKV3h4ODd4aXp4
+    TEF6Z28zSFVlTjBOTkFGRzkvNDZMVQpvp1zTrXyTo354tv/kiTGnjP5h26RZznEY
+    NjszlyCv4FG8ct8KtzX0nISVAUOC7nggCG0Xe3mPQzQOczMrLwOr
+    -----END AGE ENCRYPTED FILE-----
+- name: ci-runner
+  role: ci
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB3S0pycXMwemd3SVIzRkVR
+    dk1BMzhsTmtNQmgzcG5paGNwTkJyTlg0NTNBClhtYUFNSVJwN3NQczJQWUplVEF6
+    ajliVFFYZjBIUmhObVFXSGlSVkV2M1EKLT4gVilaLWdyZWFzZSApZXRRTCBHWmcg
+    KVE+QVVneSkgdwpkN0FvajlRa0Y5TnIrVm54MWgvcFNPSDMyeDVobkNDYTJJYjl4
+    UTdndExLT3lzRkNQY0kzN1k5UVV2ZnNHeXlzClZ3dnhpdG1JQ0ZWT29mRGhYQXcK
+    LS0tIEZVSXJWamdmZHVocUJCdGw5WU05bjhYbWZUdzBVb1Z0Qjh3MXpzWGpuNVUK
+    3JZGkUx7eaECbxqUpvfpXFnnyPjkC+yXUFQGrFiVHvpo1sPfisOizYKkfstDYWvA
+    q4pX2wXLhPeJN2IaWzOqoA==
+    -----END AGE ENCRYPTED FILE-----
+- name: admin-server
+  role: admin
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBHbnIxZDBET3JVZS9nYU5B
+    S2krcUN6ZFZsK1U3K0IxYVFqVnMzU1kxcEJnCndGUFhDU3BvQTNzcklMUnI0dWN2
+    ZVVUck82cGVpYnJxdFBRY0RSZTdJRTgKLT4gRl97LWdyZWFzZSAyRUYKMVoxUlhx
+    dXNINmhMVS9hem1LUnlSai9jb2ZMRlEvcjlpeGkyWExmN3VBCi0tLSAraHZzMVNo
+    ZHNTNDU3VmNKckhXUDVkRFZTR25TWU1pbEtGaTZRdzNnUDZnCv4zBT9JHNTN27/W
+    pGPgCNUPoD7cHEd2aa6T50DIR/ntDYN0U2XO1o3sxFPso5+rh9KWd0yge0RK9geS
+    NwdgPjs=
+    -----END AGE ENCRYPTED FILE-----

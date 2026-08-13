@@ -1,0 +1,38 @@
+version: 1
+file: cli/src/crypto/passphrase.rs
+recipients:
+- name: sid-med
+  role: developer
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSA3NUNBQkhyaXQ4WGNiVndO
+    Y3NKelBQSzVCRE9xSFNsenlYaDVJMWRRVkE0CnBNS0FQMWRQUForS01yZXZOMmNU
+    ZXJrLytMUVR5VXhSNzE4bys2amF1MzAKLT4gcVRYRi1ncmVhc2UKWTdxYmxzakJ1
+    Nzdydy9nRmdXVW91RjU3bEZjWGE1eFI0cEVVczF2UEd3S2kyZXdOcHBoaDl3WVNV
+    T2VTMGcKLS0tIHY0WXFkVTZCMTBQZ3JKTm5Vb1FIS290NGsvT3BCSXZmc1ZsRTlp
+    WVpqdG8KJwlDiug8gdgensKMd6+LIVhmZ+z2p4Fugx7CLlRa9AccsU4vyyKAVsq4
+    fTYHNwSBAokdDjisFAh/ncAa/gcYsw==
+    -----END AGE ENCRYPTED FILE-----
+- name: ci-runner
+  role: ci
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBpZWVRUXRhNUxKUEJDbkpj
+    QzJiQlBVM1VSQ1hQZ2ZISFptdTVielVHaFZBClRFZmZrTXJoenErdkYxWDhqQzBj
+    N0d1ODV6K0dwTU9YTDd5UmxicjZHK1UKLT4gPT0zOkErSy1ncmVhc2UKSzhsUUJk
+    U2loampUK3VMOE9ncTVYbFB0aVh1RW1aSTYzRnFoV2xhQlJ2N0JUVVVLdG51QnZR
+    c0NzQzEzVkRwbApVekVMRWFhZWFGVQotLS0gUXlJWitiYXBERUpTNDVuWkNZOFha
+    ck1UdnFBZjYzYWVSK3ZxWTBrZzlNbwoV2V3ByCGLFYxp92djVA8KxxhC+zVPg1my
+    uEeVbZ5tw+i3NNFTBS2nIiSNiEOcWjBL77jhMq7d4lWdJqJObh9Q
+    -----END AGE ENCRYPTED FILE-----
+- name: admin-server
+  role: admin
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSA4aEVEdDhqandJa0UrOTNR
+    dnlVdTQ5YmxyMWdMa0hNRFRUR3UxWEV6VXg4CldmU20ybnJiZVdCM0xqYnlMdTY1
+    ODhJc3Z1bTdBalRlKy9ad1E5VUZFbjgKLT4gazJudnRSaHktZ3JlYXNlID9URQpP
+    UFkKLS0tIEh1bmlpNU4ydXF6a2hKRDZqem1VVDdSWk52dG9FMlFJa2ptNzR4U3ZN
+    eTgKyIHpR3yZBeophjgeVSP2VnV0MpAEwiLq57yHdI9fDOq8Qt1nX2RkfP0e2MRU
+    SyMODwWcMP3EvJIG0gVwMxo4Ww==
+    -----END AGE ENCRYPTED FILE-----

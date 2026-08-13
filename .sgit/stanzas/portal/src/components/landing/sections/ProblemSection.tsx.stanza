@@ -1,0 +1,42 @@
+version: 1
+file: portal/src/components/landing/sections/ProblemSection.tsx
+recipients:
+- name: sid-med
+  role: developer
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBhUlpIL2x4dnNaMkF1ODJC
+    Q0FEd0xORlNIQ1YwM3JRVHhNa0pqTmdiZ2tVClZ4ZTg2Y3YrSnNXQ3NZck1Bd2p5
+    UlMzdDlhN01uVlpjQVJJR2VtOUt3emcKLT4gNStGLWdyZWFzZSBqUnhcNGAgcS4g
+    ZD9GMCYtIDNFRUt9Q2ZYCmV2eVQ5dUh6eXRYZGN5RzVyNDEwQmU3cVA0Rnc0a0wv
+    ZWpWN2lHK2dIaW5lU1pvejRMNUlvZ2tDQy9PRzcrNjYKTVAvK25HWkdNY2dHMEVP
+    Lzc1ZFhRZDdnbExVdFlNWGkKLS0tIE9PRlQyWGFKWGtuMVNnNmkrWDA2NFBZbHd0
+    dnZPQlNBa2g1dEIvTyswT1kKWnbIRHU/LrL4n6kzNW5zzOFI39mZVqNb+bwbfPwp
+    CfBWruRUinZzCqeGg1m73UfwcXhNv/xeJ94jnzDL3+XL8g==
+    -----END AGE ENCRYPTED FILE-----
+- name: ci-runner
+  role: ci
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBnaEpWL3lRMTZCcDB1bnBX
+    a1EzQlM1VWtUeVZtZWF0MGtFeEZvK3E4ZVJrCnB0Y2wreVFlTUk1WmMvOWkyYUNa
+    WjQ3MnFRZ2tMZ1RkSUNhdHZpVENtdXcKLT4gZ3VwIk4tZ3JlYXNlIEoydEQKK0Zo
+    MWloeC8xYTNoSElvcFM2azhtVDlHNU5JeG5SZy9zek14NHlWYnhjN29CcG9CS2Fh
+    Qjdub21kdTU0cDI5ZQpFN2VGVUhNMXJHWGhjWDN5b0Y3azlhbkY2SDc5Ly9ZQgot
+    LS0gT01UclhnQzRRdytqVytjb1dhQ1VVZkprT21PRzdvVGRJUHUySTI2OWc3UQo6
+    HCJQjVNDJqIdlukdO2SaoppnEreKohqjerH4w7oB+5zHk4ZRGxcpzOE8QZgVbCDJ
+    aAJS/htS8QzGaMuupDI3
+    -----END AGE ENCRYPTED FILE-----
+- name: admin-server
+  role: admin
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB6WDZpU2NQYmN3NTcwaURv
+    dm5FSzM1SjdDV0Roc0U0MW1uOHU0TE5WdUZ3CjR1RjVqT3ZlbFRHUmhEY2pCVDFp
+    MWkyQy9sT29DZHJVUXJ6Rk5jd0VQakUKLT4gbSlyLWdyZWFzZSBCIFdUIEE/Lnwg
+    Z3ZJCko1MXNJaDgrdE4xaCs0YTNaVzl5eUtaQnBjcUdXUzdTR3FGZmUwdnhBMVpL
+    cmpZTHI5bG5RUnQ4UEIrQW5JM3YKcDhkVG8zSzJwWERXCi0tLSBGN0hkbmVGVGor
+    K1NtbS8yRXdLcnI3QWs1Vk5QSEt0Z3R1ekpaNmEyTndnCswDze0vWtLo3JUUusX2
+    cVRy2g7g9YQ7v8qBLvY6BRwid7uzPITt1h78wH7LLUBPtA5LK7oGvnDfxuI15qjj
+    wtM=
+    -----END AGE ENCRYPTED FILE-----

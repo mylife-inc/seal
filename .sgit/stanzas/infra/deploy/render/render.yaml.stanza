@@ -1,0 +1,38 @@
+version: 1
+file: infra/deploy/render/render.yaml
+recipients:
+- name: sid-med
+  role: developer
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBvWXVBa2ZFaU1jUkdxcHpr
+    YUNQOGdhZ1h4bEpMMk5ZbHhuQTZBT3N1WEFrCjZqVXpiditXenRoNXlxbm5QcGxS
+    bnFOL2NjbHBDRzlxMHV5VXdFbmd4SDgKLT4gdmVMXy1ncmVhc2UgJkMrVSEgN2Bp
+    JD9jKApnWCszVFgrOHg5VlNITTAxYTFxQlFmQWIzOTV1VEVuamNLWkNtR3MKLS0t
+    IHVJOVM4SWRwQjdDNlhyN25SU01nRTJkSHhOSitjUmdJdktZVDV6ME96VUEKChHW
+    wK/8B8xyxfE0cD/N/8VUeQevm1QdYtVuOkCRqnuGQhMeZD2MAT3OB2McCbUwAuV8
+    IRBKsbGkAsrIWusGwg==
+    -----END AGE ENCRYPTED FILE-----
+- name: ci-runner
+  role: ci
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBZdUpsaklMYnA2M1Rtb2pT
+    R212Rk1RbkFxalc1N0s5R3FNemlJRFdWc1ZnCjVRcnFDZktRN093SVArRXdYalFP
+    amVFOCtrRVhzaG5qK3ZEUkJITUFlUnMKLT4gfG5uM196Yy1ncmVhc2Uge0daczMp
+    IDQ6fSBbdSB3R0NbCkcrOXNZZwotLS0geU9JK1pGcWVLU3ZWalQzclhxc0txRDFM
+    WkFhS0kyY1cycWh3L3FZZC8xWQr7iq/rHX/lQclqaGUj5EBpY7L+P2p5wg44fjpw
+    GHAn+/vA7F12OPmSIawiRK870ITvJdLjRtxxjYtdhNR+zKnA
+    -----END AGE ENCRYPTED FILE-----
+- name: admin-server
+  role: admin
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBUbW9sMVNwN0F6RlpVeGFt
+    Z0h6M200dlUrTVU5TGV5eXhSOHpFdzUwVUQ0ClpjdXIyemtTdXdZRmZidW1aZWZR
+    K1RrOURtVGZmYnNWZ2h5bWpwc0VheHMKLT4gUUA8KVdMOEUtZ3JlYXNlIDdibCln
+    ayQgLSBsT1gKcGpWN1RrbVgxaTZmM2ZsZ1FCb3hoS0FmZWlGaWo0N3JQUmlaSDdi
+    dHNFVjA3RFZGL3VTegotLS0gN2tQVUFkRkd3L0VoS1Y4aUhNOEY5d1FxYU5ycVJT
+    MXppZm96NGNsMitIQQrwG3L4HZwMtS+mhXEUpREx2fuR3NkO6mi4jDDGU3Y5Lsbd
+    Bxojkk4Ft4f3eN6QuzKeQJmExpUZAQKrXPTu5/FW
+    -----END AGE ENCRYPTED FILE-----

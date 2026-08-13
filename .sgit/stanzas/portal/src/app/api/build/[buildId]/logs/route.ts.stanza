@@ -1,0 +1,43 @@
+version: 1
+file: portal/src/app/api/build/[buildId]/logs/route.ts
+recipients:
+- name: sid-med
+  role: developer
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBPOVpyaEp2QzVwOGZNWGtx
+    Vi94YW9xajE5UWEvRnlhRk1aclhISkxXcmdvClNWV2FlS25LNW9HaUhucm5vMUhl
+    RkxoN3hjSXNqMkd0dkR6Y3lwQ1BoRXMKLT4gUzRGNUpBbC1ncmVhc2UgNyBoICwg
+    ZnlcdwppQnBLVGZQWWpENnVWU1NEV0RmTU9kd3dlMkN5a2NnL0tteGJEMjQwYk51
+    MDNGZFZvOFpFZ0J2MDZzMlg3ZGxvCmE4d2NLdTk4TkZaYUZtMmlxbk5XcTlhYndu
+    ZjdNb2hOVXdnWmExcwotLS0gbHpJM29YQ21uUjh2alh4cmJjMWZSVHhqWnpvenp4
+    M3NnTXEvSWR0clpOWQqUXmUgFPSTn1PO0qGMFPy5U67oooEGC1NKaPMOhBaI9BAo
+    OetKGE1ARYPgQEfbsFHX++4qAyOiNFUc7Mr92Yeq
+    -----END AGE ENCRYPTED FILE-----
+- name: ci-runner
+  role: ci
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB2MEExdUxNa0VIR0dLcFQw
+    WXh2aGlhRUFqNXpPUkdEM0dCcTlqSmVPdzNnCmNSM2JDU3pxQ2dGZXVzaFZ6bnhv
+    YVFkQmRzNDBwdGFXc2cwY2xpYlF5S0EKLT4gay1ncmVhc2UgazJfIGpGI3VPdjUn
+    ClJzZ0pmKzJOTURLb3VIdnhVTTFFRkQwNUswaHN3UGhadzZJQ1Z2VDRyQjNiOUFW
+    MnF6bkZIMTJrSFplT3NHUzUKZStUekJXVkRiMGdveEVrSVNNKzQKLS0tIE1vS0Ru
+    VWY4WEtEbjZqS1FWYWYxQU1YN01Ud0hJSlRXRm9aMmw4bzMrM0kKy/qZlTWYAAwc
+    jbiu2qqrNRrg1moFYuQYQ1TFiGwWc1nFB0sZ5SxWPez+xL4kG77fIb2mMz6PeWLX
+    MZ74izqCag==
+    -----END AGE ENCRYPTED FILE-----
+- name: admin-server
+  role: admin
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBmbVFiMkxock9XOVdpSm5M
+    d1J6WEErWXdGZlRkcWd2MlpxdWV4N1dwZFVVCnNJMXAxWWFocVBhdHVxbWRGc1Rn
+    Q3dhUXlESjVjRFZEbm11OVpmRHFTNzQKLT4gTkc7U3g4Li1ncmVhc2UgJSBkdnFv
+    Tk9hZyBOQCB5T0sKTmFNL3dsKzNJcXF5aDh2eU5pODRIZVZqdS8wbXNvVkxuandQ
+    NlhpR3o0cStzNSsxNS9zZGFyclJCeU1lbkRwUApJVUtMWEVldThack96b2FreExD
+    NEJwZjVqcFJYeFZNOWg2RzVRdkF6VDgvRlNwNWtTbjZ5OCtyeCs1YmlwUGRFClV3
+    Ci0tLSBDb0xKOS8vRlFxTEVCVDQrTU04MTVhYnRmQllFSGRUMllHNTlNL01Od3lN
+    CuhVCJhsrejipf6u8WbaE+TDjnefy8cdpdpPSMsaP1YjZIh6X/5+RC+lLNHggB2s
+    wTMlRm6xx8uQwerRsrSBpNM=
+    -----END AGE ENCRYPTED FILE-----

@@ -1,0 +1,38 @@
+version: 1
+file: portal/src/components/brand/CodeSealMark.tsx
+recipients:
+- name: sid-med
+  role: developer
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBIeVlNN0l1N0h1YW4zbjVv
+    b2VlZXZqSURHY2NOTGg4VmgzWGtoYm9vczNrCkNaUkZEVkthKzNWSDJCK0pCd1Nz
+    ekpjamc1czVqc1cxODhpbm8raHNwV1kKLT4gJnNHKk4lLWdyZWFzZSBGbEw/ClZq
+    UnVIRm1MV0VtcjBBCi0tLSBuZThFNFM0VDZEMnByWXhTRnhyRjZSc1JPTUR4dEg5
+    ZnVUOXg0OERPaWNNCqRh0OhzscGyxhVqCbQmT1GL6Br80wex8Ilble3XHz1qcEqJ
+    FIfmqBZxTDTnMakLDS/OUo0SmuYj+NuP+j4XSPA=
+    -----END AGE ENCRYPTED FILE-----
+- name: ci-runner
+  role: ci
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBQNEkzemZPQ2VkT0tjZUJI
+    ajIxSTNIUG4xNXBJVHptd2VnV25WK25LMW5zCldXNmpuZUgwNk05S1NJcDFOZU1Y
+    Q1hsMDJoSkthWmgyRTJkd2NPNWpUdUkKLT4gJjUtZ3JlYXNlIHY2bStdSEJmIDRU
+    I1I8U0QgbVV6RAowR2tLT2hsTDRCd0ZuY1hwOTJPY1pydkkxemVFa2ZhSW84YnVJ
+    NGloVHZEaXg5Z0p0ZEU3L3dONDNqUkV1QUFXCkJaY0ROalJFYnB1YXVSZmtOQQot
+    LS0gc3lJREd1bFZ6dmU4eTUvZUZLd2tSQzlsMjRoa0kyK1hkT045QnZ1TGNJNApu
+    hnoMHTG/YmmsrLCy3pWmDnZkuQIKXfBAV+XmI1vX9Wzr/R0OdPpuEpHNKwmoO0A8
+    RZFs3o193RWYncePVOSB
+    -----END AGE ENCRYPTED FILE-----
+- name: admin-server
+  role: admin
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSAyUFB2WitNcURFTTBrSlJz
+    Yld0SXl5S2tqNDZWTGpaVHJhdkpEbWUwK3dVCkxkVlN4KzdUNjBWdFJGNVc1SWFG
+    NzRqbWNrUnQvcXo1dHZOdWtMUW1kbHMKLT4gPmQ/S09Sa34tZ3JlYXNlIFBcQHMg
+    cSAvN3FlTl9yCnRFMUlEYjdoWkN4SFRRCi0tLSBpUGgxaExLUURFL21iWEVFN1A3
+    RVVHNHMyK0xSNUJlYlpGL3JvSzBHTmVFCl6/xaryH5hGYaCe6MJFiPjJcbRglp6j
+    IWiHSUS193qPhKhltHdCyiKAOPSjauqT4EH7aOVK9DEZKM7lO3kQQxg=
+    -----END AGE ENCRYPTED FILE-----

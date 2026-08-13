@@ -1,0 +1,39 @@
+version: 1
+file: infra/deploy/vercel/deploy-vercel-portal.sh
+recipients:
+- name: sid-med
+  role: developer
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBNc2FQV0wyRWdsYzk2R3Nr
+    V2pyZURzaCt0cmZLQzIrNU9tNERnRzlCM21BClg2RzJaemtpcmduaUdJUTJXbXJq
+    RkE1RjhsU1g1T1g4Wld3L3dFZlpNT2cKLT4gYmFoLWdyZWFzZSBIbGojOkddRyBe
+    XyIvayAoKWMgQ0sxemZBNAppNnl2N1E0N1NuY1loTW1uRGtLV09ySDBKWExhZ1FY
+    bUZYbzhJZ3o0cFBtZW9VNkRNMWdsdFdSUFRMb3dpbk04Cmw2UStTWWtyd1hwY1dQ
+    L2EKLS0tIC83aW5tQUFaYmEzdVowMzRNaUpIZi90VVVxMTY0T09aazFUTFNKaDVX
+    UkkKoRn5uB19vP0A/JvT11PjQieaaLAgzeVZkk5/Ontyci2AXHUyqF0N9nYf0fh0
+    mNijuIHa8Z80znLacs6RgGCc/w==
+    -----END AGE ENCRYPTED FILE-----
+- name: ci-runner
+  role: ci
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSA5U29kenNoMHp2NWJ4Tlg3
+    ckZrb2pRSlZqQThrVEt0alF5dWpOZUJ4OWdFCk5DcHVhOVcvWitNcFlQbHFVWW9Y
+    aUlyZVBBNzJMOXJpWnBheXVFWE1BY1kKLT4gd2EtZ3JlYXNlIFB6JCIgKy8/YjNN
+    T04gT0sxOyZTCkVheFlTUWFYaFRZR3FBejI4QlZ4N0svWXNWUlUxR1kKLS0tIEpp
+    RWlXbjhjTHZsUUJCOEc3WmJsMUtyaDFhTzdIVDhmTVUxTUJlTncxOEkKumumNCSB
+    h5xe/wXUAN46WoUmmEAORVD6VawnlTGrqJRvsqpQfgZMcIl5OlhxR7N4MhByqt9K
+    pCKhPU+FU2hrpg==
+    -----END AGE ENCRYPTED FILE-----
+- name: admin-server
+  role: admin
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBLeVcrenV5N2hjOVZDL24v
+    M1grejJmbjZENCtvLzBjRFZRWTg1U3pnWFh3ClE2RWZyQXFVa2lMQTZxZU1UaXJw
+    WUJIQ0VoaGx4bGlHU3Q1MWNkWkFJRTgKLT4gVCUqIS1ncmVhc2UgLyFISAp4RW9u
+    dWFIQkdtVDgvNkwxeDM4Ci0tLSAxYkpQZGY1ZTZEdGJGdDUwd2dOUW4vOU1aQllB
+    eTZ4WWEzR2dTZGpHcDBvCp9dxObbqEeDPuWWtFyHjj5syWff0vXxtmSfqXPB9JyM
+    Yt5/kwx9Fai4F05pGKcrMEGscnDLmE9G4XGQ1VqndjI=
+    -----END AGE ENCRYPTED FILE-----

@@ -1,0 +1,214 @@
+# compose.yml — base configuration shared by every environment.
+#
+# Layered with:
+#   compose.dev.yml   `docker compose -f compose.yml -f compose.dev.yml up`
+#   compose.prod.yml  `docker compose -f compose.yml -f compose.prod.yml up`
+#
+# All services load secrets from `.env` (copy `.env.example` → `.env`
+# and fill in real values before the first `up`). Compose merges
+# `env_file:` with `environment:` — `environment:` wins on conflict,
+# which is why interpolated values (${VAR}) are the source of truth.
+
+x-build-args: &compose-build-args
+  COMPOSE_BAKE: "true"   # picked up via env; enables BuildKit bake
+
+services:
+  # ───────────────────────────────────────────────────────────────────
+  # Pre-flight: validate .env before any other service touches state.
+  #
+  # The previous failure mode this prevents: a `POSTGRES_PASSWORD`
+  # containing `/` or `+` (e.g. from `openssl rand -base64 N`) gets
+  # interpolated into `postgres://user:PASS@host:port/db`, the URL
+  # parser misreads the authority, and Prisma errors with the famously
+  # opaque `P1013: invalid port number in database URL`. Postgres has
+  # by then ALSO baked the broken password into its data dir, so the
+  # fix requires `docker compose down -v`.
+  #
+  # This service runs first, reads /env/.env, and refuses to let the
+  # rest of the stack start if any password contains URL-unsafe
+  # characters or any high-entropy secret is too short / still the
+  # `.env.example` placeholder.
+  #
+  # Implementation: `alpine:3.23` (already on disk from postgres /
+  # redis images) + bind-mount of scripts/check-env.sh. No new image
+  # is built. ~50ms cold, no network.
+  env-check:
+    image: alpine:3.23
+    volumes:
+      - ./scripts/check-env.sh:/usr/local/bin/check-env.sh:ro
+      - ./.env:/env/.env:ro
+    command: ["sh", "/usr/local/bin/check-env.sh"]
+    networks:
+      - codeseal
+    restart: "no"
+
+  # One-shot schema migrator. Runs `prisma migrate deploy` against the
+  # freshly-up postgres and exits 0 once every migration in
+  # `prisma/migrations/` has been applied. Portal + worker wait for it
+  # via `service_completed_successfully`.
+  #
+  # We target the portal's `builder` stage because it already has the
+  # Prisma CLI + the schema + the `migrations/` directory in cache;
+  # reusing it adds zero net image weight.
+  #
+  # `migrate deploy` (not `migrate dev`) is the production-safe variant:
+  # it applies pending migrations from the `migrations/` directory,
+  # never tries to generate new ones, and never prompts.
+  # `migrate dev` is for local schema authoring only.
+  portal-migrate:
+    build:
+      context: .
+      dockerfile: infra/docker/portal/Dockerfile
+      target: builder
+    image: codeseal/portal-migrate:1.0
+    env_file:
+      - .env
+    depends_on:
+      env-check:
+        condition: service_completed_successfully
+      postgres:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgres://codeseal:${POSTGRES_PASSWORD}@postgres:5432/codeseal
+    command: ["npx", "prisma", "migrate", "deploy", "--schema=prisma/schema.prisma"]
+    networks:
+      - codeseal
+    restart: "no"
+
+  portal:
+    build:
+      context: .
+      dockerfile: infra/docker/portal/Dockerfile
+    image: codeseal/portal:1.0
+    env_file:
+      - .env
+    depends_on:
+      portal-migrate:
+        condition: service_completed_successfully
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    environment:
+      NODE_ENV: production
+      PORT: 3000
+      HOSTNAME: 0.0.0.0
+      DATABASE_URL: postgres://codeseal:${POSTGRES_PASSWORD}@postgres:5432/codeseal
+      REDIS_URL: redis://:${REDIS_PASSWORD}@redis:6379
+      SESSION_SECRET: ${SESSION_SECRET}
+      ENCRYPTION_PEPPER: ${ENCRYPTION_PEPPER}
+      CODESEAL_PUBLIC_URL: ${CODESEAL_PUBLIC_URL:-http://localhost:3000}
+      SGIT_BINARY_PATH: /usr/local/bin/sgit
+      # First-boot admin bootstrap. If BOTH are set on first startup,
+      # the portal creates an admin user with these credentials and
+      # writes an `admin.bootstrap` audit row. Idempotent: subsequent
+      # restarts skip if a user with that email already exists.
+      # REMOVE these from your .env once the admin is created — leaving
+      # the password in env state is a needless secret-leak surface.
+      BOOTSTRAP_ADMIN_EMAIL: ${BOOTSTRAP_ADMIN_EMAIL:-}
+      BOOTSTRAP_ADMIN_PASSWORD: ${BOOTSTRAP_ADMIN_PASSWORD:-}
+      # Signup-spec §2 env vars.
+      OPEN_SIGN_UP: ${OPEN_SIGN_UP:-false}
+      INVITATION_TOKEN_SECRET: ${INVITATION_TOKEN_SECRET}
+      DEFAULT_INVITATION_TTL_HOURS: ${DEFAULT_INVITATION_TTL_HOURS:-168}
+    ports:
+      - "${PORTAL_PORT:-3000}:3000"
+    networks:
+      - codeseal
+    restart: unless-stopped
+
+  worker:
+    build:
+      context: .
+      dockerfile: infra/docker/worker/Dockerfile
+    image: codeseal/worker:1.0
+    env_file:
+      - .env
+    depends_on:
+      portal-migrate:
+        condition: service_completed_successfully
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    environment:
+      NODE_ENV: production
+      DATABASE_URL: postgres://codeseal:${POSTGRES_PASSWORD}@postgres:5432/codeseal
+      REDIS_URL: redis://:${REDIS_PASSWORD}@redis:6379
+      REDIS_PASSWORD: ${REDIS_PASSWORD}
+      CODESEAL_WORKER_SECRET: ${CODESEAL_WORKER_SECRET}
+      SGIT_BINARY_PATH: /usr/local/bin/sgit
+      WORK_DIR: /work
+      LOG_LEVEL: ${LOG_LEVEL:-info}
+    volumes:
+      - worker_work:/work
+    networks:
+      - codeseal
+    restart: unless-stopped
+
+  postgres:
+    build:
+      context: .
+      dockerfile: infra/docker/postgres/Dockerfile
+    image: codeseal/postgres:local
+    env_file:
+      - .env
+    depends_on:
+      env-check:
+        condition: service_completed_successfully
+    environment:
+      POSTGRES_DB: codeseal
+      POSTGRES_USER: codeseal
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - codeseal
+    healthcheck:
+      # `-q` so health probes don't spam the postgres log on every tick.
+      test: ["CMD-SHELL", "pg_isready -q -U codeseal -d codeseal"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+      start_period: 10s
+    restart: unless-stopped
+
+  redis:
+    build:
+      context: .
+      dockerfile: infra/docker/redis/Dockerfile
+    image: codeseal/redis:local
+    env_file:
+      - .env
+    depends_on:
+      env-check:
+        condition: service_completed_successfully
+    command:
+      - redis-server
+      - /usr/local/etc/redis/redis.conf
+      - --requirepass
+      - ${REDIS_PASSWORD}
+    tmpfs:
+      - /data
+    networks:
+      - codeseal
+    healthcheck:
+      test: ["CMD", "redis-cli", "-a", "${REDIS_PASSWORD}", "PING"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+      start_period: 5s
+    restart: unless-stopped
+
+volumes:
+  # Named volume so `docker compose down -v` removes it cleanly. The
+  # OLD compose bind-mounted `./data/postgres` which a) requires the
+  # dir to exist before `up`, b) leaks pg_data into the build context
+  # unless excluded by .dockerignore, c) makes uid/gid mismatches
+  # likely on macOS / colima.
+  postgres_data:
+  worker_work:
+
+networks:
+  codeseal:
+    driver: bridge

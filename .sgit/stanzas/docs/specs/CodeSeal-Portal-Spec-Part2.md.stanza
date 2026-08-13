@@ -1,0 +1,39 @@
+version: 1
+file: docs/specs/CodeSeal-Portal-Spec-Part2.md
+recipients:
+- name: sid-med
+  role: developer
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSA4YW9hcDYvY0dFenZTWTh2
+    bDd0RzJGRGtkdUtMMkpYYmdlMlJ1S1k4N1dNCmNSRWttZElaZEVHblVXZlBzajJK
+    NWtGZzljZWQvUHVuZmJFUEZ6RHVrNGsKLT4gJ2pkUSctZ3JlYXNlCnBueXlMSjBI
+    OUlHYnU5SE1HUnJlSVBoSjE4WndzUytTZ09DOUR0VzdIUTQ2KytYUE5zU2wwNnlm
+    TFBxazZLdDAKQmsvcDg1UHV2eFp3SStLMDJIbXFvblJNdTlVZ3NWOTYzYWlka29S
+    VHJqd3d6N2tKb2ZUN0dsNHpHc3l4SGhnegpWRmYvCi0tLSB2QTNPWlhjd1dBaHlw
+    cFM0N2d4ZnpObTVmb0s5TVIvTmFWbVdiYlcreFhVCk6jYpd4AdKZSyssC3O4c97s
+    Z/AQBG16iEmqY7d06e+xks0F4+0PsvIeOZzOv5OeVCrCCyHWvzI4yBJjtoz1EaE=
+    -----END AGE ENCRYPTED FILE-----
+- name: ci-runner
+  role: ci
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBRSFg2eTZqVnN0V1JWV3J0
+    YXZlYWdiMkk1NWlVcExaMHppQkFhNGRENjNJCjhWRWcyVldRZks4MDBPZE1NdmtC
+    M0ZRL2E0ZmRxYWFPbTBjWGJsSkhEbEEKLT4gKWFJSHJ6YjItZ3JlYXNlIGpNKTVe
+    IEJwIFJ3WyxQIyAlQHhhYFU6SwpaZFVraTFoSWdTWEw5a1BRY1hTUVlnMitvcFhG
+    Tk9meHFZZXZ1aGovR01RN1hXenhjWndWd2tORgotLS0gMWdRc3FtTE9BRmgvQ1JE
+    Qk9PcFBCZWhGSjlSdFhxNUZ3eGxLdkU5Z2NKbwom18PEwPicBiyGCxhSLmLb6AWJ
+    878olWKWb39euY0+Jb9wTQu+VHmaBhDVmtbBo5Cvx61ObkWq5WNG6hv6yg0X
+    -----END AGE ENCRYPTED FILE-----
+- name: admin-server
+  role: admin
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBDNmdFK0paSloyNHJkSXY5
+    aHBXV3dvamJ2bE1NWGhiRnREVmMwWDBSLzM0Ck84Qzhwd1RSSjkxbjVIdkZhbDJO
+    R0JYdG1OcXdoSHpPY2E1UmJHdlJ5VE0KLT4genQhMC1ncmVhc2UgYi5ma208OF4K
+    SVdRVk9YTkMrbVhLOWliTTN3Ci0tLSBXTzhZRVQ5NXl3UjFpVW1lTGRyRTFEVHJp
+    QUg0WHF3WTE4SCswL2Z5NjcwCmoEngUm/Jf/8Pq85IYqp5kbqFAITJH6j7THDl+t
+    V/feRPxpfGDYmTFtVy3mefozzstB9geTQzCnTbOMbGjh/k4=
+    -----END AGE ENCRYPTED FILE-----

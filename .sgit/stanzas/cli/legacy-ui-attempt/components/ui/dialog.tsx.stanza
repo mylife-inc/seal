@@ -1,0 +1,38 @@
+version: 1
+file: cli/legacy-ui-attempt/components/ui/dialog.tsx
+recipients:
+- name: sid-med
+  role: developer
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBaejZCUGFIdHpSbFE3cllr
+    OVNRYStReWdaRHIybWo3dm1nRjJ4MUNtekRBCmJYTmRGODhFdElRbFRjaFJTZVBF
+    eU9pT0kxWUM1U3J6UndHZ3M3YXJTRnMKLT4gcTctYGwtZ3JlYXNlCis2VHJmdjJX
+    S1FHMlBRCi0tLSAxQ0VIY2gycmZDMVFHMjJ3ZmMzcXA5Nk1wTUhqeHdyN1hrVTR3
+    VWw2RDlRCpV1ArsUV96hvzQkp1R1VZRSbOgHq0mP3ZwXR1wHvJOgb06wdjsRirg8
+    YbQkY03pl3lTkpZbspHyF/lmtzNrJmw=
+    -----END AGE ENCRYPTED FILE-----
+- name: ci-runner
+  role: ci
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB1Tnk5WWtVZ2tsOGVzbXhT
+    dzYxMEpteWwyS2dxVCtvTWV2a3dIbUVFVm5vClBvajlCazZSNVJsQzhQTk1rRVdp
+    c2R2WGZvenBTSXIyY3Nyd2Z0WnVqUU0KLT4gQD0jVSc0Py1ncmVhc2UgWHF+LCBC
+    Q1RoJCBkCm92ZHprN2FwYnZRVDUzem5qaWdtYzBmOHhyU25ub3J0SGR4dndtOGRy
+    OFcrdkEKLS0tIHgyT2JKZlFjNnpxL0FtYWE4QnBhV2JHVVRSKytPUU42Sm1ZdkZ4
+    VUMzOVUKyRCno0JP0728pPJ1jhVyzKSbHwWMB1dJRK6X9NYoa5tBRQoRoP1HL5/m
+    8SRUzM4P+BXwRFUFwkZ6wZovBJ3KlA==
+    -----END AGE ENCRYPTED FILE-----
+- name: admin-server
+  role: admin
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB0TVpTSTB0QlhxNmdNMGdr
+    UUZDUlhBWEtkZDgyaSsrVUdoQmNhMU5sMmlrCmtpY21GTWNQWmpNUUErVlp2alF3
+    UU5vOHZkdFZ2TnBrejV5ai9IUzRQSGsKLT4gfS1uLCNhVy1ncmVhc2UgeCA6IDAl
+    byx5XAppRlZPbDJmVnYyeEY1cjJTQUJtVHE1NG4yRFpiN0pRCi0tLSBSaWJFcGFD
+    bXd6elpvOGZ0L2Z3VnhIem1tc2FnYWd3S05Ra2w2QmtMclkwCk2XL1qYhDKOJNYg
+    uEgvTO+Uz8WVlxczw9bSZoajsylzxUpj99eQDI7OAwHxRMODV/KBCJXU2edhb8yi
+    Ep+AdAM=
+    -----END AGE ENCRYPTED FILE-----

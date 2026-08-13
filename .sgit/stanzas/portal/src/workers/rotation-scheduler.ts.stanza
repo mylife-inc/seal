@@ -1,0 +1,39 @@
+version: 1
+file: portal/src/workers/rotation-scheduler.ts
+recipients:
+- name: sid-med
+  role: developer
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB6eTlCeWxVczBYL1o4UzVW
+    azVQRGZ0bXV4cW5jSzBJdWxxcHhYL1VjWmg0Ck11aGFVY0l0QWEwVUR6MkQ1RFR3
+    UktQbjVBNngxQThINWcvWmFHT2tqenMKLT4gKy8zMjUtZ3JlYXNlID1uIFtVIDoz
+    UTZFZVcgJ3R+aFpXClpjR2xwUVBIWURZODFkNHNXMFppSnVBRWxPdnNITElPcUd4
+    c0l6SQotLS0gejJiUzNXTktSSzc2VXdzRHA0TEJNODhHZW1qY3loYXl0WUlDdFJq
+    cmZNawofOVuoOfBxGK0r3SU7uhE8C4Ohjt6KTN7zhhN+t0e1F9Hs3gTx8H61gbH0
+    Qj0SqQi1Y7wDNPEAF0e/IlXgZxKm
+    -----END AGE ENCRYPTED FILE-----
+- name: ci-runner
+  role: ci
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBmQWRqMVBrVWdIQmdmUXkx
+    Q2NtV28xdmwzb0NQWncycmJ5cDdhTEZSL2dJCnBaUVVqRlU0UzFzVysxQUpySWJM
+    Qk5ia1B6a0dCQUtoVmVMSVkvb0dEdjgKLT4gfC1ncmVhc2UgOUYgYS9bICQhb0dW
+    RH1GIG1DMSwKWUlzNXR3Ci0tLSAzNGNrQmJtamU0UkFHUXUvWnZqdUVIQXpobU1P
+    aUo1VktrRnI4Sk1wU3RVCtZ/yidyI83A+8Zka6J4cXrcLC0cmj8hh3ahws2paOhy
+    fn7znwoz3e+511GLi66V2AfLFNrsxDW760HQapp9s4g=
+    -----END AGE ENCRYPTED FILE-----
+- name: admin-server
+  role: admin
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBoM0s2TW1TNWxmdE85amRy
+    SU9NSy9sZ0dlK3ZXRElsM0l2K1BBVUVJU2g4ClJZc0JqVlFvaWJ6SHRRai80ZjRv
+    RWFIRmFsMllxZzdUd280VUVyNVI3RTAKLT4gNGNwKUw8LWdyZWFzZSAsSCBLIF1f
+    CmpMbGl1TVZuVGoybVlBbUxKMG41SjEvZFhpT0J2VWFwNzZla3J2c2hMMkU4K2ZK
+    cWhiVk93NEpYYzl3cWUvbGEKY2NPSFk3bFZnU2JjdVROTlhoUFl5WG16cy9BR1hR
+    Ci0tLSBnejNrV3Nja3hZTjI1MUtaVWFRbTI0eWszWVBjUEw2MUtqSW9VZEZRY3V3
+    Cjy+1Azo4+ihE1OsIz9X/1puCjYImkKQoFgs6MtVsHbbE4GWEhVg8AOPJJvG/CKW
+    XBw0+xEKFwdnIqWbptCpwG0=
+    -----END AGE ENCRYPTED FILE-----

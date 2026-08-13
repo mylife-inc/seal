@@ -1,0 +1,40 @@
+version: 1
+file: portal/src/lib/observability/correlation.ts
+recipients:
+- name: sid-med
+  role: developer
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBLcXczeUNoLzQ0THptbzdG
+    REhQVFNySmNwTlBSSWIweUxNN0x3cDd3RmlVCjBUT0JIckMwVTcxODRoZjRhSHV0
+    aTFlTGdHQ1c2cFJyUGsrOVJjN1QvZ3MKLT4gS1IhaU0tZ3JlYXNlIGxLR1QgIS4K
+    LzRYdklHd0cwek1PZE5TZ1dtQXZiU21KdWRsbGE2VVRvdUNML2JmMFdwbDk3cWdL
+    YTZvalB5Z2hmQzhPY2dzRQo5THRhVm9zMVZhNXAKLS0tIEJJaEhnR0JKdSt1Vis2
+    SEh5eTNid2R0cmhQQ21nblpFOHNEYzZlblR5MWcKQR08hSAXbGaSvyJmOTdn7efc
+    CK38gmk4WrabqfSkJpSq8yOf2P2i1kXkQ+XYmMLRGt90QN1tph9Iqopg6fG4NQ==
+    -----END AGE ENCRYPTED FILE-----
+- name: ci-runner
+  role: ci
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBYby9ZMS9uRlRuUnFWSlpM
+    T1JpYTg1STJwdThMbTNmQ1NaTnVWWFM4OW1vClBFZzRnWDJ5UU9ienkzYWswQk9M
+    c281SnFHWmxnUU9WNVFabWU2R1RHV1EKLT4genctZ3JlYXNlICtzfitdKFggPFIK
+    UjVmS3BWUisvb3RPQU94dFIzWXFKM2t1U0paSzRjcldaMmtISlpOdmRnQnRsQlNs
+    QVNsT1d3TUlRUVRqdnlIegpkeVFab09vaklPdW5zN1ZuNXYyZWxzTzI5NmJaK0p2
+    a3NlT1N4SCs4NHdTWGdmeHJTbGpXSno3UkhWZ2IKLS0tIHdCaFAyR0xJa0gyaUEx
+    WVBWaUxPTjEvaEM1K3ZQdnNmTmQ1VTY2Sk5uODQKXhNXI5Ib9jalWLEZ8dqsej+/
+    9d7DYbDi51L7i8tEdhLXYyQB2e7U6LSagoXB5RPfmm5ooHEN80Zzf/zSrLyInA==
+    -----END AGE ENCRYPTED FILE-----
+- name: admin-server
+  role: admin
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSAwNHdVaFJEWGxyMFV5eDVS
+    VVlzUTdITVBDVGFCZzIwQngxM0dTaWc1eUd3CkR5bnJxRG1DSVdxOW84Z3FmS045
+    VWJoVVpqQ1V5V0R4eU9IUWtja3dCRDgKLT4gRUA+LWdyZWFzZSBWXDN4CjZuYU5y
+    RGZ1NGRSdnpFN08yUnIydTJidWs3S0cwcllxRUl2UlBPRW5CeTdaaEtJZEp1OVRZ
+    cUlzSEEKLS0tIEtUTk9tTjRtTXp2RGZ0Y3pqNy9ZenBjT2g2Y0pYclRNVmoyWXor
+    MEEvc1kKZJKm6PuvK1RiWbFgaWi+jGKaG6jxpZir108xm8/7it7LAVHcy55KEgF/
+    eaSUGotkoBtkroFbixi2bGZtLW21kA==
+    -----END AGE ENCRYPTED FILE-----

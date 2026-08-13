@@ -1,0 +1,42 @@
+version: 1
+file: portal/src/lib/http/request-context.ts
+recipients:
+- name: sid-med
+  role: developer
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBmY0NJTVNsM0ttODRuNENx
+    NzNLTUd6bXVvMnlhRWUrQWp3QWRhNEFOVVg0Cnh3Y1hpa1Y1MmpUaUtkUnlTREVM
+    R3ZPTjUra2xnVTQ4a093Rk11M1Z1djAKLT4gTS1ncmVhc2UgS25kCkpHRW5MSWtk
+    TDJ0Y2M0aXFUZURsYW50b0hPaWJWQ3BRZDB0aE1FdWdReFRPSnJqemtvSlNHQXNl
+    QkZ5TmVpMkUKKzgzaHZmN1lEcUw4L3JBazdua2libHB6VTUzSQotLS0geGxoamkw
+    OUMySmNhY0pidVhRMnB0RHFwU0ltSDI0RDBZUUdUd1BZRC91dwqNBOye4pTbgzuR
+    JCb/RU8n0JD50TK/lI2MuiRR5HNxvRXZmWtkZ2AU+1cN/mokMThj6u6YgLvHWUfk
+    UfjfywSZ
+    -----END AGE ENCRYPTED FILE-----
+- name: ci-runner
+  role: ci
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB6VG5HVzFCZjQ0b1p0M1l5
+    a2pnRklmeThHelkxaWNFV2c5dndkTUJiM2lBCnI4Mms3VFVmR29BRllGeU9NVUlW
+    N1RUaktiUmJNdFJDYzNOMlRPaGxjS2sKLT4gQzg4LWdyZWFzZSBLJG9hIUwgU1AK
+    WVNlMHFSdFQ5TGxNTVpXbnJzZ0VLLzNMcGxZaUZiL04zaG9sTlpaYzVkeTh3Yk11
+    WEN5L3hKWUJTVGd4UDFoQgpSQUdqVS9CeTIxN0w0Y05oUDh6TVBNU2Z3d1JxdVlP
+    dHB6cnlXeDRiUndEMHhRCi0tLSAwZ21mVDJnSVQ0djA2aTdKbWpaMzlKaGlrV1lF
+    RFNXZHY5YUdPQjU1dFFRCvh0vyrrARht5RlCjviXwM4i5jp6Bu5C/EVWpsNSiB2g
+    1/BPvjGPv2VuVE3zTvtoppPRrMgNrBJTZm9eFp9a2Rg=
+    -----END AGE ENCRYPTED FILE-----
+- name: admin-server
+  role: admin
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBKSk1NM1ZoVEpveWNNR0xr
+    UC9FWGpmUXdQZ2xoaXZSS2Y4dFBtS3E0UVE0CktFY2JnVzluYzBNekcxc3FyOUNB
+    dllqdzBTeG5Xck80d0ZPWWNMdjRqQzQKLT4gfFkscmstZ3JlYXNlIDJsdjd2UiMg
+    SExPJmwvcDEgXgpubWd0Qi9ZWGxWYWhrSmZuNU9jTFlaeHNuL0lOM1FEOTY5ZGdU
+    WmFTV2dwL1NxR2pPL09WSjhpVlZodzlockh4CjV2SHozbWorVENFaE5xVmttVDVL
+    TnNJajZDY1JCMzFlWDRZCi0tLSBvVFpIL3pIZFR1VHQyeFA1MngzbnNtSy9vUjQ4
+    R1VLaWQvWFkvYzJKY2M4CvrNCyUM/b0teWrgs1ubeSOQ8aNa9M7/f1cbGNuTdOv+
+    qF/KThrQHpCcTvD4HSZfABE/vpALLnPLFIwbXpQipFo=
+    -----END AGE ENCRYPTED FILE-----

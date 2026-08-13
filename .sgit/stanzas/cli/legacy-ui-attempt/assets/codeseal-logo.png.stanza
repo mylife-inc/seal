@@ -1,0 +1,39 @@
+version: 1
+file: cli/legacy-ui-attempt/assets/codeseal-logo.png
+recipients:
+- name: sid-med
+  role: developer
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSAvaUZHVWJvMHZkbjV0WFZM
+    Qmt2QkVHY1N2Ym1CVmhDeEp1VHJJNkJZbVNnCkdTV2p2UC93S1BmQk1IdzhxL01s
+    T3JTSXkyVmkrU3NQOEpvVU91MCt5bjQKLT4gZGUme0tjLWdyZWFzZSAoez0/L0t4
+    LyAqfV0gXmM3KDsgNFBpClk3Si9lTTZudzk5M3FxWmVnNmhJb2VuL1V3Q2dFaFBN
+    dTEycTRsSUE4WW1wcGcKLS0tIGtpV3lHYTJ2d01jcElHcEVvamhmY3V2bzJtcXFt
+    RHozOTZqd2FkREQ1b00KxkSbuTnQGO49/Y6LsA1BiungWSxWjLJZLS7QmSnraOiW
+    rCOFaKuQ2XtXo0IkL4ZOFTjmGdh7j3k36hZvlUvGsA==
+    -----END AGE ENCRYPTED FILE-----
+- name: ci-runner
+  role: ci
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBJbVd3M2FvbVUzWURwMTlw
+    TVY2cDRYZys3YWYxM1Izc21xQXJsMS9Hc1JzCk1uclNrNU1JcmRrcFhpYzlNdmdv
+    WnFhYWlyejREQlh1VVYxYjZIZmtrNkUKLT4gay1ncmVhc2UgN1REcC8KT3JWZVhq
+    K1FYLzhMalp3YjN4bHNrWFpMbHVFelRxaXpCTHVUOVR5c21SQUt3dHY2NW50amE3
+    YwotLS0geHlNTlZ0MWdXektZVVREV1Z1cHVKalRqM3h4Y1FUSW10Tk9wWktCRGFo
+    RQoWHHorA5xUBZou4MsydEjzt3+qItnBwfFsnHxN9XLjSNzuMd23MvBr+SHpY7of
+    cMVW0+Gl7Q1M5Jcyj741FMeU
+    -----END AGE ENCRYPTED FILE-----
+- name: admin-server
+  role: admin
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBjNTF5SXBZMlVQY2FFc3oy
+    WmdBbXBoRDdTelk4RkYrZEhReXBGNy81VVJvClRaak1PSGFHNTZ1dEl2ek4vSVYz
+    T1dRWmtxZHVjdGNiRFlGM2VKTHlPL0UKLT4gIi43TngxOS1ncmVhc2UgPTQKVUlL
+    NDdZMlVjK29GTC82emp2RWJnbHJ3bWZqZkxCVlN2MXdtY3cKLS0tIHBuQm85dUFZ
+    a0RnQ2k1VWtnemdQREJWQ3hHTWx1dC9KVUtxd1c1MTZFTEkKuuqAlS4EMpSOmZxw
+    bx32j9RPsUXiIl8sxCPH5fnNUGmird4GHRK1muJhodgTTHMEGiRg6y7F3CKGV7mT
+    36dOfA==
+    -----END AGE ENCRYPTED FILE-----

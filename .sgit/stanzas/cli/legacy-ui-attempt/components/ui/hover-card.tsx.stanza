@@ -1,0 +1,39 @@
+version: 1
+file: cli/legacy-ui-attempt/components/ui/hover-card.tsx
+recipients:
+- name: sid-med
+  role: developer
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBuMzRwWlRTcEJtcmRtb1d2
+    SUFtMG1jOC9VbVZRY096cmVnd01HVk9yWlVJCkZwbEhHM2EvUk1obEovRU5IbHo1
+    ZXNUaXpJTlJIYjcxSmRzVTBUZFlnMEkKLT4gMy1ncmVhc2UgQWUtCnEwcm42QlhX
+    UTFXTVYwRWYyUmV2U2xNSXNhalQvZ3RwZnN3Ci0tLSBGbHU0amNpbjBSd3Q4aVVm
+    MlhrclNWWVZZMVZ4TzE0VFl1KzZLT2oxSFk0Cmcis3pbxbSnZ20gMhFowFfwZvns
+    dALeKI9UdZFR9SdPDOFy/tbN8cSI3/TI3jA4Q+Ec+4r8bm2O3tMxVlRbSbE=
+    -----END AGE ENCRYPTED FILE-----
+- name: ci-runner
+  role: ci
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBWZC9TWVUrVk0zQ1EveDl3
+    QzRkcDIwcEU1YWFac0RXRE1BYmp5eEVIUHhjCktBK3JkYms5d1pkTzlNTmUyYlYz
+    OHZWdmJXWll0bmUvMUxIL3hwRmhVWG8KLT4gXnstZ3JlYXNlIGFcc2dDIHNscTJl
+    cnwKS2R3Ci0tLSAxek56ei9aeS90cDhSYUNQaUI4eHRlVld1T0FVbVJrSDNoQ2ht
+    VzVOdWdBCrye6rDkXGuDmuW0oLX8Kr8KdEf6WDwuCRIzS4RyTW8UrMQrRBPbb8MC
+    lBcehIqoXVwSZY9psVTy9ZQcnTNMsIE=
+    -----END AGE ENCRYPTED FILE-----
+- name: admin-server
+  role: admin
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBDWjBXVU1tb2Z5ak1DbElq
+    NkZzaGdlajMyaFpyc1VEWk5tQ08wTkhicG1RClRESnpSN3hLUms4WjcrRWR3UEFL
+    aElJZEo3b2NldjNQeU9ZbVFRWm9JRzQKLT4gOjl9eHBSLDAtZ3JlYXNlIFRXZysg
+    YUtbRyAmY0xFSjI1UwpZMHVPU2hqazc1VW9udERCNFAzWUVsY09rWXZKQWVTNU1E
+    OVFlN2VLM0F5NzNFTGhmSEh0Tmw4V3lSSXlTN2VuClVIY2kwWGlwcEJXQ1FNOXNJ
+    b0tTY3ZydHZtQm14TXhwa25Ma0VXY0R5VXR1SnZvNENRZnl6c2cKLS0tIEtPNVlN
+    VTJkbW5qSE04OGRsdElRY1VINjVDazBxQVZMVkxldGtjOCtCOVUKN7KN0x3387ET
+    jP98kpmnxWywR4snmChF/KlN62scX++ja4ahj1F59hOB4qZhVgg/OSPUC8qOC8rc
+    JEDmU239rg==
+    -----END AGE ENCRYPTED FILE-----

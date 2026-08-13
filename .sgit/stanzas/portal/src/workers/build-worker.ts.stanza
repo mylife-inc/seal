@@ -1,0 +1,38 @@
+version: 1
+file: portal/src/workers/build-worker.ts
+recipients:
+- name: sid-med
+  role: developer
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBadCs5d0t4SGp5OWJtbkdH
+    eU8xSHN5S25VeUswSml0dE1NZGRGdGttbnpnCmViOXgwYXQrNVFPNHVVUGkyOVdX
+    c3BKTk1pcjZhTHZrcmEzRDA2c3piWmMKLT4gZiJuRzZFaC1ncmVhc2UgXEBHaiA7
+    YE9BIGxTR189QUYgMU9KQnciCi8vWQotLS0gbzMxb0FEWCtjZk5KdkhXS1U3c3FM
+    UXNUaVNoRnNNTHF5N09OVzdlN0NyRQq987u/IJp7tjqT2Bc5WFoGau2rHvOt4asG
+    K8RvlvXd1667mUS2YTBZz9Cu1ne6PmjvI+HoEx15uLUNqVH0lfqw
+    -----END AGE ENCRYPTED FILE-----
+- name: ci-runner
+  role: ci
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBURzl0eHh6aTBhb25WVzNV
+    bDdRS2kzNDdqUld6eExvVVRIbmNLejJLL0cwClVEaFd1YUcvK1ZVUnVCRzZuSlBr
+    MHg0cTRadXBycFRzZWJ4TDhZU1hHQXcKLT4gZGQyJGItZ3JlYXNlCjNXWWhKYXEy
+    L0UxZ0V3Ci0tLSBEcEJPWFNWRGhaZFBWZDlaWTU3Vkd0UTRjODdMRnpaRVRUVUV4
+    aUJXTmVBCgM8751AKewm1CA2fOsRz3e78rN+THH6hwbxU0IinzJeAXLp++22AEGQ
+    I3CP1bEB45llmSfQTq+W/b57XM3t4wQ=
+    -----END AGE ENCRYPTED FILE-----
+- name: admin-server
+  role: admin
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBPQllYT3MxUmlQbFo5T21R
+    Q0d0UzhybnN2RHhjTGQzVmZwSVFKSFdHVDJnCkt0UERSSVZXK1NaSHZkWGlxemVO
+    clhENXkzMEE0YXRZSms2bzN2dHZZYmMKLT4gKy1ncmVhc2UKTFMxU0ZWYkdxK3p2
+    TkFkQmxzMkRJRGFTUzZwOU5wNE9yYXBNSUszSU93Y2hhT0pzdTV1Y0ZZYUdRSVJV
+    TmFjOAphNTVSY3dDd3dyYldTcjgxbFZlQzIwL1pDZUZwempZVkdnekdDdHBZCi0t
+    LSBtSWNwU2pUbUFVWHh6WE5YMVFmRE5BZEZZeGFmTTlqRVRBS3ZxQXFWcHhBCvAn
+    usiwSdzG853tEjfBo4VvH6z7bDUA6ZpKty/nrs7gGkXSyXkv9W7NS9+8+Xu4yTsV
+    T58PXKSwQtIWKmxIfhk=
+    -----END AGE ENCRYPTED FILE-----

@@ -1,0 +1,40 @@
+version: 1
+file: portal/src/lib/fixtures/rotation.ts
+recipients:
+- name: sid-med
+  role: developer
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBDVGphUldFRDBGdEhGZmlq
+    MDJ0S3d1dm95by90OXFpUXlPaDJmZDlSdmpBCllPdXYwbzdWbmw2em9QaUpjaWY0
+    dElzN1g3ZkU1T2JSWGFqc1ArZHFwSmMKLT4gN0YtZ3JlYXNlIDU6IHZNUCA1PV9Z
+    YF0ieQptZk5jMnFQZWk5b1hRclJZNHZkZkZ2NXJOOVcrWUJpaHp0eE5UQUg4MTlB
+    a1htVmVpaFFmUjZaak9reGRwN3dHCnRlRG0KLS0tIHUwZ2ptRjdqS3hOdlNiM2Yx
+    eWhHOTNDcFdXcGlncWU5bHkxeWNyVEVFSkkKLShJhlJcqf+FRHxnQk+UqoORrFek
+    XudDnlMtaMi2dNoDrLptPiwFZiU76kdxy2prBRvAyBK1/WxLvyiDhZzScg==
+    -----END AGE ENCRYPTED FILE-----
+- name: ci-runner
+  role: ci
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBwbWRrR0Fkc252aW1pM0E2
+    VExQS2JqVkh0WmtKWkZsV3NYZ1RkMFZQeUVBClZaY3I0blVHSWYzZ3NoUjFFVjJC
+    NzJoR2IwOVR0emdRdGlPejFRWFEwU0kKLT4gWVphLWdyZWFzZQpqdGFWZlAvODc0
+    dGFjdzFYeGF4MTc0OCsybERwZXpsbTlNNXJQSytPMHpJZldMcGorMzdSeXdXRktX
+    dkl0VnViCjUwRnhmazdjYkhUbWdrbzNQeTIybHYyby9NWHAvNndYYkJMSmp3Ci0t
+    LSBYZ2pzRzZnOVQxTWwwSTYyTUFJalJvVklhM1k2MzJ6NmF0dFNlZVlKZXZrCiqE
+    2JUaVibGLHSesmeOhGrhTXXIoOcs7MDNMOQZju3K/Jo+4opAoFZ9eGElcbrgWKeR
+    Z5z71JODUSxU1bGaZtw=
+    -----END AGE ENCRYPTED FILE-----
+- name: admin-server
+  role: admin
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBDcHBuV1VrenYvVUc5SVR6
+    WU1LQ0dETUpwVlIwbzFURkt2eGxzRjUrV2x3ClVEZFU2TG83SEZxVU1iK25tQXQ5
+    SUk4R3A3V04wc0tCazlTeWJCWWpYVzAKLT4gLng5K3ZlLWdyZWFzZSBOP1xpRTkK
+    aENEbDVZL0pNL1ZEZy9EbVQ3RnRqR1pENXpHayt6djJ1MmhPWHRsRAotLS0gUjl1
+    M3BLTTIzZXJ4ajJwaTZENEFQdlJCYjNrN0RJU2lEMUdmTlpadVpKWQp7lT8XjaQK
+    A3t2aixjJ6BrIvM5LjuA2Owg2zacQR7ODuW2ixKPmgJmknz4BKtOQphIrRmKbw/4
+    +9/D7YrbnEye
+    -----END AGE ENCRYPTED FILE-----

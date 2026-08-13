@@ -1,0 +1,42 @@
+version: 1
+file: portal/src/components/ui/kv-grid.tsx
+recipients:
+- name: sid-med
+  role: developer
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBybTRRcnR5Vzd1M3RiUTE3
+    Smx2eGRLa0kxcnFIY2xJRTV0OWRaMjNxSlJNCjBZNXFuQ1ZBUkFQS1FlSzVIbXBj
+    Q1Zld281MHRSUXY2Z2pOMng4czhSMEkKLT4gKTlrXy1ncmVhc2UgXD8gbTg5SVcg
+    L3tsU2h6KT8gKG0KQlpHdTAzNXhMbEpnMGF2Y2hhemZRekc5MnBBUnFGUVZzQUFI
+    bTh2WndnK3krSUxmCi0tLSAvbTVDeUxSM2lNa1hXU0pvWmk4eUxSZWlmd0I4SVI0
+    bjNNbDRCbVpDem5VCnCVKAhl9JOv50ncETRKtMY27r6qK4WJHcRqBMYBBGcZBagi
+    o2x8bMeARGMcjW9Otp48fHXaCPST8pi+G56LzRQ=
+    -----END AGE ENCRYPTED FILE-----
+- name: ci-runner
+  role: ci
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB5VVloWVZJcksreFdjRDV2
+    Y3lDcnJiQzlyaDl6V2JkTU1OTm9pV0t1NGdrCnJBZHNVOHk3bXJVbU1xZXYxRmEw
+    bU9MTDNLQlZOZVFWV2dNVmdkWFlzY0kKLT4genRsIS9pey1ncmVhc2UgVCJ5U1J3
+    VDggaDU6LzFZICdSUnZSbiBjISotOwpnak5TQWdJalR1ajA5RXRwMzdVOHhOYWVP
+    WENVMUowYTZjam1rMGtSN3VVS3huMlhscXRCR1A1dHZkckdwNUMwCkUxU0pHcVNJ
+    S0hZamsrWGdsNThobG9iUHlpZDV6V3FSZXdtcnIwYnN6bll0ZGR6WDFsVFRjNTk2
+    N2hRN09IVQotLS0gcnFVQTdiSlJ1MlBuU0pEdEcxWHYzeTZOUXFpTkFOZzNHRDc4
+    VkFQbVJIbwqISud9pV6ujWUnthiwtV/tq7lL7e70MpiyQRcs7LmjLiiArzf/aucs
+    gBl4ucwmga13PWNE7omRKvS0cUTCwYgO
+    -----END AGE ENCRYPTED FILE-----
+- name: admin-server
+  role: admin
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB6QlNXOVJlSklEUmJQdjdO
+    Z0JLVm95MmdPcGoxSXM0RkhhYmd5bUhQaTBvCkQ4UWNlYUg3UVY2WFBFM0pHZVI2
+    K0Zmc2tTdjJaVWdINXhwYkdDSzB2cEkKLT4gaFZ2XC1ncmVhc2UgcSsgKmlzNm8K
+    ZGFpeXRFeGRJY21NMkNGVW9ZZUF4Q2xucjVGMW92WVdKOHE4VkJXR1N6MnBxa3Ba
+    cUxnZzRGanMvZHI1cWhYcAo2dGxJaVk0emVjRDNNVzBMVUtNT2g2YkFtbEJJUWcK
+    LS0tIEsrVmRqamVoV1FZcThvTXY1YzB3cUtWOCtvN3AxSkZ6c0VjTmhUZUd3TFEK
+    zujyXuTSJ/34jWqDOsRQTX5F4CTj3sBuRCwNqqLReNWr1rULzX78e5nqzExD17Op
+    o2OTSH8BCSb52zYUC+y+uw==
+    -----END AGE ENCRYPTED FILE-----

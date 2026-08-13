@@ -1,0 +1,37 @@
+version: 1
+file: cli/legacy-ui-attempt/test/example.test.ts
+recipients:
+- name: sid-med
+  role: developer
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBSQk1CMkhidWF3Sk1mWkZn
+    SHl0UVJVeHJ6enUwMjhiMGpQNkxFZjBlWUNBCk0wSDRiUHNBUXFvenFwcTJVSlRs
+    Q0I1aFFkVzdRYmloeVZYV0NZWDdOTzQKLT4gTW4tZ3JlYXNlIHsgQCBEL2k3USkK
+    eWpiSWc1bTJpbjBLbGRQV0Vxams0RG03SXRlTnowZnd5bzdOUUtPZ2dwVENBekUK
+    LS0tIG9leUtZeFVpbVJ4elh4dVJucHQxY2xvUCsrWm9BWXYvS21CU2NjdmNSY3cK
+    qBDqqhNQwRRC8CjmdJrqJ/xKJLHdliYNlHMnnpjbGrF0wZGGwmxcyi3cHtzgzwE9
+    JuvqtTMsp3xU49qBpRxn4w==
+    -----END AGE ENCRYPTED FILE-----
+- name: ci-runner
+  role: ci
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB3dk1RbU9KNUdKcXhXa1F4
+    d3V2ZW9rOTloV0RMWWpYYmVoZWV0d0VsNVRVCll4aC9NRTNQd1ZvbGxNZ0VHTUtC
+    ZitUY3ZrQ2tuOU0wNk9mUTVBRU5ic1EKLT4gezsmLCteQHAtZ3JlYXNlICVqTmUm
+    Tgpidk5CQ1Y3cAotLS0gUVJiQzZ2OEpLR3RSQWNYQUxDeGlrS090M1FiR1dCdThR
+    d3Btdm9KRndJTQrumKQ/VEs+1ZYJi97vlS8WNrRVTlhnIAq8VmGWrMgwI4kALutw
+    nXIOB6ZGLd6yzWzyalda+er2nPQNOXoftwn/
+    -----END AGE ENCRYPTED FILE-----
+- name: admin-server
+  role: admin
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB1N2Q0d3JYcHdRNG5UdDlm
+    VWgrbng3S245YXh1ZmE0Vk42YncvaUVrSWkwCnBNdW5PaytLOFBGZjh1eTFFek1S
+    Tmpwd0pJa0I2S2VaT1JhMXdnQTVlakkKLT4gZmNyIVZHPC1ncmVhc2UKYjE4Qmd3
+    cTBNUQotLS0gOFE0SlV6djRJdVo2ajd2N2MyRjBMdEtkaXhWZDVrbDhpTTY0VWV5
+    TVlHTQpzgF3676LIeGoHnthvWe4S/AEfwikdRvO0D4c5RHS/wVKbEMSU6Mh2UWbA
+    NCRzo6/n7BG/CtaMPspf8xSPC+XJ
+    -----END AGE ENCRYPTED FILE-----

@@ -1,0 +1,41 @@
+version: 1
+file: portal/public/configs/case-4-recipient-portal-mode3.manifest.yaml
+recipients:
+- name: sid-med
+  role: developer
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSA4QnFBa1gyOHBlNlNyNWJQ
+    bzd6NXVEMTFQVHErczZGNU5mTitjVDUvYWdzCjhFQzR4QXZ1dkl3ZmhpUDFDSEpv
+    NGxCSWV2NXVKZTMwbFJ1RU04RzgwRmMKLT4gcyRtZEIpLWdyZWFzZSBqMSpnPicg
+    Vn53VWA7bEUgb24kICh4egpPR2FYTVlWaXlxeUZZRTF2cGNQZVZDN3VQQXVQa1dG
+    Qlh2Zisvb25YYk0xc2IzVXVTQVZ0bmhXVXBGdWdRZWU2CmF5aDFzMzBoVzJNSgot
+    LS0gZ2xCc0pDbTFhNWhqbjF1NTYzRExBQmhxTFlXT29BcUZrd2M3dDVwV3FpZwr0
+    aOlAekap+wX7bsiUdtzcf926vSz5NgscJ1Vh/b5rEKitYVLEVG9xu+msYbtXyFpc
+    RHaiiUwE5i3b8ch8//GM
+    -----END AGE ENCRYPTED FILE-----
+- name: ci-runner
+  role: ci
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB6MEswMVpoWGFFYU96alor
+    c1FRcXE3a0k5QnlpV2pLNzFXSGRBaDRlQUZRCkVrWDhoSkxTR1JNUkRMalNqWkFR
+    NnZ4QnVoeXNXZlVyUC9TVDI4M0pyaU0KLT4gei1ncmVhc2UgNiokdwp5S1Nkb0JY
+    RVkvSmJwaUt1RU0wekRvZnRoWDJ4OU5kL2hwbWx3RnFhWlhQenBteHl6RkRYdHQx
+    RldHcytnN3BxCkN4OE5RZ2hxL2hncVNVbjBCWUVjVGpwYmllM2wrOHJPR2RQYWdp
+    Vkd6RGpKTmd4ZS9sdUZvTkQyS2hlUklQT2kKREEKLS0tIGtIK2FSWEFmVXFmanlj
+    emllc3N3WmxoOU9Pb3c2djJ3OFFoVGYxQlgzVmcK7bBn2gD+MdGew4IYeEz7TurA
+    zT9Vl+g/CEoWLw6NtAQnTBsHfm7z49KDyxlAaaFdJqz2r/6f4r6qyeG+3hCNwg==
+    -----END AGE ENCRYPTED FILE-----
+- name: admin-server
+  role: admin
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBDRkZSSnFIK1FCTTROWWZ1
+    USt1b2dLTHczbzRKVlBXUkVjNG1KKytVWUJnCmdYbzAyWlc5dVd5OWdybmR2QlIr
+    UDJaWStVamFsTGI0aVloYWV4ZWhJcEkKLT4gNE9fMGtGUC1ncmVhc2UgOU9cCmUr
+    SnFmdzFoWlJWQmFVM0NETHJWTjN4QzYvTjZ1b0NzT1pHOXZXMGdQZ09MWUpUWTJT
+    V3VzM1pYZGx4Wm5xZVAKZ1IwblFiNAotLS0gV2RROGgxVzZ2WHRoV0M4akV6NUNk
+    b3dwT24xMWF6M0k0NzhETnRsUW9hNAqFNm/y0IQfDTCQjDWYXV3crU0B8kB91b46
+    jlBB4vL/L+ks6PFvnmfaDtwOXiSx0uXLesd5VPth5i61aMLyQFDS
+    -----END AGE ENCRYPTED FILE-----

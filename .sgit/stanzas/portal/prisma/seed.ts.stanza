@@ -1,0 +1,40 @@
+version: 1
+file: portal/prisma/seed.ts
+recipients:
+- name: sid-med
+  role: developer
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB6czdtc0lMbTFWOVFNTlJJ
+    TVhOcndvaVFVQyszY0J5Y3RyaG1uSWlVdnhNClFFb2I2RWFnbkhsMGFIb3RRcHJr
+    UU83U2RjbFhVNlZCTXlJR1R5WW8xUk0KLT4gW1xmREktZ3JlYXNlCm1wU3RuYjFo
+    bWc2SUR2dUdNMDVBSGhzR0Q3UW53bGpPM2k4NHZQOHkxT1ZpSXI5eSs2a3NZWUFq
+    MGF0ZEhNakYKcXE3UXVwMDd2MHZDcWs1bnRabTRvSDQ0YW5ldkVaVHF1c1djM2hs
+    VWJ3Ci0tLSBjd09UYXowcllkVkh6WHpFUXhNanFhVmJYc3FDSzBzdE9Jc0lHbTlx
+    bDFRClOrEXm6dmZuV7Slk5Pn7CXNBaQHy37P2FokM9s/XdmnpIwJjcW/skC/ziy9
+    srOJpBGqN10FFm1mtbNPKGnVkGI=
+    -----END AGE ENCRYPTED FILE-----
+- name: ci-runner
+  role: ci
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBhNFZWNXVHYVlGVjZBc0Zt
+    MHVQVVl1cEpsaUpzam92alY2MXptRkhIdVhrCndnbndvWG1STGsrY1k2SlNla2g0
+    TkhaRENHVWhTMkxrOFIyTUg5TlYybDAKLT4gSH57QWB8TXstZ3JlYXNlIG48CnlE
+    dndDRlFVT2hDTU1uamdmV0FBT0EKLS0tIEl3OXpPVzJPRGRmYkF3dVN2aklKSFpV
+    amw0dUFkcUwvUUhnZ3ltcVRVTkEKaATCiuYpxjyyf8CgJhf48o36rjZk+5Tweb02
+    ml07BsFHHN3278NeifMTqjRvrxofwmne+wOfVhgwWP/7+ranYw==
+    -----END AGE ENCRYPTED FILE-----
+- name: admin-server
+  role: admin
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBmbHVTVW96cHN2RWJueklI
+    RzRXVGdIU1BhazBCUGN6MjRVQW9yTVJSTUdrCk9aaU9LZ0V0TUxyQ2xVQlRSeTdJ
+    d1JjOENsWFlJV1VmTWU1SFNxKy9TMHcKLT4gXC1ncmVhc2UgWgpwSDlLMy90M3FS
+    dnhoYWlYcUx4U2tINlRoeExNOHhMZFRVL2tJaTRkYWtkVFhSZU40Rlk4V1JkYnF2
+    YzNrZm1vCnAwczZrc1A4VjlnQlZnUW4rRWFUYXhLQjVKaHBnUQotLS0gc1ZKbW1L
+    MllnS3d1NjA5T254WGFyRUtwcUJXeHFQWjRnVU1LUWlGbUtscwrBMVB4vMkQ+CHg
+    DE35+M2VEiH7tE6zlqEeuz1bPcRwPrjQkNlpE7IRevYJkm3ndt16tFwGWY+dRXgR
+    KzYR7uCJ
+    -----END AGE ENCRYPTED FILE-----

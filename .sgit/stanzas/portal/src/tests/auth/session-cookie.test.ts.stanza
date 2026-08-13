@@ -1,0 +1,38 @@
+version: 1
+file: portal/src/tests/auth/session-cookie.test.ts
+recipients:
+- name: sid-med
+  role: developer
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBKdnAwM2lLSlN3d3UyeUlM
+    eUhjQUpsdHlERWR3b0x5ZW5obUZKLzlXelNrCnl3MUx2L21CMHdiWDJySEh5VFRr
+    dVJ5aU5jQ21LcnJCdlgvaTlQNFhNK2cKLT4gLyUtZ3JlYXNlCkwyNzRiV2d2bC9z
+    Vmh2eDllSGZ2WXcKLS0tIGRXOHRRQzZLbzlqODV4ZTNQZkViSytuNEJTS005Zzgy
+    SGU3aFRkdG9qc2sKt7tbVJqcw4xfmj5ctnz63PvlAH7r4TLNkGjbK+0OQ1jbTYsP
+    b+4jkebFu+qSdTA4H+u+eJiHY4PgpyHhMpN8tw==
+    -----END AGE ENCRYPTED FILE-----
+- name: ci-runner
+  role: ci
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBrUmNZdVYyUEZRT1dMbXFi
+    M05wT3NJcVd5dUVaWGpoR2V5OFkyT3Q0dVEwCkJpYUdUR01GZWFoRWIra1diRnhZ
+    VVNuS2RZNFR2a0pVbHh3Q3ZaS29YSE0KLT4gOi1ncmVhc2Uga2AgQgpIbHVtbXZX
+    RjVDeGptWm1PRHNvR1pHM2gvQTFtd0lOa1BRCi0tLSBFRVlLYzhQd0JkdXZBSk9r
+    dGg3SmYxS1d5dWFveFpNRVZneVJRb2NWL080CmnT1znVT5dIKdhxzD37I2qcUJgz
+    b/Lg+wXnyNYR653ijsNOcMuTnXO12x0KpbnIXtqSTUZWScQYryYoJSN+pfY=
+    -----END AGE ENCRYPTED FILE-----
+- name: admin-server
+  role: admin
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBSNVNETm5nZ1VxQmpFZ2xw
+    b0hwMFVWdFBoQnpoTFhNaGNGV3pmOTA2bDNZCi9zSUJ6TVBscnhPZ3hNRng0a2NF
+    dmMxOXROK3B3OWw5TGZNRFhmcURpTVEKLT4gcT9rey8rQGQtZ3JlYXNlIEEhLWkK
+    Sk9lcHNDdy82eXBkZks1Z2ROWEk2VWxKSTF1UGtoenFTWHI2MENBRmZhaHlKUHBQ
+    cUFtVlNTYU0xKzRydkhZaAp0SU1sclc1d1BPd0xMU1RtR2xCZHhkZWExR096WVIv
+    eTVLVnp4Q2Zua3N3Ci0tLSBEMlEvaWx4THhJUGp2UHZnTSs0WVdjUUh5VVhpTmZx
+    elZscDVvS2xYbURBClCjXxXCN+hs3aLyhhrCSJk0AAMv1dBMGwDywJ5TM6lGR5qA
+    ygLVxgNcWUspXKmvI4b8aVWZXfcBrVLcfm72Wxk=
+    -----END AGE ENCRYPTED FILE-----

@@ -1,0 +1,40 @@
+version: 1
+file: portal/src/workers/build/docker-executor.ts
+recipients:
+- name: sid-med
+  role: developer
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBUQkdQZHIrZDlHVHp3Nkxy
+    UmVMZWlrSURUOTFCMjRRRFU4NDJ2dU9RekY4CkNaUTFqVjZPZysvb3dtejRXVCtz
+    QnBWUVVIbHlxZTcvR0NOaFJ3RWhjQkkKLT4gPW5ZJSMkLWdyZWFzZQpReDBVeXNl
+    OVZHV25aczZFcERGcjd6dkNaRHRvR3pEYURQakU5ZzY5cC9TNkpRdlVHWEphRmN2
+    OEZhbTF0NlRCCk1hbnVHOVZCZEtxdmRMZ1dON1VVaWw3R2JvL1VHMlNjTktyU1lD
+    NjVxRThHUTlNVkVzWmRDU2cKLS0tIEpaSDFjZEhpanJrMmQ3dzF0K21XMzVtR3V6
+    Y3dqZ1E1eE92eXhacllROGMK+0sqzPzCLawPqw3/A8UjtvY1VBcP+348GHQpEK5+
+    X4SZ3pekNBk8iWKsHEEmExTiQ6y2efUddfPZO8uGzaqrOQ==
+    -----END AGE ENCRYPTED FILE-----
+- name: ci-runner
+  role: ci
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBzWUxYMGc1QzJTTXNBbTVz
+    bktmTldFVmpuWDJnbEd0M3JCbFBZYWZyT1NvCnZGeWZTclJwbGNUS0JyOWNaSUhi
+    ODd1eGczeWFxVlBablhTSU9RWU1RMFkKLT4gN3RYLGstZ3JlYXNlIEI4PDFwdkhj
+    IDspWCtgJSsgWTRMMgppbmRCa21iVHIrVDJwVVN2NmVNQS96eDE1NTdQdDNLNnor
+    anFlZ2Z4VjNndmxvOHc1dUsxNExUTkNLdWJYbUpBCkoyMFgxUGZGS09Sb05lbwot
+    LS0gWkNXNzBabHlIWjhCR2xiQUhteEVrdVUzR0tod3BkeGdxTFhjQ0hJVGtuawqu
+    xu3bE7s6Do7l3u2SQGZFSSMxsap40fc43fJnqUb4pwlhN0+QfQhCrxc5uKtpVNjy
+    i5pGia+eKH8+P8NQOmEJ
+    -----END AGE ENCRYPTED FILE-----
+- name: admin-server
+  role: admin
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSAzSUZTcDI1YTlSRkhZWnhM
+    UUNxMU9CNG9nQTQ2OHRDSmZnU3BjTzhqODJrCkUvTkJDVjFJUFQ5dmJHeTVTQVY4
+    dDVzVCtIZ1hUWEhMYzVDYTdUajRQUnMKLT4gKGE9LWdyZWFzZSAyMW8gPTE2VGpD
+    QyAmWUMoKEB5aCBQdWwwVyN9CnUxazd0NHVnbUEKLS0tIGhBOWMwa1BGWnY3ekgx
+    YmppTGF2bEhCc2VpcTh2cUs0UEJGRjQzRkJoMTAK+g/gBccsvlad97GNxdC3WLbM
+    gCGIGQ3I7WqtJQd8hAUPejl6gDVTuetljyFjhxEJOgYM2zeBoGmfngGIxxS6ig==
+    -----END AGE ENCRYPTED FILE-----

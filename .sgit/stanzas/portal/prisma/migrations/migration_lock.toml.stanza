@@ -1,0 +1,38 @@
+version: 1
+file: portal/prisma/migrations/migration_lock.toml
+recipients:
+- name: sid-med
+  role: developer
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBqYzR6T3NmVHlVWmhZRHdi
+    OTI1NzQ2eGxTZU5JbHhiVWJiYk9VenpGNkJBCkE2bnd5VGJTYytFOStqd1ZodHFZ
+    N0RQWnlMTE9XbGpDN2NzaEQwcDdhYUUKLT4gaCxATzlDLWdyZWFzZQorRlUzbElL
+    eVNja0dlR3ZEWm50RjVOS1JlOTFBZGZrc0R5RHhGSmMwUDJuZFYxbjgwSHdqWGlk
+    OTM4M1Fudit2CjIxeGpPczdGMnZ1MkNhbG1NQzFwUkJsbEk4VFdBOEY4NE9YSkhj
+    SE9yUWxqbGd2NE4rZ0RsZjVRbzcwCi0tLSBISG1MaGtuaE9mVCtWKzgyZDdPVW0w
+    NXdsN2phY3NEK3FGK2J4L1phRGJVCqgvJAeD2eEPovg//+dUIam8fdyHrLkxyJVu
+    pLXcB1nq+UHOlY/H3qMbf/xWqvqem1OmERWTSOmLae7zhVX7jUw=
+    -----END AGE ENCRYPTED FILE-----
+- name: ci-runner
+  role: ci
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBaVGtIWEhMRFl1Sm1pNHlY
+    ZlRpU2had1VMcTRlVG9DQ3VwbVNTaEUzc0FRClAxR3lKREpRMmpQdlhXOU92aDNF
+    Q01qMGcrVkovY0VuWXRLTWp2clJNVWsKLT4gd2lCLWpzLWdyZWFzZSBHRml2Lm5z
+    IEhuIH5mOWQmQnoKCi0tLSBwUkF4SzZCVDJIcW5qTVd2aEJZdHNjUnMxK21zVXJa
+    NVhSZ0FoK2Y4aGc4CkWULS8X0G56EsNiFhokB9pvX6MaGnFw6aPTqoRIzuSkS2Rx
+    8ZMSbBtiB0V/Em2O77bt+qZ4fJ7v9YEeABkTqcA=
+    -----END AGE ENCRYPTED FILE-----
+- name: admin-server
+  role: admin
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSA2ZkJmVjJrVW54YWtudzhR
+    dVIxaldNZTdSUXY5OWVaZjl1ZkhnUzd2V2lVCkNKUXRkSlNxRGtENVU0VFJMOTRk
+    T09QdDRTRllKeXcxZzNHVEUvSm1GQVUKLT4gbzlbLWdyZWFzZSBlXlQvLSBoWQpE
+    UQotLS0gVDZxUSthU0lkVkt2Ky9LK09qR1BndDNOUkRDRmhtdzRqVTRYRmR0dDQ1
+    RQpgKz72ahn9AUnLGtfrG7fZEHMWkl7wBeU1/hDxYoxS8/TD3IOD6TD/ZbstORjO
+    Ml0iws5EqQOI2pNxjlWdmneq
+    -----END AGE ENCRYPTED FILE-----

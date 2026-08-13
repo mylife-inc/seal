@@ -1,0 +1,38 @@
+version: 1
+file: portal/src/app/(app)/repositories/[repoId]/ci/page.tsx
+recipients:
+- name: sid-med
+  role: developer
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBWMXVyaTdubFN5YUVac2pa
+    K2d4QTlYaUo5MTk0THlQUWRKd1hKRHcrbmhRCnRyTWNnc3d3Nzg4dFhTcGYrcklk
+    dVlWN0V3QlMxcHBQeVRINFNKMDZMSG8KLT4gTC1ncmVhc2UgOUVkS2wgWjlbPDw6
+    cQpJdWFEYnZ6VUN5Unc4Q0laQXhUWm1UZ25SdnhkYkN5UWlBY1hQZThhTkMwd245
+    NnVnelVHRExMRStTejUKLS0tIHFHZFBzZkhaellBNDlmRER3dkFHOG81cVY3alV4
+    ZmlnYUw3VnN6MXRTWUkKfvfc/+Ephh5EE8SfjH9wjqizwfLqAuvxZqv/gjEvyZgv
+    tHl7hSymz4HE3SMQn6D/2OPPzHRHUb1ewl2O8ggguA==
+    -----END AGE ENCRYPTED FILE-----
+- name: ci-runner
+  role: ci
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBIZVFWWHFWbjN4L0hJa0xB
+    L3k4YmVnQS9lUERMQlNmYnJZNCtOTnFjQVFNCmpzSTZCZmZOek9zSkw4QVc5M3BX
+    Sm90SFgzZHkwU2V4R3ZiWkxKaEp4S2MKLT4gK3BIaS1ncmVhc2UgTiBOYjY2dDY3
+    IDU/Lno/WVUKRWRHNGw2OWNuYVFyVm1QMks1K24yVnQ4U3cKLS0tIFNSenVRTDY2
+    RC93Q3ltZE9FNk1XczZ4ZFVqVG1IazBHVWh4Zy9BaFBhMkEK845+DGFV2UQfPuxu
+    tR/RLYRKCovDU4sjrZGG82rqms+GsLtFHJKG0LHUBUW6fnGL2FjVy0l+lrwGhnig
+    eYUnqQ==
+    -----END AGE ENCRYPTED FILE-----
+- name: admin-server
+  role: admin
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB1Ujg4K04zOVMyeTAvY3Fr
+    VDZwa2xacVJDNEFlbjdwK09lVStwc2lUQm1FCitucE9hUTRiZmNJdUsvT0pXQk4r
+    WHYwOHhoazRubHJ1V1JxU3d5NGhqZVUKLT4gSS1ncmVhc2UgJCE6YSAuLFMKSXdp
+    bGdrSGNIZ0hLUWN1c2JNc3VzdWFoQlRIVXVWTFpmUQotLS0gb2x6ckFuUVZwdkRr
+    RW5hcnY1a2ZMYndqS0V3TDR1djRCNUVZQ2NXcTlicwoFvUC5QJvXc+s64ePTqoFu
+    obMlD84RSwxIvw3SEV04q0Vymg6WdJ84Nj3YHofQUvw0/lBBWuK6ZQyJAnQ4aE2n
+    -----END AGE ENCRYPTED FILE-----

@@ -1,0 +1,71 @@
+# Root .dockerignore — applies to every build that uses `.` as context.
+#
+# The CodeSeal build context is intentionally narrow:
+#   - cli/         Rust source for the sgit binary
+#   - portal/      Next.js + workers source (and only source)
+#   - infra/docker/  Dockerfiles + config files copied INTO images
+#
+# Everything else either bloats the daemon push (node_modules, .next,
+# target/) or is irrelevant to image builds (docs, scripts, tests).
+#
+# A bloated context is the single biggest invisible build cost: BuildKit
+# has to hash every file to compute the cache key, and `COPY .` would
+# silently pull gigabytes of dev artifacts into image layers.
+
+# ── VCS + editor noise ────────────────────────────────────────────────
+.git
+.github
+.gitignore
+.gitattributes
+.idea
+.vscode
+*.swp
+
+# ── Node.js artifacts (per-tree; the portal-specific .dockerignore
+#    catches sub-tree paths, this one catches stray copies) ──────────
+**/node_modules
+**/.next
+**/.turbo
+**/.cache
+**/dist
+**/out
+**/coverage
+**/storybook-static
+
+# ── Rust artifacts ───────────────────────────────────────────────────
+**/target
+
+# ── OS / tooling ──────────────────────────────────────────────────────
+.DS_Store
+**/.DS_Store
+Thumbs.db
+
+# ── Secrets — NEVER ship into an image ────────────────────────────────
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+**/*.pem
+**/*.key
+**/id_ed25519*
+**/id_rsa*
+
+# ── Docs + planning + scripts (not used by any image build) ───────────
+docs
+scripts
+data            # local postgres data dir from compose volume mount
+infra/k8s
+infra/terraform
+
+# ── Test + tooling outputs ────────────────────────────────────────────
+**/playwright-report
+**/playwright/.cache
+**/test-results
+**/.vitest-cache
+**/junit.xml
+**/coverage.xml
+
+# ── Compose-managed bind mounts left behind locally ───────────────────
+data/postgres
+data/redis

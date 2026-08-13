@@ -1,0 +1,38 @@
+version: 1
+file: portal/src/components/repositories/TriggerBuildButton.tsx
+recipients:
+- name: sid-med
+  role: developer
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBWM3Q5R0FPZ1gxQ01vYTEr
+    WW5kdTMzZVpsZnl2YWlQeGt5OWZGYWtVUVFjCk5YVkFVM0dkYXBVN2JLSXRIZTZS
+    TENZaDlkODhGanMxMzFFbkNNb1ZiM1EKLT4gfGZ+YFMtZ3JlYXNlIFYKaWlONXVx
+    RU5tTzhtNjZBNVhhR0R1NHc2Y2VUdld2ZFF5ejl5NG92WWtDaW5VZEhuUy8wTGtq
+    YXRrN0VldlhXcgp2cExNOVIwTkpEbGdrQnM2b3RURnROcWJYNklaRW5UdVVtUmlz
+    SFEKLS0tIEk5bWkyZFZrVy9zYkF1TzlFbXRzaEhSc1ZZZnU0WGVVWjlIK090em5V
+    ejgKcQjM7R/MPDT16l2s1gGPOLz4lEQxtpejzhBowBYEYGNYdkKdtuwZoJEupflt
+    R9Cc42k5Hu/z8YWXC3ZwURgkXw==
+    -----END AGE ENCRYPTED FILE-----
+- name: ci-runner
+  role: ci
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSAvWWZ1WFNYU1hndElNaHRB
+    L25NSUdWTUxidExQdlpEY0RscVpOYmhvdlhRCnAyS1lSOHVYVkluUlFYTW1FSGNa
+    Q0x4b1RsS0dXVlAweGxicDVJL0NvVEEKLT4gdF0tZ3JlYXNlCjNBNXZXVEJqNEFv
+    K1NqRXRXRUN5c0F6RGVVd3hMeEUweDZURQotLS0gMktOVEI0QUI5MVBoWmVUZm8v
+    N0MzajdiMnUwb0ptcjRHMVZlc0ZISmVhNAoWM7yli+Hclbkeha5qMLrfRrgQFAaS
+    ty+JOHhbCDfeOtKIzX7U5p3yQJkPr02Jj0fd3nO5WFf5ugqUsVu8bvK+
+    -----END AGE ENCRYPTED FILE-----
+- name: admin-server
+  role: admin
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB1QmlIWVcxUkt5WlFoSFk5
+    UmdhamxGUmRjMkwxejBsYWtObHN4VjRuOVRjCnZ4b0RDNXRiNTlFdG5mOFFYK1Jq
+    YW9wcEtiT1d5RU1QdDZXSnVoaXVkVUEKLT4gakpkYGJ+LWdyZWFzZQpMZwotLS0g
+    a1BkS1hWMkcwTS9mMGx1cTZiRUJuTlNzSkt1b2dUc2U5Q3ZQM2FOS25RcwqRcdV8
+    Pd9Ay1/rnLOLAlLsXr6xtXTtJI+VtlH2/BXqodMIa3XcZr5IQLI2AnPvYUgynWDP
+    cEUszVRAwfzC9bbT
+    -----END AGE ENCRYPTED FILE-----

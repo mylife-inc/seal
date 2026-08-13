@@ -1,0 +1,36 @@
+version: 1
+file: portal/src/components/repositories/SummaryGrid.tsx
+recipients:
+- name: sid-med
+  role: developer
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBDZ2RUK1FTM05ORG1qb1J1
+    dzhMOVdwWjFEeEJSc2pURFkxK29iN1hMQmpRCkwza3JhWWViQXRDK2JSeEo1cjNB
+    YzkxcnFDek83Mm1yUDlBNjFtNS9GM00KLT4gaH4vKnYtZ3JlYXNlClp6aGx1anZh
+    ekdwRGcrd1kzT2U5Ci0tLSA1NWNtcWd2dTFxdmtUSGlBQWJGRWg3UWNscGtjZC94
+    c3I1eEZ4UEIwMnpvCsy7vZ9IbOmxGGFTr+l1yH6TNFcG0GP7aaCKUy9kyBGrRb3V
+    jsmLlHcQF5nwToPysxf1w9sOG0q0yTaG5ImQY6Q=
+    -----END AGE ENCRYPTED FILE-----
+- name: ci-runner
+  role: ci
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBwVGc2cE42RWp5ODFkamZJ
+    TklTbXBqUC8wNk5uc1lPNFVQZGNiWDkwaVdRClhjUWJQcEZmamY2K3FiR0tVajVU
+    SHo0aDJOeEsxT3J2NzJDSE1rc1FodXcKLT4gTFQiYHAqLS1ncmVhc2UgQGp7XlAl
+    Wwp4K2VCczhVTQotLS0gU0Nrb3I4RERkeHFKVlp5aGwyR2ljdGFhUHdvc2xLVHBk
+    VTZFOUFBV1l5VQr8XoDriMiSXKGJZbj5NQXGDXohvk/XrdJKzfKNLwQx9lyHBDax
+    A5d+4jEBj5PZyWKWEJ6pi8U9964yhReQxno/
+    -----END AGE ENCRYPTED FILE-----
+- name: admin-server
+  role: admin
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBSZkh4ZmZnRlF0clFoeTgv
+    cHJCY1M5UnkxV01qKzMzQW5ZR1JSWFBuRWg4CkZiSDcrTThaaDBKcXFHbnRIYnlj
+    VWlmZ09NNDFyMWl4WjZ0Tk0welZFOEEKLT4gcC1ncmVhc2UgITMyX2M5IHR8ITh7
+    CmJtVCt4YnRublF1NzJOdit5ZWFaQ0tzWFgxUlIKLS0tIDhIZUlQcHR6SGJETlVR
+    clJqbmdIdndHWGV4Z2x0NkVXOWNmVWQwUllXOFEKfUit68b1bVpLgORLkcM5EEhc
+    LPYPCSW/V5WkEI7FPey6CT+Glmlt8ML2cLRu/pths3hXoo5vGNQ+Pp5v28Q/4g==
+    -----END AGE ENCRYPTED FILE-----

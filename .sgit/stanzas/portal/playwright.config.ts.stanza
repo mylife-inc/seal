@@ -1,0 +1,40 @@
+version: 1
+file: portal/playwright.config.ts
+recipients:
+- name: sid-med
+  role: developer
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB0NTJUa3hTOEpOUld5aW9D
+    d3luS1BXcVhkTHZ0clRZV29aSThxemtSWEN3Ck9uT3IrTEJnU1FheFZNYXVKRVNr
+    QWphZUZGYTEwOGtIMWNzR3pPOUxoQW8KLT4gU20tZ3JlYXNlIFM5RCBSIwpHSGJu
+    Y2Raa0NwcDU4NnVwbWNGZmpKamJSUGsvUk5SN0lEYXQKLS0tIFJRTXBia2QrODNR
+    eDhCUEkrL3RScExUSEJkYnRZV0NuQzlqbi9NWTA1NkkKDMwY2m+jFnr3GvCY7orL
+    Q7+imhng6XNb0qy9iJN+J8M2OQoISOSMhGDjzvXR7ZX7UTX/W8KZLlYVKUGiWe00
+    QA==
+    -----END AGE ENCRYPTED FILE-----
+- name: ci-runner
+  role: ci
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBLeERjN1hMRUM1U2NVT0dk
+    SXluODVNMjQ5eXhvcUN4ZVUxWHZ0c2IvSW5JCkJyS1ZJYy93dHRVTjB0MWFzZmdJ
+    NGZpaDhMbHhWdWtLMmkza1Brd3ZkVmcKLT4gJipRLGVcOy1ncmVhc2UgVU1oM1F1
+    ICMnJXhiICMKeUJQSnF2YVFyVXlqYld3dXlkVlJnUkFUcERtS2tBVTVBTk9PYSs4
+    MzhGMHludXRNSzdMQ2lNUXpsN0RTWEtVZQpJZVNGVGgxdm04MEFaRVk0akYweHB5
+    TQotLS0gVGdiSmViSEVuZmtVVWs5ZG9iK1d0K1VkWjNPZVVsRko5QkI5dUUzelhQ
+    bwo8Lcvf/7e0WXTzZMLErf8duQaGFhnNMLv7g7iuxMAo5DUqqWWR00SezR9A1Kx0
+    xBD/Y5GHSq2xBWrcIlHcHx+g
+    -----END AGE ENCRYPTED FILE-----
+- name: admin-server
+  role: admin
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBsVDNhcHMrTnJ6S2toblR5
+    NkQyR25Zd2R0NzR0aGxjVkZoS0wzVXZBeVJVCklSQmx0ekxIdEZBdm82REJ4dUxs
+    M0MvNThjTTBoajVvRi9GZk9iUXhodWMKLT4gRkUnSS1ncmVhc2UgejwKWTNmd3hv
+    Z3FFaWJzR0hPb3E1WXJoakJpcFdLZVM5cWFMTjE4WkFtU0ppbjFMeTVaZkNvSHlK
+    ZXYvYUZKSzgydQpFVmx2UDVxa3MzZERCc0tKcFEKLS0tIHZUR1ZWeTAyd3RyNUlw
+    Nkhyc29jL3drRVdBcDlLWkJwTmhyQzJEZnQxSWcKO3GijmUOOprWFLSZxeIheNhH
+    f/shyVIEyuz62lxEyjoDb0bk2UzkEfWdrXHqGpZXLp0r87uz/D/LYrIBK6nasg==
+    -----END AGE ENCRYPTED FILE-----

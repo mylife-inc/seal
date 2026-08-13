@@ -1,0 +1,39 @@
+version: 1
+file: cli/legacy-ui-attempt/hooks/use-mobile.tsx
+recipients:
+- name: sid-med
+  role: developer
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBBSVAwN2tJdUtTaWt1VTNr
+    VGpOd1pmZzRrY0pCSk15cTZHMTZsUjBpNENVCnZHUkhDTHcrWk9KK3F6djJqYjFV
+    RnU5RDFaUFBFRi82d3BvQ0VxM1BFU1kKLT4gZ0IjSy1ncmVhc2UgeDRpS2VECkRP
+    TmoKLS0tIFRPcDV1SGQwb2ErcjhEdnY1anhZR2NCMDFBWGp1ZDVydEJBV08yWWZ0
+    QnMK7P7qbnI4KWSaBY4RdBEHMrcqdG1dB8+Tru+Gtp0rzuiUaP7IkQ8pzzpfYCCZ
+    UzrhWMXbUE2x5lhTLlnh2o95yg==
+    -----END AGE ENCRYPTED FILE-----
+- name: ci-runner
+  role: ci
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSAyMFRzdDcrMVZSUWx6SDUr
+    Z1hoYWlYS3NZdkFSclhSQ1ZPZlhKUG1pZkN3CmFCRDJweFlFQzJ3dXh3VjJzNktu
+    UUJGOGJoNEhMVlpZS1h1RnlLZlFweXMKLT4gaTs6IS1ncmVhc2UgJkggbCIgRG5M
+    cWJtOiIgZkZgejw3LXAKeDVEajhzaE13MTZPQTVqMmRaSzVacEZwd1ZBLzA4eFhJ
+    UVVkaml3Q2ZPcXBSbUVWL0tTcHRVQ0hobmZlYWpKNwpuNFZiM0FkVDNLM2hVVi9J
+    cVduUVpGTTRmOFY4dHlRai9McitCWnJRCi0tLSBHRkpPZ0RUT1Bjd1lvMzVwS2pZ
+    elhENkxjYjJNVVpIOTcvRk5EMjJzQ1JBCmn76whYm0JDchGvw0VHwuOUqn5noy+p
+    2sLHvxaHAlwcKp6lb1anO2SWKAfzzcLFxM7LkMZ1eZe7BpKa2QefQLQ=
+    -----END AGE ENCRYPTED FILE-----
+- name: admin-server
+  role: admin
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBGV1I5S1JuTWg3VnA1eEls
+    WW45WDlsNUZPN0dhalpPQVZOckpmTld3VFEwCndxYjB5OHhLUjdyNnpwTzhKUUxV
+    ZWF1aU44cStKcWdOaCt3UStvKzFvYXcKLT4gb3FWPWRgLWdyZWFzZSAsT1kgSHha
+    diBgCmoyQWVLeFFlNUViTHFJMll4NlNlSktlbWRqVlpPN0w4NFEKLS0tIFE3Z3Fp
+    K0tBcUlsNnZTYTY1aGY0OGswUVEraFpzVUQxMjF0SVhDSWtXTm8KX40qprrvBfMP
+    UNgTsEzLEmFkR5x5llvHjcZ3Ps5f+Z9bR6PeEsrmfV0JxUMFuJwSIXsSO2+2nDDp
+    xer/mX8C0Q==
+    -----END AGE ENCRYPTED FILE-----

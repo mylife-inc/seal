@@ -1,0 +1,40 @@
+version: 1
+file: cli/src/history_rewrite.rs
+recipients:
+- name: sid-med
+  role: developer
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBVcElYNENTOG1MNFFHTnZ1
+    Zy81endvMlozWkFRZTY2bHZLQWFrbEV4RjNnClg0TFpWWjZQK1BubHJnUlc4QWhQ
+    UXFDNkNML01lSG1talNDM0xmU2MwcnMKLT4gRC1ncmVhc2UKdnlxdDNNclFONWFn
+    SnFHOFVwbEk0dXBLQVU4Ci0tLSA1d2swUk5ibFg3RVh1bnhWalRpYkZPd3drdXhM
+    OHJ2Q2ZqVVE3TWtCODVBCoFYmHoedSUpW5bC2humLR3wOSmbKB+7UFA3idhL6Ov+
+    592KjFNZdrz5P9IvKlmG+9Napsek5lHmYpVilD3MzsU=
+    -----END AGE ENCRYPTED FILE-----
+- name: ci-runner
+  role: ci
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSByRGtrWDZzNGp4TXFTanJL
+    eVF0eGxUdkpqNnhteWF0Zzcwb2FpWXFLdVZRCmhqMTAzQlA3TDY5Zm5vWFI0ejlG
+    ZmdxakpvRDFFbDdMTzBrS05BZWNENmMKLT4gdCZudi1ncmVhc2UgcCAnNjdMYGdb
+    VCAlZwpNM2hHUFN0aWF2Q0wvajlzNmhORTFXRmN0YVVoK0NJCi0tLSBQL1p2RmZY
+    VUcxNnJ3YVVTZUl3U0Z4WU81VGxNZ1A4b3lVeVVkajNMU2tjCq15eTIJLvXkzxtQ
+    uGSZXxd5DM3mFYEXv6T97qy6bg7akXUJ5n64uLeK6dz44yX3vSeNGJKXfxndYTgX
+    9+Dxih4=
+    -----END AGE ENCRYPTED FILE-----
+- name: admin-server
+  role: admin
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSAyQjJUakx4YWZHR01rbDFm
+    b1hVNlMwQ2l4SnVUVjdtcjIrQnA3SVdvR3lRCkVkbUJZcHNJOXRZTzQxcWE2MjNm
+    V2F1cmpJdDgyVXRGUnJLSFZwUDZVQ28KLT4gdWA5RWQtZ3JlYXNlIEoqYGF5fSAl
+    Mkp+MVpnQiAjPCs2NSwgbGBhfignQX0KRVFHNG8xT1ZlZlJQQ21mMEkvNE90YndR
+    cm1BYkhyMkNUb2ZxSW5lRUlkRlowOGxwbTUvTVBSQkh4cWRLdG1ZQwpacm5JSFRT
+    WnVHZmpWaDF3OEJnV1V3enZ6OUJhQXlXMXRtWDMrTkNBY3pWUmZaNlRBRnJBVGxC
+    NEtxZ3FadDluCkx3Ci0tLSBGR2dmL2duaVNsbzgrN3phUjY3ZVoxeDNOd1NHeTlU
+    OWtrVER4QlJwS0V3ClTvpK0Y8EpxLD8PNv+rxPAyXTgylz0sqlB2KUHbNdBDZALv
+    4OGqJoxtp5/ch/VONKmYcX/sRkDwsWSmoKiCH2M=
+    -----END AGE ENCRYPTED FILE-----

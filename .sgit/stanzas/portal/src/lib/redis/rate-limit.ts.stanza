@@ -1,0 +1,40 @@
+version: 1
+file: portal/src/lib/redis/rate-limit.ts
+recipients:
+- name: sid-med
+  role: developer
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB5d3NnZzU3anNyNjFlMStr
+    OWVBaFlKMUpSdW44M1huNU1KbnNQL213elZrCkRiMWtJSXNFQ1FZcFdoOUFEaXhu
+    WkhGVGwrV3ZEYzdkOG53Y3V4Z3BiZVkKLT4gLVpTSVtGTUotZ3JlYXNlIEhMIDgg
+    fGdULzEKdXVLcU1vdWpZVjBPeW9ZWEZyN01FZW1wVHF0dEhkMDVobVhkdzRTQVor
+    NjZwbXV3dno1aHJDcDMKLS0tIENoRkVyMmpnemlSc1U2VnF4eVBVU1VBSlVyOXBo
+    YU4vUHpHZndZdGdYSXMK+a6EfVzr0ccL/8LiNCjuub7BR7Nrz/V9O4aXS95xE6hx
+    gcRz+YuMXS1apixunwfFNxyGQzHadEUVG+UhQKm2AQ==
+    -----END AGE ENCRYPTED FILE-----
+- name: ci-runner
+  role: ci
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBsQUZrYmxCcFhGMmx4Tndw
+    VkZnSHZiSjB6VCt2WFpCVCtMVjh1UkZJT0RFCnlUU2NQMTA2NGUremdUTjR0cExt
+    VmhaVmdJTE51SXllRWp0UWF3Y2dEeUUKLT4gRy1ncmVhc2UgKWcgRzMxQApCMTRE
+    cytPd2tUYVhyKzMwdjd0Rm5hc2paSS9seFJ3MzI5YjlIWjBzNGI3RHlUdTlUTTJW
+    UFhJeVExb1ZudUV4CmRGU0NOak13SEp3NzFrWWVOTXJECi0tLSBkb3k4UW1LU0t4
+    V1d5a1pETzczTU5MWHlZYVZsVy8zQmVrMU9vVXlHeEhnCs0z4YMs2hig0s1WFrRO
+    fQzAhttM26uyVB3FWcdOtOOtLu7hv53tsS2f51UWz+rpZvcpTMRE+/igFxRw9U/F
+    v1k=
+    -----END AGE ENCRYPTED FILE-----
+- name: admin-server
+  role: admin
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBCNThxTzNScnU0QmJDb3FM
+    NGRnNFJWZHlxV2QxUm1oMjVHZUJWZ2lDUXlJCjlwamduZTBWbytVUHZlNGVaODZ3
+    RmZ2Mm9tQitXRW81RXM3L0MxcGdKeDgKLT4gZ3pVRC1ncmVhc2UgeFs3ID13RidQ
+    KApldDY1MGNsajBhTW51WThjUW5zU0JBaVFELzZ3WXlZCi0tLSBHWVFVNFhLUHJK
+    WmFBaStwa1FEWWY2MjFyRFB3YklxY1JuOTVvMFpzM3JvCs1aSrG9luTxF3O+Li4X
+    VYHQjjLlbpsQu2wTqNzHMH7d5d88wKd1nmeLs+oYNjmFLGZOkfyXbFJCLtdWKIkM
+    QlU=
+    -----END AGE ENCRYPTED FILE-----

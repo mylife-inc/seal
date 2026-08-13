@@ -1,0 +1,37 @@
+version: 1
+file: portal/src/components/ui/radio-group.tsx
+recipients:
+- name: sid-med
+  role: developer
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBHb1hwa3ZKUC9uWGc5UzFx
+    Zko0c1FvZld6VzRxdGxWc1JSMjlOK0lyc2s4CmlienNtWjV1LzFKZ1hheXdRQkow
+    ZEZVSDJIcUtvdnRGZzY4SFpka3RDeE0KLT4ge3gtZ3JlYXNlIFwlClpUU3d6c01U
+    RUtySlJJcUxWYnJ6L1dKcUtQd3JwdwotLS0gTVplRlN3cHZxcC9CVWxaRGEvWVZL
+    dUJBWGExVTdWalJLQ1J3Y2FOT3BNUQp9wQ0xi5QMBYEWR7meOn9ILPgsqIBIR6Et
+    kZ6zHOe+sJsTy5eKF50INYVp5XwHNELG38B/Xf7bUJccvEzNooED
+    -----END AGE ENCRYPTED FILE-----
+- name: ci-runner
+  role: ci
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBoNytSTmpwazh6ejM1M1Zk
+    UklBRlBBYVE3R1NzN2NqRXZDdmVCTWdZU1ZvCitxS044RmNqZUdtSnVMSGkvaGx6
+    TUI2cDBPcTNnNEVwM0Q1WW80VE85QlkKLT4gTUJCU2ciIi1ncmVhc2UgV15paSBc
+    Jz8nIGt1YCBvS2U1Xwp0ekI0bzR3YzBSVHB5ZlJHQnJsMUNac2V6QQotLS0gVEhh
+    ZUtiSnhHbithdWpjelVPd3BKdWc2WnRRK2pGT2RDU3dCQ1VMRDMrcwrS7EiMm1OE
+    le+iRNisoDa+PWrvoccdqePH2JeMcQIShFiXIuGwUrBpzHyjEgWXSnukYMlPRCXb
+    a29OrLywZ9Qj
+    -----END AGE ENCRYPTED FILE-----
+- name: admin-server
+  role: admin
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSA3RzFnajhEa0wwWFAraWl4
+    d0VrQlE3L3MybUcvR0JHdmNDWHJLNDFoV25JClNwck05YWdGZ1RUaVkvbnFyd2RH
+    YytUdlIzcmhGekswSkt1Mk1TM3hqWk0KLT4geTF9UXVGRFctZ3JlYXNlIGJILXEi
+    eSJDICd+MXcgLmxfIExvCklQQQotLS0gRjZsWXEzODMxTENZS2NqK2Z4Ujh3ZHVs
+    R0lUYmlnL1VGOS9hd24xaTB4UQqZ1BrmczarInARLQhBWAmkV3IfgPvNXauw/D0n
+    82nzMEYiSxMbJ509kf6Ks25pOo2oWkQqBmOaKxko54/Znjod
+    -----END AGE ENCRYPTED FILE-----

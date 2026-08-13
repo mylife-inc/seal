@@ -1,0 +1,40 @@
+version: 1
+file: docs/internal/docs/portal/observability.md
+recipients:
+- name: sid-med
+  role: developer
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBNWWJpcnc0Ym5OVjRlaFpz
+    WDhFQ1YyTmo0ckpVcGlVUHdlUUx3VnRZUVZvCnAvVkFrYnNYNVdEYlB1SGQ0T2tu
+    UWU5VG9jVmlXRERrcVRIOUkxanJQbWsKLT4gLnp5Yi1ncmVhc2UgJ2YjZV03IFNG
+    ekRxfgpqbEc2VFZjWEZ0dlBOWVp4NjltSmFtVTl3SFZpNytkNTh0bXZRZWV0dDNV
+    Ci0tLSBueDRzNmlBTDRjVE95RHBvNkd6QjlrWFBaOFVtSE1KTjVySlhCdW9JREw4
+    CpI4pwS/OwXemVh1DolRSSBY5Na1BS94MlAtThPzV7BPRJF3XjZznYGfvbIuDpy6
+    VN522/hhepLbhOHfHn5hI+U=
+    -----END AGE ENCRYPTED FILE-----
+- name: ci-runner
+  role: ci
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSAzSDBBeW50M09HblpldmFh
+    VEZnN1pWN1BpekZSNTNwVUV5RHR4Qk1VUVJnClFCbVVNaFR3VXZDeW1CYitKSGNK
+    REVyYWVpQjlwVzBzV21FNExDamZ6QmcKLT4ganA8LWdyZWFzZQo3Z29vN09HZmI0
+    OEtvQnZnbDJtN29FYkU5d043MWIwbDM2SVpIVVJOVjVGNmh4aEx3N2hFM1NjVHNp
+    SjhhSEtKCk84Qld5L08ranpzWGFmWG1PemNxbGJVdgotLS0gL3dxQkdFM2lTN280
+    YiswbWJ6VmU1Q2V4VlE2cHYzVVMvM1ZiUDlWTUJrVQrvbbBBaKf0w59qvkpBSRL4
+    SO/sSYkD/qGccu/5NsSalHKTjFWs4Q7PmEpghIYIU6PhJ3yosNfEhJIgt7A8pYvx
+    -----END AGE ENCRYPTED FILE-----
+- name: admin-server
+  role: admin
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBQRWsrbzN6V1dYV0VyR0hD
+    TUpzeE5wQlF4WWFSejNETHZRSVFvMnVaKzNjCmRmbUlRMkwybE5DUnFnNlI5NWNh
+    QWh1aFZ1SkwxTnhLK2xQVDAzRWo1d1UKLT4gVURoKUJ2Pj4tZ3JlYXNlIH4zJi45
+    PkMgPTBsUC9tCkhpSTM3SWxlUGZPb1pseDhLTVNva3hRWUVubnBNUnBHQjRYOGhC
+    ZTlPSVhuRGpJZGFWR2xPdnljZXJjaGEwemQKa0h1ZXFSTmN4cWtCSHJIdQotLS0g
+    RGEvNE1OTXpPVlUxV25GMGpkQXlacTlZamJRQkZuRE1xU1d2bDJkMUxQcwpkqRtO
+    ykAtP60QYX3y4N7YuVHto0dedwkuKKXYiwo85I57Mcisj6XGKNazeoOtrYNbgkdU
+    PNXR5fDLxSX8YCq2
+    -----END AGE ENCRYPTED FILE-----

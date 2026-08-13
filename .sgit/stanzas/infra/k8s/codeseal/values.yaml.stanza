@@ -1,0 +1,37 @@
+version: 1
+file: infra/k8s/codeseal/values.yaml
+recipients:
+- name: sid-med
+  role: developer
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBMaEpSK0x2eUFtSUgwYmxu
+    cE00L2MxdGhDRjg2blJZKzhqUDBiV0w2VmhRCjJ1cDI5MWd3dXBQby9Eb0k1T3J2
+    eGtYUldsNkIzaWhiSlcxbExMTDg4RlkKLT4gLDtlXGNrbC1ncmVhc2UKZlIxdi83
+    WUZNdwotLS0gclludEpIU1NUcTBQTXFlT1k3bGdjZmJlallxdEpoaDJmVHRwWFQz
+    bDE5MArBKZIgiYUTGVkmdLlVN/cLvY1TbN9a4X9z7k7D1T7F8XceaX/xChzKtanL
+    cnAtGaxQoLETarRylxfCI8+lFDip
+    -----END AGE ENCRYPTED FILE-----
+- name: ci-runner
+  role: ci
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBhaURHdTlHdnFXNHArZnVN
+    QnMybFIyem9QZy9JTTM4NWFVNldKalJxandVCkFPa01XNE5TcEp3bFB6bERnQWJY
+    SFdJbnk1RmpVWjUrNnFJZHBhSlV0S3MKLT4gIkphLWdyZWFzZQpMSDkvRUduVmY4
+    OTBMSWsKLS0tIHlLYzZPMGVCV3BBUFBBMXI2SSttL2lTVHgvM291eHR4M0dkRzZO
+    K2wzYWMK1pFZxczo2ww1dREMrbgkXx5ZsRuNFCvKdld6kyT+nzaskW89FS8crVix
+    Y+jaXNsk9K5aTOAqbWCS38rBLSmwEA==
+    -----END AGE ENCRYPTED FILE-----
+- name: admin-server
+  role: admin
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSAyc2JtUFlUZDlWcE5ZUmx4
+    bWNmRGliSnFUT2ZUb09rOUZpc0VGMS9JWW5FCllSU0gxRENRY1FoUFY2SWduamFI
+    MmhlYW05amZKbllRZzR6cmNLbkNNUmcKLT4gUS4zdy1ncmVhc2UKZkVqeVJ3UHRG
+    Tml1dloydlhESnhZdTNzRGQydVlpdi9BemNDNzAzZHZBcnpzUWphWVYxelRFbVhO
+    c3ljaVhRCi0tLSAyRW9FYjBuTitLM2hxWVM3Y0x4OVZCMHlyRXUvNVkvM1VmUjUw
+    UVZIZ3VNCmZ1lx69SmxofrH5alY7uIv6Btud5ZAKTguYlwOSijQHm/i9MzdUMtpC
+    eGxixAcLkuecT1kKSQFepIGNV6nPmrg=
+    -----END AGE ENCRYPTED FILE-----

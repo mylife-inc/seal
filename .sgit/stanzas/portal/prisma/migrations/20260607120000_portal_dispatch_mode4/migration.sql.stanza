@@ -1,0 +1,37 @@
+version: 1
+file: portal/prisma/migrations/20260607120000_portal_dispatch_mode4/migration.sql
+recipients:
+- name: sid-med
+  role: developer
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBaTHFQdThDeXoyanhQSURl
+    Z2NEU3ZiZnRVQW5NNG5tc0xxWERlT3JLY3c0CjErRmZsN3E5dWNTazNJdnF3aDU1
+    OEREYmlUTUhkMmtuNUx0bTZZZEUrbmcKLT4gMFkoLWdyZWFzZQpuT0d6SGo2T1Zj
+    NAotLS0gb1VhbERMUHZKVHJZazFkZ0ErODFmbWwxUFNCbG43cEw5STNwNU1Sb09I
+    NAqMyl6pkfJpHtWdAaObAOb7jK/MqfP877bFg7adA+3BEBdIcDRhcigRxQbw1k3q
+    40Gc8aAHlrSHjBwJg5CG3cJV
+    -----END AGE ENCRYPTED FILE-----
+- name: ci-runner
+  role: ci
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBEdnJqb1d4NTlxYTVEM21V
+    d2RLS0gwdnAxb2xXZUh4L0I3V3VqKzE5SDJRCi9aV25jZnVPdFVwaGlSNUdwVTVr
+    S05IVzlpTGRJUWJMU3lZbmRCWUc4MGsKLT4gKic5LWdyZWFzZSBgLXlHfSAhIHp2
+    fCQgQXwiCjJRcjZTamloVUxJbGNDQnNmeFZVcENHYlF4VlljWWpUTTRvaksvYzJy
+    MnBObzhiZlJpK0kKLS0tIFVnc1FQa3prVTVWTzRpUC9GMU1DVTVYb2Jac05ZYVgz
+    U2pwclJTczNRYmMKNYTaaXROYoxAtFOhLvA1BQiVE5Es8GI+3H7Lr2CsW8G8C7wq
+    V6tO6EpImUphN6xGHbIugNuNnoCknTXm0RCyvw==
+    -----END AGE ENCRYPTED FILE-----
+- name: admin-server
+  role: admin
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBVSHNpY1hiZ29KZEVXNnVC
+    K1hzeGJKSURQK0xHcmZQZ2JXVVNuTmNJblRVCmgzUjJxRHhvUTVNMXNlUUZTSXM0
+    QnBNTnV6ME5CcHdCWmdUU1g0ck5QRmMKLT4gRTMtZ3JlYXNlIHkvIChmUFxxUTIl
+    IFsnYC4jJjQgJC54CgotLS0gaHRqZFQzdVRacytRL2FPNEVvdnhRNXd4d1ZMNjNk
+    TWF1Z3pRamhxT0thTQoHYAKYpKSiJJ8EqhdENUWKEXAvRzpmfGxyT5RM/Ps7ozvt
+    jWKmiOnBARBGAsSDyNrVCrI8O7NutzRqHtfP8sqT
+    -----END AGE ENCRYPTED FILE-----

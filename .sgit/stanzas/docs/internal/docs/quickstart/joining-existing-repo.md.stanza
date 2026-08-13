@@ -1,0 +1,40 @@
+version: 1
+file: docs/internal/docs/quickstart/joining-existing-repo.md
+recipients:
+- name: sid-med
+  role: developer
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB0dTI3SUI4eGR1TWZiOE16
+    WEtZZ3E1TGxxdTlJa2VyT2V5TzlOOFRRNnpvCkFtUFprbEpjbktsSnJ0cjdIeUxy
+    SlNBeGF6NTBKbmQxNnVBOU5LdkJqRjAKLT4gXkY9elYmSy1ncmVhc2UgZlQgV3Ix
+    X3tzNTsKaEEKLS0tIDN1L0tuR0RoNWNlUGRjU0Z5OUxYSEY3cWszNGc1WUU5YU1T
+    SGNVY28zTncKczzzrjfZDaARIV2QzP/KPeH35uda7Bm8dQ11xPrkvNBpZG+V8iBF
+    FGcGQSYb9ba3Da/9dn4J9E8K+i14f8MPjQ==
+    -----END AGE ENCRYPTED FILE-----
+- name: ci-runner
+  role: ci
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBEZ05kUjA4TGFNVHJ2b2pi
+    OHR2MUp3STRuaDNWU1R0U3FtTDhoYWJQSWljCmVwb1pXamdkaXlZU2xYSEE2M085
+    UFI0SlI5ekdYYlZjQktwaEFHK2ExNEkKLT4gXzc6dngkLWdyZWFzZQpDcnhBVFJB
+    Z1k3eHA1djg3cHdRTTNidVlqTk1kMksxT09yS0JjbTVGZ005bVdyMG84MU50TzJo
+    bUNXZDlyeVFHCndlZkx6RlNBYU9XcEcwWDVEaUwwT3NIQUJvQlVrdVRDZFdqVzVq
+    cVJ5WkpiWTIwCi0tLSA1MlB3Ryt1OTZVS0gxL01yb1hIWWdQd2w3Z3lBUmtqQUNk
+    QXllSWpyZVpjCko8AvgPWBuJKF1lHbJRlPriboubJgyvQK+Obv3HnWBKXmF1B3pm
+    qa8km/pvEb2Kh10LLYjO3LQeXQdylgEVh5o=
+    -----END AGE ENCRYPTED FILE-----
+- name: admin-server
+  role: admin
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBqOWozSkVvS0l5WnhLcW1l
+    elY3RUtqZ3hWK1RMQk5rcHBJNGc0d1ZIV0NnCjdyVml2ZE1vZzBBN25MeEJqTmNZ
+    MW81QkhiZkNCSUw3Qk51a0ZCN2xnbTgKLT4gcllvayMjLWdyZWFzZSBTRythQ1Qg
+    NSBAX0A/SFYKa1JTT05jWUp2NVpHZVBhNExyYjRTRERHdDBwZlFXYmE1Vk52c3FE
+    dFh5MGdiTlpFWXZnK0Z4YzFQNnlUZG81eApyY1hRdXhHRlJxMUZqQzhmZGRHU21x
+    K1IKLS0tIEx1NzgxWmp3ZlJ2ZklPaUUvVmdyN3ZYWjl1MmNEcE1HaU8yMjNYZ2Vq
+    UEkKmRz4dwxG9b8FC2CpldueWzvNCFBOsw5cDwXfebGXyyxRhGOVfy5haaLS51tc
+    2jl68g2aP1tRVBU+CWU3+BE/Sg==
+    -----END AGE ENCRYPTED FILE-----

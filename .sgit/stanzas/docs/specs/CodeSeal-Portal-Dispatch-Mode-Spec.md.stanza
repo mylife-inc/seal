@@ -1,0 +1,42 @@
+version: 1
+file: docs/specs/CodeSeal-Portal-Dispatch-Mode-Spec.md
+recipients:
+- name: sid-med
+  role: developer
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB2TDdtbFNsdmZoUFFBSVND
+    RlJsSEF5WlY0Z0dNeWFmdndLOFFNYk1ING1jCnVGWlU5UUIxZFNFem9taEtKeEgr
+    NlhRTHJTdW13MnRCbFJYZXV2b0RBazAKLT4gLzdiIVlpLWdyZWFzZSBuaktpVVQu
+    PQprc053YURSOWFGUFBsWjFEbjFuNkFXeEdNQWN4Nm5EY1dqN3hLcEo3ZENzcmJq
+    QXdKVktYdFpGcUlwQUxSS1ZVCmdUT1NwYVk4NWJhdSt0RjBhNmMxSytCanBoRDNY
+    NEZLQ2xZWGlZYTlQQ2xuRFc0cURtZ0Y1ZnZLNTNmYkx3Ci0tLSB5SUhIUmU3UFkr
+    c0NRazZhYXZueWlGOThLZWRLUEM2Rm15ekRTazRVL2tzCrosvD/rb2pld/uiEIoh
+    N/q9p4vqr161sa4HBCvW3LiDJ5pRdJ8Tg0+NmCmVGnkYbE5cpnYXUcTzHA2OcAko
+    7wE=
+    -----END AGE ENCRYPTED FILE-----
+- name: ci-runner
+  role: ci
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSAxL1Bsc0ExbGxvOFZDcUs5
+    eGdIVmUzYkVadktxTmVTYWpqSjR2Vm1MWFdzCk9ZeG9PSWFXRjc1TlhRclZZWm5m
+    STllSlptcDI5Z3lZNHhhQlJyNUlIcGcKLT4gbzNxTiZzOC1ncmVhc2Ugd3YpLXgg
+    UHVLRiBqCllnalh5MDhmWVhlS2hYcmlqWXBzb1d2N3JKbWJ2dnhYbEJjcFN5VTFF
+    azYvVnloeUFLYlF0dkpFCi0tLSB4MlpaRVBDdXJKRkJ1aVBlZEt6VTE5cnRwMlN1
+    eU5Da2ZicVhxQnJOMUdJCoD+syhJnBW9z4JpsZBb92mMeZwD1wBBsy6Cvvb/j97b
+    eBPHcsRTOGIFz5g0cljXe2h1qHKmD3D6QNd5iaanVjQ=
+    -----END AGE ENCRYPTED FILE-----
+- name: admin-server
+  role: admin
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBIVUN2TGJHMjF0b1ZIaGxv
+    NUN1S1dnYnF3VFpneDZaUEQyeFFQdVB1S2hzCnI0RU82TkdkTnlndVBGcHUzVlk5
+    SnViQnluYWpZa3FkYnNaTUtSdjNhMUEKLT4gS0FkVG8tZ3JlYXNlICxcbDlwaXwg
+    UmNwCmo4cWh4YUxDSHBkT05zUTdtbExTdStuNGtsd3hQWmh4N1VuU2xZSzFUc2hx
+    SDBGbU9yL3NhcC9yWTBmNDBRbFIKNVlJSkJPK1NEY3JhRzIxOENYWnNHRXhDdzhK
+    Q1BYRQotLS0gbHdibGRaYzVqYlY2UDhOVHYycFRrNHdvU3JDeW4vbzhEWkk4YjVl
+    Zzg3WQrBE/wOdRYcohm2Fk8jmNOv7e2kMqGgUdV3KeHrNU7mnBTt0Q4kvOuX3ETj
+    NbzBI1w88e8c2cji7elDr6Ko2gU8
+    -----END AGE ENCRYPTED FILE-----

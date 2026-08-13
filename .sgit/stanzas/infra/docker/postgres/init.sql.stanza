@@ -1,0 +1,37 @@
+version: 1
+file: infra/docker/postgres/init.sql
+recipients:
+- name: sid-med
+  role: developer
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSA0R3J2ek1LbmgrV3phM2Iy
+    eXlYb3pFRzcrMEQxeitRb3RWNDRzQ1pmTGxjCnBhMzUzZHBkM3BwVGJwWlUxU2sx
+    UDdTbzRXYkFwQldkbmZLd2VkMDFReVkKLT4gT1JeLWdyZWFzZSBOKldwQiAkJSFh
+    MiBHfnBvQz51YgpKRUpTazVLUXRXNU1BYjZUemcKLS0tIEQvWmxMUm1SSE5HV2oz
+    bTI3MW1oWURHa0hJWDlxbFRORmRIU0FsZlUzYWcKZGGne5ecrhDj4cS4819qWfmb
+    h4fu8lxtpUJaaMOd6iIMZArj0HAInd5cNTtlh0KXRxeIGTSF9HBt89UVAcic1Q==
+    -----END AGE ENCRYPTED FILE-----
+- name: ci-runner
+  role: ci
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBCTVdDS0ZGNW5nbkxMRnNX
+    cUxaQjFldWVDQmFxTjRHb09INGRocHN6TWxRCmxhYnY1bkxMYUdEeFc4L1pjZSt2
+    THRMeEYxRTdNRUNabTlJMERjeEFLSmcKLT4gUUUuTVxkcS1ncmVhc2UKNG0yUjJ1
+    czkzY09ZZEdveFNMQjIKLS0tIDhCbTNSZk42dHFxVHI2VWFsbHIzT0czRjBVa2dh
+    ZFFzMmR0Wkg1Q2M5V2MKn2OBMGsfNdWQ6u6TQF2GTW9ajHxEWcBFke8AXupVftjE
+    uQCKOfoi/DThC2IwRUQAm0XTSQ37JimBGVT3Cja9hQ==
+    -----END AGE ENCRYPTED FILE-----
+- name: admin-server
+  role: admin
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBEeS9YSWFndUFpeFdXVndQ
+    SVdreVVBakd4cjh5VW9pTFNTR1J3S0NpMUNZCnE0aW1oZ2JEUUtVaWJtRkM1LzJS
+    ZFFPbHpvRThzZjFoSVVxZ2J3UEcwUU0KLT4gQTBRfS1ncmVhc2UgZyw9OkElXUEg
+    U1AwV2stZyAhT3ozey8iIEJOciw/CllMN2V4Vi9yeCtra3Z4NVVjZwotLS0geTRs
+    eXVjVVZpV2pHV2RPTmpORTFOZ24rSnNDRm0xNWdpT1dGWUNCeXpRdwrEt6JkScaX
+    Vgg2Pa+kZExwM+01HL+54o+0s4aVqAxxYkWEzb9b25CCwotn+1kdz4S9MfCZrOca
+    3D0yT5qDkq6y
+    -----END AGE ENCRYPTED FILE-----

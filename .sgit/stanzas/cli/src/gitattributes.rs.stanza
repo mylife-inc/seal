@@ -1,0 +1,39 @@
+version: 1
+file: cli/src/gitattributes.rs
+recipients:
+- name: sid-med
+  role: developer
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBQamR1d1hsLzJsNkFVWXNJ
+    SzdQNXNueGQ0cHpGdmhUaWpneHduVEVTNW40ClB6MjZ1c0pMeXJ4dXh0SDZlRDZ2
+    SE9BSEo1WmlFYklCb0RJL2s5WU5jRHMKLT4gMWh7ejotZ3JlYXNlIGI8TU9rRyYp
+    ICYmIj1YXCBBMjFTdVggfS8hCkVGV3h5WTRITmlicTE5VQotLS0gNDBmS3hOV2F1
+    Rm55NkIxZXltZk1hc0FYYjRUK1VLYjhVMnJLOEhGUlpIWQo3HwOqagkoVka1vl2x
+    O+HHYvrTIhJDpIR8HjrW5XhtJ+Z4f4/hmCpLW8XeKYYsou+fpyjnZZhj5ddTQD9Q
+    Zjbl
+    -----END AGE ENCRYPTED FILE-----
+- name: ci-runner
+  role: ci
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBUQVBuN3BtRFZpTU9hYm0x
+    SGl2cG1LdWJLMFdTazBjem1rT0J3YTllVG44Cm0xWjRZR2twcHNVdnMwejY5V2FT
+    b2FXNzFhTWEyZFRpVU9kTDRCUXh5S28KLT4gRS1ncmVhc2UgTFpEQyMgJiB4NWdS
+    JlEmbCBSWDFuLE5kCi90dWF1REk3M09rTUNxWjBkc3MKLS0tIDl0M3J4SkVMRVVY
+    eVVOOVFOWmRpRUkrQStqN3VIN1Z6ckRLVThwOGJZL2cKz5JWoyej6o001hd/WVkk
+    jfy0Rhjm/NB0JQjGGYv3qv/QA+kQBAnqdhPzzs/LPGl+OzsqDRMlxt4yWpllzgZR
+    Sw==
+    -----END AGE ENCRYPTED FILE-----
+- name: admin-server
+  role: admin
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBHbXRkYk1sdnNmZW5wcCty
+    b0c1QXRPVEZ6Y2RHcy9uTWZlQTYraFhFVURzCldtU2NGSzN2T05NWlpEclJWcU42
+    YVhuUGxtS2c2WlF5Z01tY1Brd0ZudHMKLT4gbmBuSzg9fC1ncmVhc2UKN1ZVVHpa
+    ZVFxYzIvS3dFNytxcjVheUJqZExCY2gvOHBCbFJBaFF2WkNnCi0tLSBZTUpjZkZv
+    bXdPRlc4YzRmc1VNdGQ3dXJUSVg3dmVHcUR6UDBMTXhtaklVCuLx4TU40mtsWgIV
+    jNiXp6Z3OO6U9ERKPoq2FHy51CpESQO7EAiEZZTxGQcabmc5Hm4fukDalu/d14ZS
+    tTKCiZs=
+    -----END AGE ENCRYPTED FILE-----

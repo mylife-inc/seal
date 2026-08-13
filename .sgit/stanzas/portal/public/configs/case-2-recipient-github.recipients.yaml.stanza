@@ -1,0 +1,39 @@
+version: 1
+file: portal/public/configs/case-2-recipient-github.recipients.yaml
+recipients:
+- name: sid-med
+  role: developer
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBYVGhRMGtuZ0ZwRTVrZitR
+    cDE1SVdnKzJ1OVBWcGJDcWNuY0ZUUDZzSkFrClFRbVNoNGY3ZUxxKzFiUVBhd0dR
+    N2VSYVZjaU1OVmpUTElrMTdvTUFaTUEKLT4gcF8tZ3JlYXNlIHFDTQpqdTE0dWZU
+    VEROMHF2RlBqQzArd0lqUWNJODBYazUwSXBNUXBERzZqb0phUFUvNHZXa1MvWll4
+    RVpHak1DVWY2CitMRkdYSFFKKytGdlRXcWVmN05iTzNicDFDQXUxb1o5VXV4UzlM
+    SWtEUTJpOEtjRAotLS0gK0R6b1Zoakc0dUF1elVqNVFtTG5kYVhnMGhvWTNXdHpy
+    UjFSUU4zYWFlRQoafzZlzVnp4gdV21jpzG97cjqbzJ0FJfYyMLdkpYuaLnqiXYOR
+    m0rPvTYDHb2z2InJxlGd9rt5bRSUH+kqGhkn
+    -----END AGE ENCRYPTED FILE-----
+- name: ci-runner
+  role: ci
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBMSkFuMTBReUFZdDNzTjRS
+    elJsTHpFclhBV0hQYUFyT0dxZzhKS3oreHhNCktCQk11SUpuYjhhdDVBTng0Rmxi
+    N20zVzgzeG9mT21jdlNBaWlIL0xNdVkKLT4gTF9AVC1ncmVhc2UgWi41fUkgU2R5
+    IGpnR1BoeWc3CjdsQmVkZmxBNzBpblJKT3QwNEZaWUZjSURjK2hoS3pJR3crV0JT
+    LzlDR1UKLS0tIHNxOVNtcFR0SnZyYmdoaG5lbjgvdXVYbEdlejVTNnF4VGI0Qlg3
+    RGxpWE0KDyzFjgG8d+2Ouan+iIfh/1uvpGulKDukGhm2o9YdylznZ6CJ4Zx7j+JK
+    Jcdx66OqiSlkA92/Jf4vbced0ZqYaA==
+    -----END AGE ENCRYPTED FILE-----
+- name: admin-server
+  role: admin
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBjTjZUV0hKRXNlODh1RGhk
+    dC9tUUVqeUE3RXdSSEg3ZlI4by9wQTJEbVY0CjFlVWJZUGNjTE5mc1RqbDY5Z1ov
+    MmlJVDJxZGpOdytGallMN0tYTTM3cTQKLT4gbF9zLWdyZWFzZSAieSRIfmUgPU5O
+    NCBrZk0jKl57bwp4TVM2Ci0tLSB0MGxOV28vOStERkxlamVxMkQ3ZG5Eb0RWSjZ4
+    VTZIdHRQSFJBOE83dUFZCqj9ZL0nifx/aPa/GfvROtvT99G4pGLVylw7ehjbQ+tn
+    F6tn8rI+m5S0CWneOlbd8oDZZjcQ/2dzKVMJwY6wMyY=
+    -----END AGE ENCRYPTED FILE-----

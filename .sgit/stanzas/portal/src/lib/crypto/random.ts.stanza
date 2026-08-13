@@ -1,0 +1,39 @@
+version: 1
+file: portal/src/lib/crypto/random.ts
+recipients:
+- name: sid-med
+  role: developer
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBJL3lqdVAvWTFmNlZwTHJT
+    amhBSG96SWl4YTFkZ0E1NzQ3RTVUVnZTUjFJCmNSYWxJOFZIMUxJbEN0ZTRwQmxn
+    clBpeUE2cTFaQW9aT0F3clBxOWNpdkUKLT4gVSwtZ3JlYXNlCkUwR05XT2ZNaW1x
+    ZlV0bDY1UmJoQzh1bUxWWjNGSU8yWVg3bW1CRWUwK2d5bWRWTGZqTXFwN3hhNVJP
+    QmNqZ2MKb0dtRzlRZjJPNzBkL2hCVXh4a2FFZi9GSzIrVG04MnZZWWRhWVJkaXZ1
+    bldmbEwxMlEKLS0tIG1hejhabWIyczRYRHk4SUhWOVpEMFNRdm9zd0ZDaVlMTHZu
+    TnpHRHZtWG8KL8Zxm/Ug7UQBWpNCMXcoM2w326PLoC1lbGRAG8WSN1hf1SApx4Ey
+    WFlqVYvI0v8uykCOYrYhJgot6JxlayNk4g==
+    -----END AGE ENCRYPTED FILE-----
+- name: ci-runner
+  role: ci
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSAvc0dxTUpjbGtyRXo1bVQ3
+    V0NBanVHU2Y0VCt3VCsxUmxqVGh1RWdpcUJrCjNuYWZwdUJXK3ZrVmxVd3oyVmxP
+    KyswMkJIdldXS0JPS2FGbkd1a2pEQ1EKLT4gPk1YMS1ncmVhc2UgUVogZyAxUQo3
+    L3J1S1dpMXF1VnhxM3RJdHg1Z3NBCi0tLSBxeUQ4ZlRoUXIxOTFhbTRPY1hQaGhM
+    bm9mSmRZeXVGUkRqanFUTzcxQUpnCt/GnOMIJQpC1qKNBEo3PLSxutxEtrpCeTIi
+    qmmJf/NgIx9eekp4q8WNH6ek3O1nBm/2ohZebBDNGYUuA/WxJFE=
+    -----END AGE ENCRYPTED FILE-----
+- name: admin-server
+  role: admin
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSAyYkQyNTdmd2p4NXk3S1BF
+    ejgzUVJFY0w3RTljZnMyRjhDdHFkUXJJbUIwCmc1N1A4c2ZwRnh2dmlod3lKa3pp
+    VzI0aDc5ZFY3VHF3N1h6MElYd0hiQlUKLT4gcnRtYXktZ3JlYXNlCnJ4OGNZUSt5
+    bGZEbCtBZVBnQjF1dlZHc2IrcXYwQkNoY0JRSUt1SVNUOXcvU1ZXbXZxN25YelVi
+    MGJHVE9DSWIKcWQ4NWk2QVIKLS0tIGR1YUxnQ3hkSFFLWmM4RmFKMy8wSmg1d2o2
+    Wlowa3dJQ2pRbytrWDlKS3MKKUTWrlrHL/pxYNELM8L1frWBKubwkVkaOpReFxym
+    tl+O8EWMXZm7pLHqD8nqIYo31rQ/ZT0H6tvtC5fGNEyVPg==
+    -----END AGE ENCRYPTED FILE-----

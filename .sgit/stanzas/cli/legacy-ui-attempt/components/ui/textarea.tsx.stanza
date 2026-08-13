@@ -1,0 +1,43 @@
+version: 1
+file: cli/legacy-ui-attempt/components/ui/textarea.tsx
+recipients:
+- name: sid-med
+  role: developer
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSAxYWVsNTVlK1VxcUp4M0NE
+    TmJGYVJKSUIzSC9rLzBiZ3RtQklpanRlSnpRCmFuS29IOVdzMWRNbkdWT2VvTjhj
+    MmdZVmtnL0huZEtoNUdQYUhmYWR3UG8KLT4gdSw9LWdyZWFzZSAobFQnVGV1UyBa
+    cChJXCQga0kiXWlDICVMeU4mRTsKcnppVVhUNkhOZU4wRXJvcmNpY0d4cXVrSzg4
+    WEJ0VzlWL1FLYkVRc2NWMDFYRlNadTMvZWpjcEFmbytJOHVjUwp0bjdwTFg5NllE
+    Ym91Y2xaemxndTd5UXQ1K2dXcW8xQUJXNStGbkNIRGJRSkd3U3NqQUFhTjVsSgot
+    LS0gWUUxNWE0dnFRVTRxQXcxV3lxdWlJT2kwY0tPK2o1WGdyMkg1NjdyR0tBWQpO
+    fJKkfsjq7gKTkul0PDLYufh+4689LSGiOLkx8EshlCLiTa1xaf6b5FJqApc74RaB
+    YePJ+SXevg8yVYUxTwGH
+    -----END AGE ENCRYPTED FILE-----
+- name: ci-runner
+  role: ci
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBDd3Z4NmJpVlVMUGpVSzVY
+    bVRBYXUrcEl0YjBBSmpDRDd2eHhKUGhNNVM4CnVDelY2bUs0YW5ZODB5N2xtRm81
+    WW5ETHllLzJSYjNURmt0bmZqQmpZVHcKLT4gSHtSZE8oay1ncmVhc2Ugc21bOyxf
+    Yy0gZmMiX0IgNlVoUXAtICxQNS8KaGVqc2FtNUViem1pUFYxd0VEWTB5Q3Ricmpu
+    eFlrZVoxNDJDUC84ODR5SGhzNlU4WG1vKzMwU3VoRFdyOTFQYgpGeFp4aWxweks5
+    bDVTYStnR3hjNFBZTkNvYTNrMXE4UUpXclFMZwotLS0gV2FIWGxOU3NPa2s5MlJD
+    ZzF6S1cvd2pZQ01PTi9nL2hiYUdkYngyQ0NnNApTNItqFEpzZhGSINBmC0prJOZd
+    rs2bEax9cv58kYUxOiW+Zgm3lk+K8HfGsGEIRTj4SlCiQ87knn8Y8M5bAkdo
+    -----END AGE ENCRYPTED FILE-----
+- name: admin-server
+  role: admin
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSArclhDTXVTYjVNR1MxZ1BR
+    S25MMVFPM3JKZ2tyL1l4c2hUcVpTT2lUVEZzClQ2bERXMnAwVGowUnJpUkk0SklU
+    Q0x0Nk9nVnozanVCYVhYR1MrT0pNaXcKLT4gdy1ncmVhc2UKR0oxclBOcjdJcDAy
+    cjJUejlRbHJIQm1MN2FyMHJBWllKVFJtL01sT1BZbUhLZzFUT0dRTUE3N0VtTysx
+    cUp2RgpKV2xhME1zWGh6ekpMMG5UalAzRyt0M203QTRVM3NZTEpiUWlkeDJKdlZF
+    d2pFc3ROa1UKLS0tIDYyNjIzTVIzZ3lJL0FjU3FERklFUmlIVmpVT0NBSElSb3Rz
+    QkhnejU3MWcKCtgZfk74IHGXxf8XkOaMluJ4BzqQ+lhzB+F9c2VIXpXWPyGRAWcb
+    cThiylyweypqWm39CHIEm7ITAQ/XR6PhVg==
+    -----END AGE ENCRYPTED FILE-----

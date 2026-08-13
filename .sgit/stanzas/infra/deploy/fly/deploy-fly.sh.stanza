@@ -1,0 +1,40 @@
+version: 1
+file: infra/deploy/fly/deploy-fly.sh
+recipients:
+- name: sid-med
+  role: developer
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSA1QTBoZyswSDBFb0xjbklw
+    eFdFZ2pLNjBPTmcrbEpVSTBERTVQa2FxYWtJCjVBOFo5ODcwWURBNEZYOURVRzhL
+    cmNUM2t6Z0NNbDRPamw2V2IvelJEbW8KLT4gWj8wSS1ncmVhc2UgJTRsPi43IFh1
+    dwpXOHFra2pab2tsZTdYdGlwcjdqaFByVU9CR1BFb1U3bi8waDVNTTEwUkpYOWI0
+    Y1YzbXZTTzA5Z2Urd2hYRURUCitKQ2gydit3RkFDR1c4emxNNXdsCi0tLSBRRU5i
+    SytjOWNudGdVdmoxb0pwYWtDVDk4Z2RkOFJsSjg1eWhDUmpqeTM0ChhlrLrQ8SEC
+    hdo8Pebk9XpHHAfWT4firaLHIUXECUZovRyq6CG5Dl1rYVnAFMqbaS2JDGH/A3R7
+    tzfcUuJMSm8=
+    -----END AGE ENCRYPTED FILE-----
+- name: ci-runner
+  role: ci
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBDNnEzaUlMWGptNG5kVGhC
+    QmtpdktickZxS0lPTnVvNmJ0VW5EN3YyN1JrCi9pUUhXTCtGY0pER2V1ODhURTlE
+    SlorVUhINWhBUE9iaDg0TkdTd3BDeFEKLT4gPjUsZi1ncmVhc2UgQGB6ClRnbGJs
+    ZkZSQ2NzM0FOQWpTR2xUS01obHJKOFgySkcwTm5lOFVxK0VzeUtBdFV6aUlvOXlI
+    Y0hCUmdLSVBNV0EKZnZhQ3V3dUZ0eThJZlNFdG5oZ1h6bWZvNGcKLS0tIG9HN2hr
+    R0NMT1FWdEs1RmVnUnRhNy9JMk5nb0NzbExXSVcrT2dwRVJVU00KGdVp+LcBEkIR
+    M6tHlMPJNvCSnOjKeu2+HkIX/RXCijT8xyYyq4DguY07uS1JLAs3LpxuQLXd2E2J
+    +qiIdfH6ng==
+    -----END AGE ENCRYPTED FILE-----
+- name: admin-server
+  role: admin
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBraEExUzVnaGhXcGpzT1V6
+    TDNRWXRLMDhidldNQXFaeDZlbmVINUtxZUhvCkRTVHN0M3VmZ2pLM0s4Zm9qRXZs
+    ajJnY295d3FRNVBwZW85dWtvSnFqTlEKLT4gQk1nPy1ncmVhc2UgMGVsNnQlPEQg
+    blIgKSlRXmBqCmllRkJaeDgKLS0tIFEwNjZkbmZESVB5TW5IUFVhalh2dDRYTzAw
+    VzlzS3AxQlRSbS9KN2tNUEEKnjfQLUPHBTXDhF+MRPx4q3BfeEVQhuwcYa0FSVXU
+    RVoR8wKTvJ5O560Rw0e2/E7aZ+MMD4YDLEts9TyEjsgVIQ==
+    -----END AGE ENCRYPTED FILE-----

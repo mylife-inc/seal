@@ -1,0 +1,41 @@
+version: 1
+file: infra/deploy/terraform/aws/variables.tf
+recipients:
+- name: sid-med
+  role: developer
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBzRGVKaXBWOHVNa3dMWXky
+    clQ2ZlRqYVlIS0o0OWZOZ2taVnRzZnNWNVVzCk5GNnpvWnVtMm02eGVGL1p1RHBR
+    MitPZGE5VExsT21wMm5oZjB4ZCthdlUKLT4gcXItZ3JlYXNlIEI1JV0mID5ndjcg
+    RTprUSAzMGZ4ClQxK0xaNmxpaGM4eksweFRVTkpFOXVISllQWGJxQmtNLzZwL0tJ
+    d1VvWDdrMTFDNHhGdFlzNHMzdHB3ekJnCi0tLSBiQnVSTERGNVF1cUhXamFIMlRX
+    TXZ0ZS9uKzk4M0FuNXdIU1ZzaUsySHBrChTaUGxO++E36m+nRAFTa5lVF9rArssz
+    VHsOHnMWmkjfytpuvUfMSQtQsvy3NnvK2ai3RFpX2gHkzbWeZG/vq50=
+    -----END AGE ENCRYPTED FILE-----
+- name: ci-runner
+  role: ci
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBaeWVqSnBNNk81QXNOR3RI
+    MHB0TlhRS3RLQnRWZ09wVmZQTTh6ZWZhVXpvClFVVkx5azMxb1h3clRGUDZETmEv
+    MjJlZzNQSVJkOFVrVmxkellZQzlrV0kKLT4gIT9RfnouSD4tZ3JlYXNlClVUbDht
+    WHlyanBRbFF1aGNJTkxZYVQxNS9LWk4vOE5haGlzcnpTc0Nid3o5UEd3dTZFVjIx
+    RzBCK1Nxa0Q4QUYKRDJMTGpISW9aQUhTemZoclRsekVhNHNsY3dyeFluUVZDaGF5
+    TkMvOWdnCi0tLSBPYlZROG5OZkhGVmNRSTBvMjY0ZzllN2NtWDVvMkVNTDA3cEJQ
+    dm51UUxvCv7j/vmFxejZtCWGVNcogMc9WeT9yWTkPT5vVUACA5u7r1hSK87lMCLd
+    llNmnhrX9rUUNgEqh3/K8s0QQdKb2gM=
+    -----END AGE ENCRYPTED FILE-----
+- name: admin-server
+  role: admin
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBPZXBrQjRSeW5GQWVwVjVq
+    N2Q4YVJxOWdkRURyZityZHM3UXdmcXNDbGxzCno3WERFOWkzK3hSZDdMNU9lOGo3
+    OXF0QnpyMm1aaXFVTE11cTN4S2l4RkEKLT4galZnb2c7a1YtZ3JlYXNlICNlCitH
+    MjR4NGFJOUVLZm9mMFlzTFJHa2huOTE0OUpKYXBVSVQxNjltenNwRUZZbCs3cjcy
+    RHJmeEpRVUJzRUtpa1EKTzcyTXhMZllSZHRBcEhHQTVMWmVNR2E1OGdtbDFaUQot
+    LS0gYVVLdnJuTVFtZnhmYmVvM05TaWFxcUM5azVlUnhrVXdVbVdLSkRiL2Z0QQr+
+    S+7KVxFKGBc8AiuHr4cLuE8wwTkIXILhXGmLj+y2/ty3coZXNEXc1tElzqsaU2da
+    BKzTzpJhKfEu5+2x51RA
+    -----END AGE ENCRYPTED FILE-----

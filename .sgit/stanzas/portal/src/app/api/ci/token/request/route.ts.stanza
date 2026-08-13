@@ -1,0 +1,42 @@
+version: 1
+file: portal/src/app/api/ci/token/request/route.ts
+recipients:
+- name: sid-med
+  role: developer
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSA5R2V5dWJxYVlsNGNRcFNo
+    Rm1SbU5uQWFZQ20wZTFaaXNzWHRNWEJvZmtrCjVxY3NGNDlmeHBFUjJiWDFsd000
+    Z3dRZFJKNTdWdURudGlKa1hlWHZXZk0KLT4gc3MrV08tZ3JlYXNlICxYIGRjIE1K
+    c3pGJVsgIyxQCm1QeElGYlJsMHc4MjdZeHBUeDViSWpZaXhEMnNiMXZweHlTMDYy
+    UTZoZ29BMjUrMlUySzRZUQotLS0gcWMwYUQ1a0JWQ09vREFvaFMzNDB0S0tucERI
+    aERjQkUwSkx2SUhLZzl3awo0PjF4xoULdGe9JEQxg0ht9k4nnP+KTDfQFApojjxv
+    /Mt+bKSpcmnoxxPP4+U98KzH2WhKitnJYqdgs1vgTejV
+    -----END AGE ENCRYPTED FILE-----
+- name: ci-runner
+  role: ci
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBmSFBBQjc5VVZnVlRBaDZx
+    dVkwVTZnaDAzZkhwajI4dGp6S2pBSkxENlhNCmxDciszbVh5Wmc5d0xHSnRxWFp2
+    R2FVUWpmNWlpYnVldVoxMzhxNU9vRmcKLT4gRSM9Ui4tZ3JlYXNlIF49WCk+cGJN
+    ICoicyRoc19qIEYKUmN6ckF0Y3RhSHpUdWZnblg3WGt3SW13VEQwSEo3T0VHU0lZ
+    SVZRb045RHBrcmtuWkl3alY1Vmw3OTVEMDR1WApORWNMWDFjTk1sTlpCQWtIZzlz
+    ZXRCYnJrY1Q2OXg0N200RTliaHViQUw3NmZEZlhleHlOZHRmcGFWdFIKLS0tIG13
+    RStmNm1qRjIwNzgwQUFMT2ZIYnNGc1FJREZRczV5QkdldXFEQ2JBM2MKd3n7rn22
+    vjfHxnmOTWx983FUAlcmeXOrq7v3uYysWvaWYfhZkZl1s+u+fNtaV/NTPFgbZB/Y
+    CBQoSkjIZBd0Fg==
+    -----END AGE ENCRYPTED FILE-----
+- name: admin-server
+  role: admin
+  wrapped_key: |
+    -----BEGIN AGE ENCRYPTED FILE-----
+    YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSAwTlVCeTdQNmQ5UVdzVGhn
+    d3NFelVPeTdjL0xocFRJUks0UGx6SmZFWWhNClJiTm9CT3IreUdoODFyakFpVUlY
+    VTZZeGtHaWFDRkJxckJUcGNyOXpraEUKLT4gQU96dS8tZ3JlYXNlIFp4LyAlCkEx
+    MFBoQUZId3dHTG9DclR4bkYvQVBtVzVOdklFSzhTQkNEUGEyL25Tdm1uUjZUYmR1
+    YlZscENhVmhGM1A5TEYKVGNGR2N1aWlTRHYwakZnZURoVmxxSGlOYkVieVlvcDZy
+    T04wNWg4cmFXQQotLS0gVEd3UUNhQXFFczFHZzlLbW01emI1QmYxNDM2N0JlUWpV
+    SHk3c1JOcSs3WQqq/bVUCMz4Px9ODMbrqFwfuCZNHm/dMrx9AmXatyQuuvDFMl5Q
+    wG2kFY4X9d9+Zkq9tws9Roy52hcCdUB4hOaq
+    -----END AGE ENCRYPTED FILE-----
