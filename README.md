@@ -27,7 +27,7 @@ source tree, and releases that come out of it anyway.
 ## Install
 
 ```
-curl -fsSL https://raw.githubusercontent.com/mylife-inc/releases/main/codeseal/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/mylife-inc/seal/main/scripts/install.sh | sh
 ```
 
 macOS and Linux, x86-64 and arm64. Every release publishes checksums and the
