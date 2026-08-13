@@ -63,5 +63,5 @@ jobs:
       - name: Upload
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          NETLIFY_SITE_ID: b8a8ce89-5ad0-4dba-a907-3a0ec0bf4f32
+          NETLIFY_SITE_ID: 35a99464-2fb6-4948-a8d8-2eb416d80a0e
         run: npx --yes netlify-cli@latest deploy --prod --dir dist
