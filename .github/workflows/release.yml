@@ -164,6 +164,25 @@ jobs:
           pattern: binary-*
           merge-multiple: true
 
+      # The installer has to look where this workflow publishes.
+      #
+      # It did not. `DEFAULT_REPO` still named the shared artefact bucket the
+      # binaries went to while the source was private, so `curl … | sh` kept
+      # installing v1.1.0 long after v1.3.0 was published — and reported
+      # success, because from where it was looking that WAS the latest release.
+      # Nothing failed. The only way to see it was to install and run
+      # `sgit --version`.
+      - name: The installer looks where this release lands
+        run: |
+          set -euo pipefail
+          declared=$(sed -n 's/^DEFAULT_REPO="\(.*\)"$/\1/p' scripts/install.sh | head -1)
+          [ "$declared" = "$GITHUB_REPOSITORY" ] || {
+            echo "::error::scripts/install.sh installs from $declared, but this publishes to $GITHUB_REPOSITORY."
+            echo "::error::A release nobody can install is worse than no release. Fix DEFAULT_REPO."
+            exit 1
+          }
+          echo "install.sh reads $declared"
+
       - name: Checksums, and the installer
         env:
           VERSION: ${{ inputs.version }}

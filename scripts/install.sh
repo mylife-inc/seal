@@ -3,7 +3,7 @@
 #
 # Standalone POSIX sh (works on macOS bash 3.2, Alpine ash, dash).
 #
-#   curl -fsSL https://raw.githubusercontent.com/mylife-inc/releases/main/codeseal/install.sh | sh
+#   curl -fsSL https://raw.githubusercontent.com/mylife-inc/seal/main/scripts/install.sh | sh
 #
 # What it does, in order:
 #   1. Installs the `sgit` binary from the latest GitHub release
@@ -43,26 +43,38 @@
 
 set -eu
 
-# The PUBLIC artefact repository — not the source repository.
+# The repository the release workflow publishes to.
 #
-# CodeSeal's source is private, and a private repository's release assets need
-# a token to download, which makes `curl … | sh` impossible. So binaries and
-# the operator assets are published into a public repository that holds
-# artefacts for several projects.
+# This used to be a shared artefact bucket, `mylife-inc/releases`, because the
+# source repository was private and a private repository's release assets need
+# a token to download — which makes `curl … | sh` impossible. Sealing removed
+# that constraint: `mylife-inc/seal` is public, and its release workflow now
+# publishes into itself.
 #
-# That sharing is why every tag here is scoped: `latest` in a repository shared
-# by several products is not necessarily ours.
-DEFAULT_REPO="mylife-inc/releases"
+# The default outlived the reason for it. Releases went to `seal`, the
+# installer kept reading `releases`, and the newest thing it could find there
+# was v1.1.0 — so a fresh `curl … | sh` installed a version two releases old
+# and said nothing, because from where it was looking that WAS the latest. The
+# release workflow now refuses to publish if these two disagree.
+#
+# Tags stay scoped (`codeseal-v1.3.0`) so this can be pointed back at a shared
+# repository without `latest` meaning some other product's newest release.
+DEFAULT_REPO="mylife-inc/seal"
 REPO="${SGIT_REPO:-$DEFAULT_REPO}"
 SCOPE="${SGIT_SCOPE:-codeseal}"
 
 # Where a signature was MADE, which is not where the file was downloaded from.
 #
-# Sigstore binds a signature to the workflow identity that produced it. That
-# workflow runs in the source repository; the artefact is republished here.
-# Checking the download location instead would accept a signature made by any
-# workflow in the artefact repository — including one for a different product.
-SIGNING_REPO="${SGIT_SIGNING_REPO:-mylife-inc/CodeSeal}"
+# Sigstore binds a signature to the workflow identity that produced it. Where
+# that differs from the download location, checking the download location
+# would accept a signature made by any workflow in the artefact repository —
+# including one for a different product.
+#
+# They are the same repository today: the sealed public repo both builds and
+# publishes. It stays a separate knob because republishing elsewhere would
+# separate them again, and the answer then is still "verify against whoever
+# built it".
+SIGNING_REPO="${SGIT_SIGNING_REPO:-mylife-inc/seal}"
 VERSION="${SGIT_VERSION:-latest}"
 INSTALL_DIR="${SGIT_INSTALL_DIR:-}"
 SKIP_VERIFY="${SGIT_SKIP_VERIFY:-0}"
