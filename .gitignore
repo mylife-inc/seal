@@ -196,11 +196,13 @@
 /docs/internal/docs/quickstart/recipient-mode.md
 /docs/internal/docs/quickstart/security.md
 /docs/internal/mkdocs.yml
+/docs/internal/sealing-field-notes.md
 /docs/specs/CodeSeal-Advanced-Appendices-Part6.md
 /docs/specs/CodeSeal-CLI-CI-Spec-Part1.md
 /docs/specs/CodeSeal-CLI-CI-Spec-Part2.md
 /docs/specs/CodeSeal-CLI-CI-Spec-Part3.md
 /docs/specs/CodeSeal-CLI-CI-Spec-Part4.md
+/docs/specs/CodeSeal-Container-Distribution-Spec.md
 /docs/specs/CodeSeal-GitHub-Issue-Backlog-Part11.md
 /docs/specs/CodeSeal-Implementation-Handoff-Part5.md
 /docs/specs/CodeSeal-Onboarding-and-History-Rewrite-Part13.md
