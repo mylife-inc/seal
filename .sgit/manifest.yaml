@@ -303,6 +303,8 @@ paths:
   kind: file
 - path: cli/tests/runner_key.rs
   kind: file
+- path: cli/tests/safety_net.rs
+  kind: file
 - path: cli/tests/secret_scan.rs
   kind: file
 - path: cli/tests/signup.rs

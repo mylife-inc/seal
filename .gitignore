@@ -144,6 +144,7 @@
 /cli/tests/onboard_portal.rs
 /cli/tests/portal_client.rs
 /cli/tests/runner_key.rs
+/cli/tests/safety_net.rs
 /cli/tests/secret_scan.rs
 /cli/tests/signup.rs
 /cli/tests/smart_add.rs
