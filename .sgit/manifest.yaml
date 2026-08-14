@@ -293,6 +293,8 @@ paths:
   kind: file
 - path: cli/tests/merge_driver.rs
   kind: file
+- path: cli/tests/mode_matrix.rs
+  kind: file
 - path: cli/tests/onboard_auto.rs
   kind: file
 - path: cli/tests/onboard_portal.rs

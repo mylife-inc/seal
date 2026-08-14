@@ -139,6 +139,7 @@
 /cli/tests/init_config_portal_signup.rs
 /cli/tests/keygen.rs
 /cli/tests/merge_driver.rs
+/cli/tests/mode_matrix.rs
 /cli/tests/onboard_auto.rs
 /cli/tests/onboard_portal.rs
 /cli/tests/portal_client.rs
