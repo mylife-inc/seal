@@ -301,6 +301,8 @@ paths:
   kind: file
 - path: cli/tests/portal_client.rs
   kind: file
+- path: cli/tests/release_guards.rs
+  kind: file
 - path: cli/tests/runner_key.rs
   kind: file
 - path: cli/tests/safety_net.rs

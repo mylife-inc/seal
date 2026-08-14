@@ -143,6 +143,7 @@
 /cli/tests/onboard_auto.rs
 /cli/tests/onboard_portal.rs
 /cli/tests/portal_client.rs
+/cli/tests/release_guards.rs
 /cli/tests/runner_key.rs
 /cli/tests/safety_net.rs
 /cli/tests/secret_scan.rs
