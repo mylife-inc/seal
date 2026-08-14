@@ -50,6 +50,17 @@ jobs:
           - { target: aarch64-unknown-linux-musl, platform: ubuntu-24.04-arm }
           - { target: aarch64-apple-darwin, platform: macos-latest }
           - { target: x86_64-apple-darwin, platform: macos-latest }
+          # Windows, cross-compiled from Linux — and it has to be.
+          #
+          # A `windows-latest` runner would need to decrypt before it could
+          # build, decryption needs `sgit`, and there is no Windows `sgit` to
+          # install: the binary this job produces is the one that would be
+          # required to produce it. Cross-compiling from a Linux runner, which
+          # *can* decrypt, breaks the circle.
+          #
+          # `-gnu` rather than `-msvc` for the same reason — the MSVC toolchain
+          # only exists on Windows.
+          - { target: x86_64-pc-windows-gnu, platform: ubuntu-latest }
 
     steps:
       - uses: actions/checkout@v4
@@ -69,6 +80,10 @@ jobs:
       - name: Install the musl toolchain
         if: contains(matrix.target, 'musl')
         run: sudo apt-get update && sudo apt-get install -y musl-tools
+
+      - name: Install the mingw toolchain
+        if: contains(matrix.target, 'windows')
+        run: sudo apt-get update && sudo apt-get install -y gcc-mingw-w64-x86-64
 
       - uses: Swatinem/rust-cache@v2
         with:
@@ -97,6 +112,8 @@ jobs:
 
       - name: Build
         working-directory: cli
+        env:
+          CARGO_TARGET_X86_64_PC_WINDOWS_GNU_LINKER: x86_64-w64-mingw32-gcc
         run: cargo build --release --locked --target ${{ matrix.target }}
 
       - name: Package
@@ -107,8 +124,21 @@ jobs:
           set -euo pipefail
           mkdir -p dist
           name="sgit-${VERSION}-${TARGET}"
-          tar -czf "dist/${name}.tar.gz" -C "cli/target/${TARGET}/release" sgit
-          ( cd dist && shasum -a 256 "${name}.tar.gz" > "${name}.tar.gz.sha256" )
+
+          # Windows gets a .zip holding sgit.exe. `install.sh` is POSIX and
+          # cannot run there, so this archive is downloaded and unpacked by
+          # hand — a format Explorer opens without extra software is worth
+          # more than consistency with the tarballs.
+          case "$TARGET" in
+            *windows*)
+              ( cd "cli/target/${TARGET}/release" && zip -q "$OLDPWD/dist/${name}.zip" sgit.exe )
+              ( cd dist && shasum -a 256 "${name}.zip" > "${name}.zip.sha256" )
+              ;;
+            *)
+              tar -czf "dist/${name}.tar.gz" -C "cli/target/${TARGET}/release" sgit
+              ( cd dist && shasum -a 256 "${name}.tar.gz" > "${name}.tar.gz.sha256" )
+              ;;
+          esac
 
       - uses: actions/upload-artifact@v4
         with:
@@ -142,7 +172,7 @@ jobs:
           # One SHA256SUMS over every archive, beside the per-archive files.
           # The installer reads either, and has failed closed on a release that
           # published only the form it was not looking for.
-          ( cd dist && shasum -a 256 ./*.tar.gz > SHA256SUMS && shasum -a 256 -c SHA256SUMS )
+          ( cd dist && shasum -a 256 ./*.tar.gz ./*.zip > SHA256SUMS && shasum -a 256 -c SHA256SUMS )
           # Published with the binaries, so a pinned version can always be
           # installed the same way the release it belongs to was.
           cp scripts/install.sh dist/install.sh
