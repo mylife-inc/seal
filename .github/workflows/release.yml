@@ -110,6 +110,22 @@ jobs:
           }
           echo "cli/Cargo.toml declares $declared"
 
+          # And the lockfile, which `--locked` checks a step later with a
+          # message about lock files rather than about versions.
+          #
+          # `cargo build --locked` refuses to update Cargo.lock, so a bumped
+          # Cargo.toml with a stale lock fails all five matrix jobs with
+          # "cannot update the lock file ... because --locked was passed" —
+          # true, unhelpful, and three releases in a row now. The bump belongs
+          # in the same commit as the lock it implies.
+          locked=$(awk '/^name = "sgit"$/{f=1;next} f&&/^version = /{gsub(/[" ]/,"",$3); print $3; exit}' cli/Cargo.lock)
+          [ "$locked" = "$want" ] || {
+            echo "::error::cli/Cargo.lock pins $locked, but cli/Cargo.toml declares $want."
+            echo "::error::Run a build locally so cargo rewrites the lock, and commit it."
+            exit 1
+          }
+          echo "cli/Cargo.lock pins $locked"
+
       - name: Build
         working-directory: cli
         env:
